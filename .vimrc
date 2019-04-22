@@ -40,6 +40,7 @@ Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'posva/vim-vue'
 "Plug 'SirVer/ultisnips'
 "Plug 'ervandew/supertab'
 "***************"
@@ -115,7 +116,8 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt=noinsert,menuone,noselect
+set completeopt-=preview
+set completeopt+=longest,menuone,noselect
 set si
 set magic
 set lazyredraw
@@ -145,13 +147,6 @@ set smartcase
 set diffopt +=iwhite
 set ofu=syntaxcomplete#Complete
 
-"***************"
-" mucomplete"
-" ***************"
-let g:mucomplete#enable_auto_at_startup = 0
-let g:mucomplete#chains = {
-    \ 'default': ['omni', 'ulti', 'path', 'dict', 'uspl'],
-\ }
 
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
@@ -320,3 +315,10 @@ let g:python_highlight_all = 1
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
 
+"***************"
+" mucomplete"
+" ***************"
+let g:mucomplete#chains = {
+    \ 'default': ['omni', 'ulti', 'path', 'dict', 'uspl'],
+\ }
+let g:mucomplete#enable_auto_at_startup = 1
