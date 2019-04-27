@@ -83,13 +83,13 @@ set nocompatible
 " Colorscheme
 "***************"
 "set background=dark
-"colorscheme dracula
-let g:gruvbox_termcolors=16
-colorscheme gruvbox
-set background=dark
-set termguicolors
-hi LineNr ctermbg=NONE guibg=NONE
-hi Comment guifg=#5C6370 ctermfg=59
+colorscheme dracula
+"let g:gruvbox_termcolors=16
+"colorscheme gruvbox
+"set background=dark
+"set termguicolors
+"hi LineNr ctermbg=NONE guibg=NONE
+"hi Comment guifg=#5C6370 ctermfg=59
 
 filetype plugin indent on
 set nocp
