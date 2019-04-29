@@ -104,6 +104,7 @@ set wildmode=full
 set path +=**
 set wildmenu
 set cursorline
+set complete+=kspell
 
 "***************"
 " Tabs and spacing
@@ -318,7 +319,6 @@ autocmd FileType php set sw=4 ts=4 sts=4
 "***************"
 " Vim-emmet
 " ***************"
-let g:user_emmet_leader_key='<Tab>'
 let g:user_emmet_settings = {
   \  'javascript.jsx' : {
     \      'extends' : 'jsx',
