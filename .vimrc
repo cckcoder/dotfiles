@@ -41,6 +41,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
+Plug 'pangloss/vim-javascript'
 "Plug 'SirVer/ultisnips'
 "Plug 'ervandew/supertab'
 "***************"
@@ -146,7 +147,6 @@ set ignorecase
 set smartcase
 set diffopt +=iwhite
 set ofu=syntaxcomplete#Complete
-
 
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
@@ -314,6 +314,16 @@ let g:python_highlight_all = 1
 " PHP config
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
+"
+"***************"
+" Vim-emmet
+" ***************"
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 "***************"
 " mucomplete"
