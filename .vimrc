@@ -47,9 +47,12 @@ Plug 'pangloss/vim-javascript'
 "***************"
 " Colorscheme
 "***************" 
+Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
 Plug 'colepeters/spacemacs-theme.vim'
+Plug 'rakr/vim-one'
+
 "***************"
 " Autocomplete
 "***************"
@@ -83,8 +86,8 @@ set nocompatible
 "***************"
 " Colorscheme
 "***************"
-"set background=dark
-colorscheme dracula
+set background=dark
+colorscheme onedark
 "let g:gruvbox_termcolors=16
 "colorscheme gruvbox
 "set background=dark
@@ -179,7 +182,7 @@ function! CocCurrentFunction()
 endfunction
 
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
+	\ 'colorscheme': 'onedark',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -190,7 +193,9 @@ let g:lightline = {
 	\ },
 \ }
 
+"***************"
 " Vim-Lua
+"***************"
 let g:lua_syntax_someoption = 1
 
 "***************"
