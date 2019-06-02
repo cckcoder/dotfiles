@@ -1,18 +1,35 @@
-filetype plugin indent on
-"***************"
-" Encoding"
-" ***************"
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8
-set termencoding=utf-8
+scriptencoding utf8
+if &compatible
+  set nocompatible
+endif
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+
+  call dein#end()
+  call dein#save_state()
+endif
 
 syntax on
 call plug#begin()
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'tbastos/vim-lua'
 Plug 'mattn/emmet-vim'
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'raimondi/delimitmate'
+Plug 'kien/rainbow_parentheses.vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-endwise'
 Plug 'mxw/vim-jsx'
@@ -25,9 +42,8 @@ Plug 'vim-python/python-syntax'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
-Plug 'ervandew/supertab'
-Plug 'raimondi/delimitmate'
 "Plug 'SirVer/ultisnips'
+"Plug 'ervandew/supertab'
 "***************"
 " Colorscheme
 "***************" 
@@ -35,11 +51,27 @@ Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
 Plug 'colepeters/spacemacs-theme.vim'
+Plug 'rakr/vim-one'
 
 "***************"
 " Autocomplete
 "***************"
-Plug 'ajh17/vimcompletesme'
+Plug 'maralla/completor.vim'
+Plug 'lifepillar/vim-mucomplete'
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'davidhalter/jedi-vim'
+Plug 'zchee/deoplete-jedi'
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'roxma/nvim-yarp'
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 call plug#end()
 
 "***************"
@@ -56,7 +88,14 @@ set nocompatible
 "***************"
 set background=dark
 colorscheme onedark
+"let g:gruvbox_termcolors=16
+"colorscheme gruvbox
+"set background=dark
+"set termguicolors
+"hi LineNr ctermbg=NONE guibg=NONE
+"hi Comment guifg=#5C6370 ctermfg=59
 
+filetype plugin indent on
 set nocp
 set wrap
 set number
@@ -64,6 +103,7 @@ set cursorline
 set showmatch
 set undolevels=1000
 set wildmode=full
+"set wildmode=longest,list:longest
 set path +=**
 set wildmenu
 set cursorline
@@ -86,8 +126,14 @@ set completeopt+=longest,menuone,noselect
 set si
 set magic
 set lazyredraw
-set textwidth=80
 
+"***************"
+" Encoding"
+" ***************"
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set termencoding=utf-8
 set bomb
 set binary
 set title
@@ -146,14 +192,20 @@ let g:lightline = {
 	\   'currentfunction': 'CocCurrentFunction'
 	\ },
 \ }
-"***************"
-" VimComplete
-" ***************"
-autocmd FileType vim let b:vcm_tab_complete = 'omni'
 
 "***************"
-" Enable omni completion.
+" Vim-Lua
 "***************"
+let g:lua_syntax_someoption = 1
+
+"***************"
+" Deoplete
+" ***************"
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_delay = 100
+let g:deoplete#enable_smart_case = 1
+
+" Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS noci
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
@@ -161,6 +213,22 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType vue syntax sync fromstart
 
+"***************"
+" Completor
+" ***************"
+let g:completor_complete_options = 'menuone,noselect,preview'
+let g:completor_php_omni_trigger = '([$\w]{2,}|use\s*|->[$\w]*|::[$\w]*|implements\s*|extends\s*|class\s+[$\w]+|new\s*)$'
+let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
+let g:completor_python_binary = '/usr/local/lib/python3.5/dist-packages/jedi'
+let g:completor_auto_trigger = 0
+
+"***************"
+" NCM2"
+" ***************"
+autocmd BufEnter * call ncm2#enable_for_buffer()
+" make it fast
+let ncm2#popup_delay = 5
+let ncm2#complete_length = [[1, 1]]
 "***************"
 "" Use new fuzzy based matche
 "***************"
@@ -171,6 +239,28 @@ autocmd FileType vue syntax sync fromstart
 "***************"
 let g:comfortable_motion_scroll_down_key = "j"
 let g:comfortable_motion_scroll_up_key = "k"
+
+"Rainbow Parentheses
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
 
 "***************"
 " Vim IndentLine
@@ -230,7 +320,7 @@ let g:python_highlight_all = 1
 " PHP config
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
-
+"
 "***************"
 " Vim-emmet
 " ***************"
@@ -241,7 +331,9 @@ let g:user_emmet_settings = {
   \}
 
 "***************"
-" Super-Tab 
+" mucomplete"
 " ***************"
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
+let g:mucomplete#chains = {
+    \ 'default': ['omni', 'ulti', 'path', 'dict', 'uspl'],
+\ }
+let g:mucomplete#enable_auto_at_startup = 1
