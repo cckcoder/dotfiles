@@ -25,7 +25,7 @@ Plug 'vim-python/python-syntax'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
-Plug 'ervandew/supertab'
+"Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
 "Plug 'SirVer/ultisnips'
 "***************"
@@ -39,7 +39,8 @@ Plug 'colepeters/spacemacs-theme.vim'
 "***************"
 " Autocomplete
 "***************"
-Plug 'ajh17/vimcompletesme'
+"Plug 'ajh17/vimcompletesme'
+Plug 'lifepillar/vim-mucomplete'
 call plug#end()
 
 "***************"
@@ -82,7 +83,7 @@ set expandtab
 set clipboard+=unnamedplus
 set ruler
 set completeopt-=preview
-set completeopt+=longest,menuone,noselect
+set completeopt+=longest,menuone,noinsert
 set si
 set magic
 set lazyredraw
@@ -116,7 +117,10 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
+"***************"
+" Mucomplete
+"***************"
+let g:mucomplete#enable_auto_at_startup = 1
 "***************"
 " Nerd tree 
 "***************"
@@ -146,10 +150,6 @@ let g:lightline = {
 	\   'currentfunction': 'CocCurrentFunction'
 	\ },
 \ }
-"***************"
-" VimComplete
-" ***************"
-autocmd FileType vim let b:vcm_tab_complete = 'omni'
 
 "***************"
 " Enable omni completion.
@@ -224,7 +224,6 @@ map <C-m> :TagbarToggle<CR>
 " Python config
 "***************"
 autocmd FileType python set sw=2 ts=2 sts=2
-" For python syntax
 let g:python_highlight_all = 1
 "***************"
 " PHP config
@@ -243,5 +242,6 @@ let g:user_emmet_settings = {
 "***************"
 " Super-Tab 
 " ***************"
-let g:SuperTabDefaultCompletionType = "<c-n>"
+"let g:SuperTabDefaultCompletionType = "<c-n>"
+
 
