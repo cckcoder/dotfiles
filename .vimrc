@@ -39,9 +39,24 @@ Plug 'colepeters/spacemacs-theme.vim'
 "***************"
 " Autocomplete
 "***************"
-"Plug 'ajh17/vimcompletesme'
 Plug 'lifepillar/vim-mucomplete'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 call plug#end()
+
+"***************"
+" Deoplete 
+"***************"
+let g:deoplete#enable_at_startup = 1
 
 "***************"
 " General
@@ -82,7 +97,7 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt-=preview
+set completeopt=noinsert,menuone,noselect
 set completeopt+=longest,menuone,noinsert
 set si
 set magic
@@ -106,7 +121,6 @@ set ignorecase
 set smartcase
 set diffopt +=iwhite
 set ofu=syntaxcomplete#Complete
-
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
@@ -121,6 +135,7 @@ nnoremap <C-H> <C-W><C-H>
 " Mucomplete
 "***************"
 let g:mucomplete#enable_auto_at_startup = 1
+
 "***************"
 " Nerd tree 
 "***************"
@@ -150,6 +165,11 @@ let g:lightline = {
 	\   'currentfunction': 'CocCurrentFunction'
 	\ },
 \ }
+"
+"***************"
+" Ncm 2
+" ***************" 
+autocmd BufEnter * call ncm2#enable_for_buffer()
 
 "***************"
 " Enable omni completion.
@@ -243,5 +263,3 @@ let g:user_emmet_settings = {
 " Super-Tab 
 " ***************"
 "let g:SuperTabDefaultCompletionType = "<c-n>"
-
-
