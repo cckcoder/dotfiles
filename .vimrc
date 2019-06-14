@@ -1,4 +1,5 @@
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 "***************"
 " Encoding"
 " ***************"
@@ -39,24 +40,12 @@ Plug 'colepeters/spacemacs-theme.vim'
 "***************"
 " Autocomplete
 "***************"
-Plug 'lifepillar/vim-mucomplete'
+Plug 'lifepillar/vim-mucomplete' 
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-call plug#end()
-
-"***************"
-" Deoplete 
-"***************"
-let g:deoplete#enable_at_startup = 1
+call plug#end() 
 
 "***************"
 " General
@@ -79,11 +68,13 @@ set number
 set cursorline
 set showmatch
 set undolevels=1000
-set wildmode=full
+"set wildmode=full
+set wildmode=longest,list:longest 
 set path +=**
 set wildmenu
 set cursorline
-set complete+=kspell
+"set complete+=kspell 
+set complete=.,w,b,u,k
 
 "***************"
 " Tabs and spacing
@@ -97,8 +88,7 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt=noinsert,menuone,noselect
-set completeopt+=longest,menuone,noinsert
+set completeopt=noinsert,menuone,noselect,longest
 set si
 set magic
 set lazyredraw
@@ -120,21 +110,32 @@ set incsearch
 set ignorecase
 set smartcase
 set diffopt +=iwhite
-set ofu=syntaxcomplete#Complete
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
+"***************"
+" Mu complete
+"***************" 
+let g:mucomplete#force_manual = 1 
+let g:mucomplete#enable_auto_at_startup = 1
+
+"***************"
+" NCM2
+"***************" 
+autocmd BufEnter * call ncm2#enable_for_buffer()
+" Use <TAB> to select the popup menu:
+"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+"***************"
 "split navigations
+"***************"
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-"***************"
-" Mucomplete
-"***************"
-let g:mucomplete#enable_auto_at_startup = 1
 
 "***************"
 " Nerd tree 
@@ -165,11 +166,6 @@ let g:lightline = {
 	\   'currentfunction': 'CocCurrentFunction'
 	\ },
 \ }
-"
-"***************"
-" Ncm 2
-" ***************" 
-autocmd BufEnter * call ncm2#enable_for_buffer()
 
 "***************"
 " Enable omni completion.
@@ -223,7 +219,7 @@ let g:mta_filetypes = {
 "***************"
 " Jedi-Vim
 "***************"
-autocmd FileType python setlocal omnifunc=jedi#completions
+"autocmd FileType python setlocal omnifunc=jedi#completions
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 1
 let g:jedi#use_tabs_not_buffers = 1
