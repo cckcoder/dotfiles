@@ -34,8 +34,8 @@ Plug 'raimondi/delimitmate'
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
-Plug 'colepeters/spacemacs-theme.vim'
-
+Plug 'colepeters/spacemacs-theme.vim' 
+Plug 'liuchengxu/space-vim-dark'
 "***************"
 " Autocomplete
 "***************"
@@ -53,8 +53,10 @@ set nocompatible
 "***************"
 " Colorscheme
 "***************"
-set background=dark
-colorscheme onedark
+let g:space_vim_dark_background = 234
+colorscheme space-vim-dark
+set termguicolors
+hi Comment guifg=#5C6370 ctermfg=59
 
 set nocp
 set wrap
