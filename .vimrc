@@ -16,7 +16,6 @@ Plug 'mattn/emmet-vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-endwise'
-Plug 'mxw/vim-jsx'
 Plug 'valloric/matchtagalways'
 Plug 'sbdchd/neoformat'
 Plug 'itchyny/lightline.vim'
@@ -40,17 +39,12 @@ Plug 'colepeters/spacemacs-theme.vim'
 "***************"
 " Autocomplete
 "***************"
-Plug 'lifepillar/vim-mucomplete' 
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
+Plug 'lifepillar/vim-mucomplete'
 call plug#end() 
 
 "***************"
 " General
 "***************"
-" path to your python
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python2'
 highlight Normal ctermbg=NONE
@@ -88,7 +82,9 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt=noinsert,menuone,noselect,longest
+set completeopt-=preview
+set completeopt+=longest,menuone,noselect
+"set completeopt=noinsert,menuone,noselect,longest
 set si
 set magic
 set lazyredraw
@@ -115,19 +111,6 @@ au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
-"***************"
-" Mu complete
-"***************" 
-let g:mucomplete#force_manual = 1 
-let g:mucomplete#enable_auto_at_startup = 1
-
-"***************"
-" NCM2
-"***************" 
-autocmd BufEnter * call ncm2#enable_for_buffer()
-" Use <TAB> to select the popup menu:
-"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "***************"
 "split navigations
@@ -151,10 +134,6 @@ let NERDTreeAutoDeleteBuffer = 1
 " ***************"
 " Vim light line
 " ***************"
-function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
-endfunction
-
 let g:lightline = {
 	\ 'colorscheme': 'onedark',
 	\ 'active': {
@@ -168,14 +147,25 @@ let g:lightline = {
 \ }
 
 "***************"
+" Mucomplete
+"***************"
+let g:mucomplete#enable_auto_at_startup = 1
+"let g:mucomplete#completion_delay = 1
+let g:mucomplete#reopen_immediately = 0 
+let g:mucomplete#minimum_prefix_length = 3
+"***************"
 " Enable omni completion.
 "***************"
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS noci
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-autocmd FileType vue syntax sync fromstart
+augroup omnicuncs
+	autocmd!
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+	autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+	autocmd FileType vue syntax sync fromstart
+	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+augroup	end
 
 "***************"
 "" Use new fuzzy based matche
@@ -201,9 +191,6 @@ let g:indentLine_color_dark = 1
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
-"JSX
-let g:jsx_ext_required = 0
-
 "***************"
 " Matching Tags
 "***************"
@@ -219,7 +206,6 @@ let g:mta_filetypes = {
 "***************"
 " Jedi-Vim
 "***************"
-"autocmd FileType python setlocal omnifunc=jedi#completions
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 1
 let g:jedi#use_tabs_not_buffers = 1
@@ -254,8 +240,3 @@ let g:user_emmet_settings = {
     \      'extends' : 'jsx',
     \  },
   \}
-
-"***************"
-" Super-Tab 
-" ***************"
-"let g:SuperTabDefaultCompletionType = "<c-n>"
