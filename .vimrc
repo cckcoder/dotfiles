@@ -1,3 +1,5 @@
+set nocompatible 
+syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 "***************"
@@ -8,7 +10,6 @@ set fileencoding=utf-8
 set fileencodings=utf-8
 set termencoding=utf-8
 
-syntax on
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -27,7 +28,9 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 "Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
+Plug 'ludovicchabant/vim-gutentags'
 "Plug 'SirVer/ultisnips'
+
 "***************"
 " Colorscheme
 "***************" 
@@ -41,14 +44,13 @@ Plug 'liuchengxu/space-vim-dark'
 "***************"
 Plug 'lifepillar/vim-mucomplete'
 call plug#end() 
-
+syntax enable
 "***************"
 " General
 "***************"
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python2'
 highlight Normal ctermbg=NONE
-set nocompatible
 
 "***************"
 " Colorscheme
@@ -61,7 +63,6 @@ hi Comment guifg=#5C6370 ctermfg=59
 set nocp
 set wrap
 set number
-set cursorline
 set showmatch
 set undolevels=1000
 "set wildmode=full
@@ -69,6 +70,7 @@ set wildmode=longest,list:longest
 set path +=**
 set wildmenu
 set cursorline
+set colorcolumn=180
 "set complete+=kspell 
 set complete=.,w,b,u,k
 
@@ -132,6 +134,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeQuitOnOpen = 1
 
 " ***************"
 " Vim light line
