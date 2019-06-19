@@ -42,7 +42,11 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 "***************"
 " Autocomplete
 "***************"
-Plug 'lifepillar/vim-mucomplete'
+"Plug 'lifepillar/vim-mucomplete'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
 call plug#end() 
 syntax enable
 "***************"
@@ -55,18 +59,18 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-"let g:space_vim_dark_background = 234
-"colorscheme space-vim-dark
-"set termguicolors
-"hi Comment guifg=#5C6370 ctermfg=59
-colorscheme jellybeans
-let g:jellybeans_use_lowcolor_black = 1
-let g:jellybeans_overrides = {
-\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
-\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
-\              'attr': 'bold' },
-\    'Comment': { 'guifg': 'cccccc' },
-\}
+let g:space_vim_dark_background = 234
+colorscheme space-vim-dark
+set termguicolors
+hi Comment guifg=#5C6370 ctermfg=59
+"colorscheme jellybeans
+"let g:jellybeans_use_lowcolor_black = 1
+"let g:jellybeans_overrides = {
+"\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+"\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+"\              'attr': 'bold' },
+"\    'Comment': { 'guifg': 'cccccc' },
+"\}
 
 set nocp
 set wrap
@@ -94,9 +98,9 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt-=preview
-set completeopt+=longest,menuone,noselect
-"set completeopt=noinsert,menuone,noselect,longest
+"set completeopt-=preview
+"set completeopt+=longest,menuone,noselect
+set completeopt=noinsert,menuone,noselect
 set si
 set magic
 set lazyredraw
@@ -123,6 +127,12 @@ au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
+"***************"
+" NCM2
+"***************"
+autocmd BufEnter * call ncm2#enable_for_buffer()
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "***************"
 "split navigations
@@ -162,10 +172,11 @@ let g:lightline = {
 "***************"
 " Mucomplete
 "***************"
-let g:mucomplete#enable_auto_at_startup = 1
+"let g:mucomplete#enable_auto_at_startup = 1
 "let g:mucomplete#completion_delay = 1
-let g:mucomplete#reopen_immediately = 0 
-let g:mucomplete#minimum_prefix_length = 3
+"let g:mucomplete#reopen_immediately = 0 
+"let g:mucomplete#minimum_prefix_length = 3
+
 "***************"
 " Enable omni completion.
 "***************"
@@ -175,7 +186,7 @@ augroup omnicuncs
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-	autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+	autocmd FileType php setlocal omnifunc=phpcomplete#Complete
 	autocmd FileType vue syntax sync fromstart
 	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup	end
