@@ -28,7 +28,6 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 "Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
-Plug 'ludovicchabant/vim-gutentags'
 "Plug 'SirVer/ultisnips'
 
 "***************"
@@ -39,6 +38,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
 Plug 'colepeters/spacemacs-theme.vim' 
 Plug 'liuchengxu/space-vim-dark'
+Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 "***************"
 " Autocomplete
 "***************"
@@ -55,10 +55,18 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-let g:space_vim_dark_background = 234
-colorscheme space-vim-dark
-set termguicolors
-hi Comment guifg=#5C6370 ctermfg=59
+"let g:space_vim_dark_background = 234
+"colorscheme space-vim-dark
+"set termguicolors
+"hi Comment guifg=#5C6370 ctermfg=59
+colorscheme jellybeans
+let g:jellybeans_use_lowcolor_black = 1
+let g:jellybeans_overrides = {
+\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+\              'attr': 'bold' },
+\    'Comment': { 'guifg': 'cccccc' },
+\}
 
 set nocp
 set wrap
@@ -236,6 +244,7 @@ let g:python_highlight_all = 1
 " PHP config
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
+let g:phpcomplete_search_tags_for_variables = 1
 
 "***************"
 " Vim-emmet
