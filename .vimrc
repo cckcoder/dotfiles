@@ -127,7 +127,7 @@ let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js
 "***************"
 " Deoplet
 "***************"
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "***************"
 " NCM2
