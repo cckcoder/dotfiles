@@ -23,7 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 "Plug 'ervandew/supertab'
@@ -43,10 +43,13 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 " Autocomplete
 "***************"
 "Plug 'lifepillar/vim-mucomplete'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
+Plug 'roxma/nvim-yarp' 
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+Plug 'davidhalter/jedi-vim'
+
 call plug#end() 
 syntax enable
 "***************"
@@ -59,18 +62,12 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-let g:space_vim_dark_background = 234
-colorscheme space-vim-dark
-set termguicolors
-hi Comment guifg=#5C6370 ctermfg=59
-"colorscheme jellybeans
-"let g:jellybeans_use_lowcolor_black = 1
-"let g:jellybeans_overrides = {
-"\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
-"\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
-"\              'attr': 'bold' },
-"\    'Comment': { 'guifg': 'cccccc' },
-"\}
+set background=dark
+colorscheme gruvbox
+"let g:space_vim_dark_background = 234
+"colorscheme space-vim-dark
+"set termguicolors
+"hi Comment guifg=#5C6370 ctermfg=59
 
 set nocp
 set wrap
@@ -126,6 +123,11 @@ set diffopt +=iwhite
 au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
+
+"***************"
+" Deoplet
+"***************"
+let g:deoplete#enable_at_startup = 1
 
 "***************"
 " NCM2
@@ -188,7 +190,7 @@ augroup omnicuncs
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 	autocmd FileType php setlocal omnifunc=phpcomplete#Complete
 	autocmd FileType vue syntax sync fromstart
-	autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+	autocmd FileType python setlocal omnifunc=jedi#completions
 augroup	end
 
 "***************"
@@ -229,7 +231,9 @@ let g:mta_filetypes = {
 
 "***************"
 " Jedi-Vim
-"***************"
+"***************" 
+let g:jedi#smart_auto_mappings = 1 
+let g:jedi#auto_initialization = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 1
 let g:jedi#use_tabs_not_buffers = 1
