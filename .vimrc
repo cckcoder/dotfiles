@@ -55,7 +55,7 @@ syntax enable
 "***************"
 " General
 "***************"
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
 highlight Normal ctermbg=NONE
 
@@ -127,7 +127,7 @@ let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js
 "***************"
 " Deoplet
 "***************"
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
 "***************"
 " NCM2
