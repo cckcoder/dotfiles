@@ -23,6 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
+Plug 'kien/ctrlp.vim'
 "Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
@@ -42,7 +43,6 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 "***************"
 " Autocomplete
 "***************"
-"Plug 'lifepillar/vim-mucomplete'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp' 
@@ -64,10 +64,6 @@ highlight Normal ctermbg=NONE
 "***************"
 set background=dark
 colorscheme gruvbox
-"let g:space_vim_dark_background = 234
-"colorscheme space-vim-dark
-"set termguicolors
-"hi Comment guifg=#5C6370 ctermfg=59
 
 set nocp
 set wrap
@@ -269,3 +265,10 @@ let g:user_emmet_settings = {
     \      'extends' : 'jsx',
     \  },
   \}
+
+"***************"
+" CtrlP
+"***************"
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_show_hidden = 1
