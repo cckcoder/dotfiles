@@ -3,6 +3,11 @@ https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
 https://qiita.com/miyagaw61/items/bcd1fb86bbc69e1aa3a3
 https://stackoverflow.com/questions/22531360/no-module-named-setuptools
 https://stackoverflow.com/questions/21055859/what-are-the-risks-of-running-sudo-pip
+https://hackernoon.com/5-vim-plugins-i-cant-live-without-for-javascript-development-f7e98f98e8d5
+https://adminhacks.com/vim-javascript.html
+https://github.com/ap/vim-css-color
+https://github.com/tyru/caw.vim
+https://github.com/leafoftree/vim-vue-plugin
 #Install Neovim
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 #remove Neovim
