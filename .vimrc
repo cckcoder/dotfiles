@@ -43,13 +43,19 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 "***************"
 " Autocomplete
 "***************"
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp' 
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'davidhalter/jedi-vim'
-
+Plug 'deoplete-plugins/deoplete-jedi'
 call plug#end() 
 syntax enable
 "***************"
@@ -62,8 +68,9 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-set background=dark
-colorscheme gruvbox
+let g:onedark_termcolors=256
+colorscheme onedark
+
 
 set nocp
 set wrap
@@ -121,7 +128,7 @@ let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
 "***************"
-" Deoplet
+" Deoplete
 "***************"
 let g:deoplete#enable_at_startup = 1
 
