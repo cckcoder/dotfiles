@@ -131,6 +131,10 @@ let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js
 " Deoplete
 "***************"
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#enable_smart_case = 1
+let g:deoplete#enable_camel_case = 1
+let g:deoplete#enable_refresh_always = 1 
 
 "***************"
 " NCM2
