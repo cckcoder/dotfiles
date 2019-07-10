@@ -1,6 +1,6 @@
 set nocompatible 
 syntax on
-filetype plugin indent on
+filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 "***************"
 " Encoding"
@@ -40,6 +40,7 @@ Plug 'morhetz/gruvbox'
 Plug 'colepeters/spacemacs-theme.vim' 
 Plug 'liuchengxu/space-vim-dark'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
+Plug 'tomasiser/vim-code-dark'
 "***************"
 " Autocomplete
 "***************"
@@ -68,8 +69,9 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-let g:onedark_termcolors=256
-colorscheme onedark
+"let g:onedark_termcolors=256
+"colorscheme onedark
+colorscheme codedark
 
 
 set nocp
