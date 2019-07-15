@@ -216,6 +216,7 @@ let g:comfortable_motion_scroll_up_key = "k"
 "***************"
 " Vim IndentLine
 "***************"
+let g:indentLine_enabled = 0
 let g:indentLine_setColors = 0
 let g:indentLine_color_dark = 1 
 
