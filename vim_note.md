@@ -3,6 +3,9 @@
 - Screen positions H M L
 - Scrolling Ctrl-U/D/B/F
 
+#Delete ^M
+- :e ++ff=dos
+
 * EDITING
 - e[dit] {file}
 - f[ind] {file}
