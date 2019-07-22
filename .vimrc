@@ -44,6 +44,7 @@ Plug 'tomasiser/vim-code-dark'
 "***************"
 " Autocomplete
 "***************"
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -128,6 +129,7 @@ set smartcase
 set diffopt +=iwhite
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
+au BufEnter,BufRead *.vue set filetype=vue,javascript
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
