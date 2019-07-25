@@ -1,5 +1,6 @@
 set nocompatible 
 syntax on
+syntax enable
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 "***************"
@@ -24,11 +25,12 @@ Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
 Plug 'kien/ctrlp.vim'
-"Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 "Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
+Plug 'jelera/vim-javascript-syntax'
 "Plug 'SirVer/ultisnips'
 
 "***************"
@@ -47,6 +49,8 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+	Plug 'kristijanhusak/deoplete-phpactor'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -59,7 +63,6 @@ Plug 'ncm2/ncm2-path'
 Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
 call plug#end() 
-syntax enable
 "***************"
 " General
 "***************"
@@ -129,7 +132,6 @@ set smartcase
 set diffopt +=iwhite
 "Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
-au BufEnter,BufRead *.vue set filetype=vue,javascript
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
@@ -195,13 +197,13 @@ let g:lightline = {
 "***************"
 " Enable omni completion.
 "***************"
-augroup omnicuncs
+augroup omnicomplete
 	autocmd!
 	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-	autocmd FileType php setlocal omnifunc=phpcomplete#Complete
+	autocmd FileType php setlocal omnifunc=phpactor#Complete
 	autocmd FileType vue syntax sync fromstart
 	autocmd FileType python setlocal omnifunc=jedi#completions
 augroup	end
@@ -295,3 +297,13 @@ let g:ctrlp_show_hidden = 1
 " NVIM SETUP
 "***************"
 tnoremap <Esc> <C-\><C-n>
+
+
+"***************"
+" PHPACTOR
+"***************"
+let g:phpactorPhpBin = 'php'
+let g:phpactorBranch = 'master'
+let g:phpactorOmniAutoClassImport = v:true
+let g:phpactorCompletionIgnoreCase = 0
+let g:phpactorOmniError = v:true

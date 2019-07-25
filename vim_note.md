@@ -64,5 +64,8 @@ https://github.com/tyru/caw.vim
 https://github.com/leafoftree/vim-vue-plugin
 #Install Neovim
 https://github.com/neovim/neovim/wiki/Installing-Neovim
+https://www.linode.com/docs/tools-reference/tools/how-to-install-neovim-and-plugins-with-vim-plug/
 #remove Neovim
 https://www.thelinuxfaq.com/ubuntu/ubuntu-17-04-zesty-zapus/neovim?type=uninstall
+#Config
+https://www.davidosomething.com/blog/vim-for-javascript/
