@@ -99,9 +99,11 @@ set complete=.,w,b,u,k
 "***************"
 set laststatus=2
 set autochdir
+set autoindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set shiftround
 set smarttab
 set expandtab
 set clipboard+=unnamedplus
@@ -169,7 +171,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeQuitOnOpen = 1
+"let NERDTreeQuitOnOpen = 1
 
 " ***************"
 " Vim light line
