@@ -132,7 +132,12 @@ set incsearch
 set ignorecase
 set smartcase
 set diffopt +=iwhite
+"***************"
+" Vim ignore path
+"***************"
 "Syntax highlighting in Markdown
+set wildignore+=*/env/*,*/node_modules/*
+
 au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']
 let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
