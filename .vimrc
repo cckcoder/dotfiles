@@ -1,4 +1,3 @@
-set nocompatible 
 syntax on
 syntax enable
 filetype plugin on
@@ -32,6 +31,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
 "Plug 'SirVer/ultisnips'
+Plug 'hail2u/vim-css3-syntax'
 
 "***************"
 " Colorscheme
@@ -305,7 +305,6 @@ let g:ctrlp_show_hidden = 1
 "***************"
 tnoremap <Esc> <C-\><C-n>
 
-
 "***************"
 " PHPACTOR
 "***************"
@@ -314,3 +313,12 @@ let g:phpactorBranch = 'master'
 let g:phpactorOmniAutoClassImport = v:true
 let g:phpactorCompletionIgnoreCase = 0
 let g:phpactorOmniError = v:true
+
+"***************"
+" VIM-CSS
+"***************"
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
