@@ -130,6 +130,8 @@ set shortmess+=c
 set autoread
 "Search
 set hlsearch
+hi Search ctermbg=LightBlue
+hi Search ctermfg=black
 set incsearch
 set ignorecase
 set smartcase
