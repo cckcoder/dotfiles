@@ -73,11 +73,11 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-"color dracula
 "let g:gruvbox_italic=1
-"olorscheme gruvbox
+"colorscheme gruvbox
 "let g:onedark_termcolors=256
 "colorscheme onedark
+"color dracula
 colorscheme codedark
 
 
