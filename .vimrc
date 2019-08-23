@@ -43,6 +43,7 @@ Plug 'colepeters/spacemacs-theme.vim'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 Plug 'tomasiser/vim-code-dark'
+Plug 'itchyny/landscape.vim'
 "***************"
 " Autocomplete
 "***************"
@@ -77,7 +78,7 @@ highlight Normal ctermbg=NONE
 "colorscheme gruvbox
 "let g:onedark_termcolors=256
 "colorscheme onedark
-color dracula
+color landscape
 "colorscheme codedark
 
 
