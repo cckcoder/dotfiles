@@ -36,21 +36,13 @@ Plug 'hail2u/vim-css3-syntax'
 "***************"
 " Colorscheme
 "***************" 
-Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'morhetz/gruvbox'
-Plug 'colepeters/spacemacs-theme.vim' 
-Plug 'liuchengxu/space-vim-dark'
-Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
-Plug 'tomasiser/vim-code-dark'
 "***************"
 " Autocomplete
 "***************"
 Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-	Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
-	Plug 'kristijanhusak/deoplete-phpactor'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -73,27 +65,18 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-"let g:gruvbox_italic=1
-"colorscheme gruvbox
-"let g:onedark_termcolors=256
-"colorscheme onedark
 color dracula
-"colorscheme codedark
-
-
 
 set nocp
 set wrap
 set number
 set showmatch
 set undolevels=1000
-"set wildmode=full
 set wildmode=longest,list:longest 
 set path +=**
 set wildmenu
 set cursorline
 set colorcolumn=180
-"set complete+=kspell 
 set complete=.,w,b,u,k
 
 "***************"
@@ -110,8 +93,6 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-"set completeopt-=preview
-"set completeopt+=longest,menuone,noselect
 set completeopt=noinsert,menuone,noselect
 set si
 set magic
@@ -139,10 +120,6 @@ set diffopt +=iwhite
 "***************"
 "Syntax highlighting in Markdown
 set wildignore+=*/env/*,*/node_modules/*
-
-au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:polyglot_disabled = ['markdown']
-let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
 "***************"
 " Deoplete
@@ -178,18 +155,21 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeQuitOnOpen = 1
+"let NERDTreeQuitOnOpen = 1
 
 " ***************"
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'landscape',
+	\ 'colorscheme': 'onedark',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 	\ },
-	\ }
+  \ 'component_function': {
+  \   'filename': 'LightlineFilename',
+  \ },
+\ }
 
 "***************"
 " Enable omni completion.
@@ -226,7 +206,6 @@ let g:indentLine_color_dark = 1
 "***************"
 " Map key
 "***************"
-"map <C-l> :noh<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
@@ -253,12 +232,6 @@ let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#completions_command = "<C-Space>"
 
 "***************"
-" Asyncomplete
-"***************"
-let g:asyncomplete_smart_completion = 1
-let g:asyncomplete_auto_popup = 1
-
-"***************"
 " Tagbar
 "***************"
 map <C-m> :TagbarToggle<CR>
@@ -268,6 +241,7 @@ map <C-m> :TagbarToggle<CR>
 "***************"
 autocmd FileType python set sw=2 ts=2 sts=2
 let g:python_highlight_all = 1
+
 "***************"
 " PHP config
 "***************"
@@ -289,20 +263,6 @@ let g:user_emmet_settings = {
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
-
-"***************"
-" NVIM SETUP
-"***************"
-tnoremap <Esc> <C-\><C-n>
-
-"***************"
-" PHPACTOR
-"***************"
-let g:phpactorPhpBin = 'php'
-let g:phpactorBranch = 'master'
-let g:phpactorOmniAutoClassImport = v:true
-let g:phpactorCompletionIgnoreCase = 0
-let g:phpactorOmniError = v:true
 
 "***************"
 " VIM-CSS
