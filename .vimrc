@@ -74,27 +74,21 @@ highlight Normal ctermbg=NONE
 "***************"
 " Colorscheme
 "***************"
-"let g:gruvbox_italic=1
-"colorscheme gruvbox
-"let g:onedark_termcolors=256
-"colorscheme onedark
-color landscape
-"colorscheme codedark
+color landscape 
 
-
-
+"***************"
+" General
+"***************"
 set nocp
 set wrap
 set number
 set showmatch
 set undolevels=1000
-"set wildmode=full
 set wildmode=longest,list:longest 
 set path +=**
 set wildmenu
 set cursorline
 set colorcolumn=180
-"set complete+=kspell 
 set complete=.,w,b,u,k
 
 "***************"
@@ -111,8 +105,6 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-"set completeopt-=preview
-"set completeopt+=longest,menuone,noselect
 set completeopt=noinsert,menuone,noselect
 set si
 set magic
@@ -129,7 +121,10 @@ set splitbelow
 set splitright
 set shortmess+=c
 set autoread
-"Search
+
+"***************"
+" Search
+"***************"
 set hlsearch
 set incsearch
 set ignorecase
@@ -138,8 +133,12 @@ set diffopt +=iwhite
 "***************"
 " Vim ignore path
 "***************"
-"Syntax highlighting in Markdown
 set wildignore+=*/env/*,*/node_modules/*
+"***************"
+" Tags
+"***************"
+set tags=./tags;,tags;$HOME
+
 
 au BufNewFile,BufReadPost *.md set filetype=markdown
 let g:polyglot_disabled = ['markdown']

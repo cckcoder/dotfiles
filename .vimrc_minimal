@@ -27,10 +27,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
-"Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
-"Plug 'SirVer/ultisnips'
 Plug 'hail2u/vim-css3-syntax'
 
 "***************"
@@ -40,20 +38,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 "***************"
 " Autocomplete
 "***************"
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp' 
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'davidhalter/jedi-vim'
-Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'lifepillar/vim-mucomplete'
 call plug#end() 
 "***************"
 " General
@@ -93,14 +78,13 @@ set smarttab
 set expandtab
 set clipboard+=unnamedplus
 set ruler
-set completeopt=noinsert,menuone,noselect
+set completeopt-=preview
+set completeopt+=longest,menuone,noselect
 set si
 set magic
 set lazyredraw
 set textwidth=80
 
-set bomb
-set binary
 set title
 set ttyfast             
 set nobackup
@@ -122,20 +106,9 @@ set diffopt +=iwhite
 set wildignore+=*/env/*,*/node_modules/*
 
 "***************"
-" Deoplete
+" Mucomplete.
 "***************"
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#enable_refresh_always = 1 
-
-"***************"
-" NCM2
-"***************"
-autocmd BufEnter * call ncm2#enable_for_buffer()
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+let g:mucomplete#enable_auto_at_startup = 1 
 
 "***************"
 "split navigations
@@ -184,11 +157,6 @@ augroup omnicomplete
 	autocmd FileType vue syntax sync fromstart
 	autocmd FileType python setlocal omnifunc=jedi#completions
 augroup	end
-
-"***************"
-"" Use new fuzzy based matche
-"***************"
- let g:ncm2#matcher = 'substrfuzzy'
 
 "***************"
 " comfortable motion
