@@ -5,12 +5,15 @@ set omnifunc=syntaxcomplete#Complete
 "***************"
 " Encoding"
 " ***************"
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8
+set encoding=utf-8 
+set fileencoding=utf-8 
+set fileencodings=utf-8 
 set termencoding=utf-8
 
 call plug#begin()
+"***************"
+" Utility
+"***************" 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'mattn/emmet-vim'
@@ -32,6 +35,7 @@ Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
 "Plug 'SirVer/ultisnips'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'mhinz/vim-signify'
 
 "***************"
 " Colorscheme
@@ -44,6 +48,8 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/landscape.vim'
+Plug 'mhinz/vim-janah'
+
 "***************"
 " Autocomplete
 "***************"
@@ -312,3 +318,8 @@ augroup VimCSS3Syntax
 
   autocmd FileType css setlocal iskeyword+=-
 augroup END
+
+"***************"
+" VIM-SIGNIFY
+"***************"
+let g:signify_vcs_list = [ 'git', 'hg' ]
