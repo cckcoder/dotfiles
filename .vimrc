@@ -36,6 +36,8 @@ Plug 'jelera/vim-javascript-syntax'
 "Plug 'SirVer/ultisnips'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 "***************"
 " Colorscheme
@@ -75,12 +77,12 @@ call plug#end()
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
-highlight Normal ctermbg=NONE
-
+"highlight Normal ctermbg=NONE
+autocmd ColorScheme janah highlight Normal ctermbg=235
 "***************"
 " Colorscheme
 "***************"
-color landscape 
+color janah 
 
 "***************"
 " General
@@ -185,6 +187,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeQuitOnOpen = 1
+let NERDTreeShowHidden=1
 
 " ***************"
 " Vim light line

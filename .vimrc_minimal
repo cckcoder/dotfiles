@@ -29,7 +29,8 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'hail2u/vim-css3-syntax'
+Plug 'hail2u/vim-css3-syntax' 
+Plug 'mhinz/vim-signify'
 
 "***************"
 " Colorscheme
@@ -45,12 +46,11 @@ call plug#end()
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
-highlight Normal ctermbg=NONE
-
+autocmd ColorScheme janah highlight Normal ctermbg=235
 "***************"
 " Colorscheme
 "***************"
-color dracula
+color janah 
 
 set nocp
 set wrap
