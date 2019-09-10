@@ -21,7 +21,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-endwise'
 Plug 'valloric/matchtagalways'
-Plug 'sbdchd/neoformat'
+"Plug 'sbdchd/neoformat'
 Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
@@ -29,11 +29,12 @@ Plug 'vim-python/python-syntax'
 Plug 'kien/ctrlp.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
-Plug 'pangloss/vim-javascript'
 "Plug 'ervandew/supertab'
+"Plug 'SirVer/ultisnips'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
-"Plug 'SirVer/ultisnips'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
@@ -71,13 +72,13 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'deoplete-plugins/deoplete-tag'
 call plug#end() 
 "***************"
 " General
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
-"highlight Normal ctermbg=NONE
 autocmd ColorScheme janah highlight Normal ctermbg=235
 "***************"
 " Colorscheme
@@ -141,16 +142,11 @@ set diffopt +=iwhite
 "***************"
 " Vim ignore path
 "***************"
-set wildignore+=*/env/*,*/node_modules/*
+set wildignore+=*/env/*,*/node_modules/*,.git,.hg
 "***************"
 " Tags
 "***************"
 set tags=./tags;,tags;$HOME
-
-
-au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:polyglot_disabled = ['markdown']
-let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html', 'vim']
 
 "***************"
 " Deoplete
@@ -277,6 +273,7 @@ map <C-m> :TagbarToggle<CR>
 "***************"
 autocmd FileType python set sw=2 ts=2 sts=2
 let g:python_highlight_all = 1
+
 "***************"
 " PHP config
 "***************"
@@ -326,3 +323,13 @@ augroup END
 " VIM-SIGNIFY
 "***************"
 let g:signify_vcs_list = [ 'git', 'hg' ]
+
+"***************"
+" VIM-JSX
+"***************"
+let g:jsx_ext_required = 1
+
+"***************"
+" VIM-JAVASCRIPT
+"***************"
+let g:javascript_plugin_jsdoc = 1
