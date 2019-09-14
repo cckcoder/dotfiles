@@ -21,7 +21,6 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-endwise'
 Plug 'valloric/matchtagalways'
-"Plug 'sbdchd/neoformat'
 Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
@@ -29,8 +28,6 @@ Plug 'vim-python/python-syntax'
 Plug 'kien/ctrlp.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
-"Plug 'ervandew/supertab'
-"Plug 'SirVer/ultisnips'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
@@ -70,6 +67,7 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp' 
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-cssomni'
 Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'deoplete-plugins/deoplete-tag'
@@ -79,11 +77,11 @@ call plug#end()
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
-autocmd ColorScheme janah highlight Normal ctermbg=235
 "***************"
 " Colorscheme
 "***************"
-color janah 
+autocmd ColorScheme janah highlight Normal ctermbg=235
+colorscheme janah
 
 "***************"
 " General
