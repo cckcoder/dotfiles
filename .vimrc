@@ -36,6 +36,7 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'scrooloose/syntastic'
 
 "***************"
 " Colorscheme
@@ -49,7 +50,7 @@ Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/landscape.vim'
 Plug 'mhinz/vim-janah'
-
+Plug 'doums/darcula'
 "***************"
 " Autocomplete
 "***************"
@@ -80,9 +81,8 @@ let g:python_host_prog = '/usr/bin/python2'
 "***************"
 " Colorscheme
 "***************"
-autocmd ColorScheme janah highlight Normal ctermbg=235
-colorscheme janah
-
+colorscheme space-vim-dark
+hi Comment guifg=#5C6370 ctermfg=59
 "***************"
 " General
 "***************"
@@ -187,7 +187,7 @@ let NERDTreeShowHidden=1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'landscape',
+	\ 'colorscheme': 'darcula',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -331,3 +331,17 @@ let g:jsx_ext_required = 1
 " VIM-JAVASCRIPT
 "***************"
 let g:javascript_plugin_jsdoc = 1
+
+"***************"
+"	SYNTASTIC
+"***************"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0 
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
