@@ -81,8 +81,8 @@ let g:python_host_prog = '/usr/bin/python2'
 "***************"
 " Colorscheme
 "***************"
-colorscheme space-vim-dark
-hi Comment guifg=#5C6370 ctermfg=59
+syntax on
+colorscheme dracula
 "***************"
 " General
 "***************"
