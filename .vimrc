@@ -37,6 +37,11 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/syntastic'
+"***************"
+" Snippet
+"***************" 
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 "***************"
 " Colorscheme
@@ -345,3 +350,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0 
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+"
+"***************"
+" Ultisnips
+"***************"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
+let g:UltiSnipsExpandTrigger="<tab>"               
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"

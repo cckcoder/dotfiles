@@ -1,0 +1,14 @@
+snippet debug "pydebug"
+print('***************')
+print(${1})
+print('***************')
+endsnippet
+
+snippet forb "check value in array"
+k = 0
+for i in ${1}:
+	print(${2})
+	if k == 10:
+		break
+	k += 1
+endsnippet
