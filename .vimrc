@@ -355,6 +355,6 @@ let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 " Ultisnips
 "***************"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
-let g:UltiSnipsExpandTrigger="<tab>"               
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
