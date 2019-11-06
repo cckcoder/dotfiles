@@ -1,4 +1,4 @@
-syntax on
+set nocompatible
 syntax enable
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -57,6 +57,7 @@ Plug 'itchyny/landscape.vim'
 Plug 'mhinz/vim-janah'
 Plug 'doums/darcula'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
+
 "***************"
 " Autocomplete
 "***************"
@@ -79,21 +80,25 @@ Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'deoplete-plugins/deoplete-tag'
 call plug#end() 
+
 "***************"
 " General
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
+
 "***************"
 " Colorscheme
 "***************"
 syntax on
+set termguicolors
 "colorscheme dracula
 colorscheme purify 
 let g:purify_override_colors = {
     \ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
     \ 'green': { 'gui': '#5FD700', 'cterm': '76' }
 \ }
+
 "***************"
 " General
 "***************"
@@ -129,8 +134,6 @@ set magic
 set lazyredraw
 set textwidth=80
 
-set bomb
-set binary
 set title
 set ttyfast             
 set nobackup
@@ -148,10 +151,12 @@ set incsearch
 set ignorecase
 set smartcase
 set diffopt +=iwhite
+
 "***************"
 " Vim ignore path
 "***************"
 set wildignore+=*/env/*,*/node_modules/*,.git,.hg
+
 "***************"
 " Tags
 "***************"
@@ -210,7 +215,7 @@ let g:lightline = {
 "***************"
 augroup omnicomplete
 	autocmd!
-	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+	"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
@@ -218,6 +223,15 @@ augroup omnicomplete
 	autocmd FileType vue syntax sync fromstart
 	autocmd FileType python setlocal omnifunc=jedi#completions
 augroup	end
+
+"***************"
+" VIM-CSS
+"***************"
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
 
 "***************"
 "" Use new fuzzy based matche
@@ -267,12 +281,6 @@ let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#completions_command = "<C-Space>"
 
 "***************"
-" Asyncomplete
-"***************"
-let g:asyncomplete_smart_completion = 1
-let g:asyncomplete_auto_popup = 1
-
-"***************"
 " Tagbar
 "***************"
 map <C-m> :TagbarToggle<CR>
@@ -320,15 +328,6 @@ let g:phpactorCompletionIgnoreCase = 0
 let g:phpactorOmniError = v:true
 
 "***************"
-" VIM-CSS
-"***************"
-augroup VimCSS3Syntax
-  autocmd!
-
-  autocmd FileType css setlocal iskeyword+=-
-augroup END
-
-"***************"
 " VIM-SIGNIFY
 "***************"
 let g:signify_vcs_list = [ 'git', 'hg' ]
@@ -364,3 +363,5 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
 let g:UltiSnipsExpandTrigger="<cr>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+set secure
