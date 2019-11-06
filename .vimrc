@@ -56,6 +56,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/landscape.vim'
 Plug 'mhinz/vim-janah'
 Plug 'doums/darcula'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 "***************"
 " Autocomplete
 "***************"
@@ -87,7 +88,12 @@ let g:python_host_prog = '/usr/bin/python2'
 " Colorscheme
 "***************"
 syntax on
-colorscheme dracula
+"colorscheme dracula
+colorscheme purify 
+let g:purify_override_colors = {
+    \ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
+    \ 'green': { 'gui': '#5FD700', 'cterm': '76' }
+\ }
 "***************"
 " General
 "***************"
@@ -192,7 +198,7 @@ let NERDTreeShowHidden=1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'darcula',
+	\ 'colorscheme': 'purify',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -350,7 +356,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0 
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
-"
+
 "***************"
 " Ultisnips
 "***************"
