@@ -61,24 +61,9 @@ Plug 'kyoz/purify', { 'rtp': 'vim' }
 "***************"
 " Autocomplete
 "***************"
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-	Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
-	Plug 'kristijanhusak/deoplete-phpactor'
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp' 
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-cssomni'
 Plug 'davidhalter/jedi-vim'
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'deoplete-plugins/deoplete-tag'
 call plug#end() 
 
 "***************"
@@ -86,6 +71,31 @@ call plug#end()
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
+set hidden
+
+"***************"
+" Map key
+"***************"
+nnoremap <silent> <C-l> :<C-u>noh<CR><C-l>
+map <F6> :setlocal spell! spelllang=en_us<CR>
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 "***************"
 " Colorscheme
@@ -163,22 +173,6 @@ set wildignore+=*/env/*,*/node_modules/*,.git,.hg
 set tags=./tags;,tags;$HOME
 
 "***************"
-" Deoplete
-"***************"
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#enable_refresh_always = 1 
-
-"***************"
-" NCM2
-"***************"
-autocmd BufEnter * call ncm2#enable_for_buffer()
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-"***************"
 "split navigations
 "***************"
 nnoremap <C-J> <C-W><C-J>
@@ -215,12 +209,11 @@ let g:lightline = {
 "***************"
 augroup omnicomplete
 	autocmd!
-	"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteTags 
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteTags
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-	autocmd FileType php setlocal omnifunc=phpactor#Complete
-	autocmd FileType vue syntax sync fromstart
+	autocmd FileType php setlocal omnifunc=phpcomplete#CompleteTags
 	autocmd FileType python setlocal omnifunc=jedi#completions
 augroup	end
 
@@ -250,13 +243,6 @@ let g:comfortable_motion_scroll_up_key = "k"
 let g:indentLine_enabled = 0
 let g:indentLine_setColors = 0
 let g:indentLine_color_dark = 1 
-
-"***************"
-" Map key
-"***************"
-"map <C-l> :noh<CR>
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-map <F6> :setlocal spell! spelllang=en_us<CR>
 
 "***************"
 " Matching Tags
