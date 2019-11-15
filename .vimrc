@@ -37,6 +37,7 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
 "***************"
 " Snippet
 "***************" 
