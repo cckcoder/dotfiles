@@ -77,7 +77,6 @@ set hidden
 "***************"
 " Map key
 "***************"
-nnoremap <silent> <C-l> :<C-u>noh<CR><C-l>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 inoremap <silent><expr> <TAB>
   \ pumvisible() ? "\<C-n>" :
@@ -270,8 +269,8 @@ let g:jedi#completions_command = "<C-Space>"
 "***************"
 " Tagbar
 "***************"
-map <C-m> :TagbarToggle<CR>
-
+map <C-m> :TagbarToggle<CR> 
+map <C-c> :noh<CR> 
 "***************"
 " Python config
 "***************"
