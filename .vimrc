@@ -102,12 +102,11 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "***************"
 syntax on
 set termguicolors
-"colorscheme dracula
-colorscheme purify 
-let g:purify_override_colors = {
-    \ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
-    \ 'green': { 'gui': '#5FD700', 'cterm': '76' }
-\ }
+colorscheme gruvbox
+"let g:purify_override_colors = {
+    "\ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
+    "\ 'green': { 'gui': '#5FD700', 'cterm': '76' }
+"\ }
 
 "***************"
 " General
