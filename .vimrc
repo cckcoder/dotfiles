@@ -25,7 +25,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'posva/vim-vue'
 Plug 'raimondi/delimitmate'
@@ -292,11 +293,10 @@ let g:user_emmet_settings = {
   \}
 
 "***************"
-" CtrlP
+" FZF
 "***************"
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_show_hidden = 1
+nnoremap <C-p> :Files<Cr> 
+let g:fzf_layout = { 'down': '~40%' }
 
 "***************"
 " NVIM SETUP
