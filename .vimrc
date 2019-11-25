@@ -129,23 +129,25 @@ set complete=.,w,b,u,k
 "***************"
 set laststatus=2
 set autochdir
-set autoindent
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set autoindent expandtab
+set tabstop=2 shiftwidth=2 softtabstop=2
 set shiftround
 set smarttab
-set expandtab
 set clipboard+=unnamedplus
 set ruler
 set completeopt=noinsert,menuone,noselect
 set si
 set magic
-set lazyredraw
 set textwidth=80
 
-set title
+"***************"
+" Performance Tuning
+"***************" 
+set lazyredraw
 set ttyfast             
+set nocursorline
+
+set title
 set nobackup
 set noswapfile
 set splitbelow
@@ -156,16 +158,13 @@ set autoread
 "***************"
 " Search
 "***************"
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch incsearch ignorecase smartcase
 set diffopt +=iwhite
 
 "***************"
 " Vim ignore path
 "***************"
-set wildignore+=*/env/*,*/node_modules/*,.git,.hg
+set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,.*jpeg
 
 "***************"
 " Tags
