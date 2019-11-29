@@ -1,4 +1,3 @@
-set nocompatible
 syntax enable
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -118,7 +117,8 @@ set number
 set showmatch
 set undolevels=1000
 set wildmode=longest,list:longest 
-set path +=**
+set path+=**
+set nocompatible 
 set wildmenu
 set cursorline
 set colorcolumn=180
@@ -138,7 +138,6 @@ set ruler
 set completeopt=noinsert,menuone,noselect
 set si
 set magic
-set textwidth=80
 
 "***************"
 " Performance Tuning
