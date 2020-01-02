@@ -31,6 +31,7 @@ Plug 'posva/vim-vue'
 Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
+Plug 'crusoexia/vim-javascript-lib'
 Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mhinz/vim-signify'
@@ -58,6 +59,8 @@ Plug 'itchyny/landscape.vim'
 Plug 'mhinz/vim-janah'
 Plug 'doums/darcula'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'crusoexia/vim-monokai'
+Plug 'patstockwell/vim-monokai-tasty'
 
 "***************"
 " Autocomplete
@@ -101,12 +104,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Colorscheme
 "***************"
 syntax on
-set termguicolors
-colorscheme gruvbox
-"let g:purify_override_colors = {
-    "\ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
-    "\ 'green': { 'gui': '#5FD700', 'cterm': '76' }
-"\ }
+let g:vim_monokai_tasty_italic = 1
+colorscheme vim-monokai-tasty
 
 "***************"
 " General
@@ -195,7 +194,7 @@ let NERDTreeShowHidden=1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'purify',
+	\ 'colorscheme': 'monokai_tasty',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
