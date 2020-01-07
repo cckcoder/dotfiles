@@ -15,7 +15,7 @@ let NERDTreeShowHidden=1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'monokai_tasty',
+	\ 'colorscheme': 'codedark',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -39,9 +39,10 @@ augroup END
 "***************"
 " Vim IndentLine
 "***************"
-let g:indentLine_enabled = 0
-let g:indentLine_setColors = 0
-let g:indentLine_color_dark = 1 
+let g:indentLine_enabled = 1
+let g:indentLine_char_list = ['┆']
+"let g:indentLine_setColors = 0
+"let g:indentLine_color_dark = 1 
 
 "***************"
 " Matching Tags
@@ -104,7 +105,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0 
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']

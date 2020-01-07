@@ -1,8 +1,11 @@
 "***************"
 " Colorscheme
 "***************"
-let g:vim_monokai_tasty_italic = 1
-colorscheme vim-monokai-tasty
+"let g:vim_monokai_tasty_italic = 1
+"colorscheme vim-monokai-tasty
+set t_Co=256
+set t_ut=
+colorscheme codedark
 
 "***************"
 " Encoding"
