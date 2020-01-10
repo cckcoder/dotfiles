@@ -48,7 +48,7 @@ Plug 'mhinz/vim-janah'
 Plug 'doums/darcula'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'patstockwell/vim-monokai-tasty'
-
+Plug 'ayu-theme/ayu-vim' 
 "***************"
 " Autocomplete
 "***************"
