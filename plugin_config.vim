@@ -15,7 +15,7 @@ let NERDTreeShowHidden=1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'codedark',
+	\ 'colorscheme': 'iceberg',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]

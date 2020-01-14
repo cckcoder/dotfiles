@@ -1,20 +1,8 @@
 "***************"
 " Colorscheme
 "***************"
-"let g:vim_monokai_tasty_italic = 1
-"colorscheme vim-monokai-tasty
-"set t_Co=256 
-"set t_ut= colorscheme codedark
-"let g:space_vim_dark_background = 233
-"colorscheme space-vim-dark 
-"set termguicolors
-"hi Comment guifg=#5C6370 ctermfg=59
-"hi Normal     ctermbg=NONE guibg=NONE
-"hi LineNr     ctermbg=NONE guibg=NONE
-"hi SignColumn ctermbg=NONE guibg=NONE
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu
+colorscheme iceberg
 "***************"
 " Encoding"
 " ***************"
