@@ -41,7 +41,16 @@ let g:comfortable_motion_scroll_down_key = "j"
 let g:comfortable_motion_scroll_up_key = "k"
 
 "***************"
+" Leader
+"***************"
+let mapleader = ","
+nmap <leader>y :StripWhitespace<CR>
+nmap <leader>\ :noh<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+map <leader>w <Plug>(easymotion-bd-w)
+
+"***************"
 " Tagbar
 "***************"
-map <C-m> :TagbarToggle<CR> 
-map <C-c> :noh<CR> 
+nmap <C-m> :TagbarToggle<CR>

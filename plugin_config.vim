@@ -1,8 +1,7 @@
 "***************"
-" Nerd tree 
+" Nerd tree
 "***************"
 autocmd vimenter * NERDTree
-map <C-\> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
@@ -20,7 +19,12 @@ let g:lightline = {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 	\ },
+	\ 'component_function': {
+	\   'cocstatus': 'coc#status'
+	\ },
 	\ }
+" Use auocmd to force lightline update.
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 "***************"
 " VIM-CSS
@@ -42,7 +46,7 @@ augroup END
 let g:indentLine_enabled = 1
 let g:indentLine_char_list = ['┆']
 "let g:indentLine_setColors = 0
-"let g:indentLine_color_dark = 1 
+"let g:indentLine_color_dark = 1
 
 "***************"
 " Matching Tags
@@ -58,8 +62,8 @@ let g:mta_filetypes = {
 
 "***************"
 " Jedi-Vim
-"***************" 
-let g:jedi#smart_auto_mappings = 1 
+"***************"
+let g:jedi#smart_auto_mappings = 1
 let g:jedi#auto_initialization = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 1
@@ -78,7 +82,7 @@ let g:user_emmet_settings = {
 "***************"
 " FZF
 "***************"
-nnoremap <C-p> :Files<Cr> 
+nnoremap <C-p> :Files<Cr>
 let g:fzf_layout = { 'down': '~40%' }
 
 "***************"
@@ -90,11 +94,13 @@ let g:signify_vcs_list = [ 'git', 'hg' ]
 " VIM-JSX
 "***************"
 let g:jsx_ext_required = 1
+let g:jsx_pragma_required = 1
 
 "***************"
 " VIM-JAVASCRIPT
 "***************"
 let g:javascript_plugin_jsdoc = 1
+let g:used_javascript_libs = 'react,jquery'
 
 "***************"
 "	SYNTASTIC
@@ -106,7 +112,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0 
+let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 
