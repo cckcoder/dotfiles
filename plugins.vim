@@ -16,7 +16,7 @@ Plug 'hail2u/vim-css3-syntax'
 "***************"
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
-
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "***************"
 " Tools
 "***************"
@@ -70,4 +70,11 @@ Plug 'cocopon/iceberg.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
 Plug 'davidhalter/jedi-vim'
+
+"***************"
+" Devicons
+"***************"
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
+
