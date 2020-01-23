@@ -10,6 +10,12 @@ let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden=1
 
+"***************"
+" Nerd tree syntax Highlight
+"***************"
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 " ***************"
 " Vim light line
 " ***************"
@@ -20,11 +26,21 @@ let g:lightline = {
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 	\ },
 	\ 'component_function': {
-	\   'cocstatus': 'coc#status'
+	\   'cocstatus': 'coc#status',
+	\   'filetype': 'MyFiletype',
+	\   'fileformat': 'MyFileformat',
 	\ },
 	\ }
 " Use auocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+" Config for Devicons
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
 "***************"
 " VIM-CSS
@@ -123,3 +139,9 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
 let g:UltiSnipsExpandTrigger="<cr>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"***************"
+" Font
+"***************"
+set guifont=JetBrainsMono:h11
+

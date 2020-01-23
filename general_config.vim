@@ -6,25 +6,26 @@ colorscheme iceberg
 "***************"
 " Encoding"
 " ***************"
-set encoding=utf-8 
-set fileencoding=utf-8 
-set fileencodings=utf-8 
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
 set termencoding=utf-8
+
 
 "***************"
 " General
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
-set hidden 
+set hidden
 set nocp
 set wrap
 set number
 set showmatch
 set undolevels=1000
-set wildmode=longest,list:longest 
+set wildmode=longest,list:longest
 set path+=**
-set nocompatible 
+set nocompatible
 set wildmenu
 set cursorline
 set colorcolumn=180
@@ -46,7 +47,7 @@ set si
 
 "***************"
 " Performance Tuning
-"***************" 
+"***************"
 set lazyredraw
 set nocursorline
 
@@ -79,7 +80,7 @@ set tags=./tags;,tags;$HOME
 "***************"
 augroup omnicomplete
 	autocmd!
-	autocmd FileType css setlocal omnifunc=csscomplete#CompleteTags 
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteTags
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteTags
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
