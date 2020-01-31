@@ -48,6 +48,8 @@ nmap <leader>y :StripWhitespace<CR>
 nmap <leader>\ :noh<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>bf :Buffers<CR>
+nmap <leader>bt :BTags<CR>
 map <leader>w <Plug>(easymotion-bd-w)
 
 "***************"

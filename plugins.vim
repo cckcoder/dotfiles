@@ -31,6 +31,7 @@ Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
+
 "***************"
 " PYTHON
 "***************"
@@ -47,7 +48,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
 
 "***************"
-" GIT
+" GIT & HG
 "***************"
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
