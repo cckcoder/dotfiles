@@ -64,7 +64,7 @@ Plug 'honza/vim-snippets'
 " Colorscheme
 "***************"
 Plug 'cocopon/iceberg.vim'
-
+Plug 'dracula/vim', { 'as': 'dracula' }
 "***************"
 " Autocomplete
 "***************"
