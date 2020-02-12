@@ -20,7 +20,7 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'iceberg',
+	\ 'colorscheme': 'darcula',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
