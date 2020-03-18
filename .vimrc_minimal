@@ -10,51 +10,57 @@ set termencoding=utf-8
 
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'mattn/emmet-vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-endwise'
 Plug 'valloric/matchtagalways'
-Plug 'sbdchd/neoformat'
 Plug 'itchyny/lightline.vim'
 Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-python/python-syntax'
-Plug 'kien/ctrlp.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
-Plug 'raimondi/delimitmate'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'hail2u/vim-css3-syntax' 
-Plug 'mhinz/vim-signify'
-
+Plug 'hail2u/vim-css3-syntax'
 "***************"
-" Colorscheme
-"***************" 
-Plug 'dracula/vim', { 'as': 'dracula' }
+" SEARCH FILE
+"***************"
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf.vim'
+
 "***************"
 " Autocomplete
 "***************"
-Plug 'lifepillar/vim-mucomplete'
-call plug#end() 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"***************"
+" Colorscheme
+"***************"
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+"***************"
+" Autocomplete
+"***************"
+call plug#end()
+
 "***************"
 " General
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
+
 "***************"
 " Colorscheme
 "***************"
 syntax on
-color zellner
+colorscheme dracula
 
 set nocp
 set wrap
 set number
 set showmatch
 set undolevels=1000
-set wildmode=longest,list:longest 
+set wildmode=longest,list:longest
 set path +=**
 set wildmenu
 set cursorline
@@ -83,7 +89,7 @@ set lazyredraw
 set textwidth=80
 
 set title
-set ttyfast             
+set ttyfast
 set nobackup
 set noswapfile
 set splitbelow
@@ -105,7 +111,7 @@ set wildignore+=*/env/*,*/node_modules/*
 "***************"
 " Mucomplete.
 "***************"
-let g:mucomplete#enable_auto_at_startup = 1 
+let g:mucomplete#enable_auto_at_startup = 1
 
 "***************"
 "split navigations
@@ -116,7 +122,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "***************"
-" Nerd tree 
+" Nerd tree
 "***************"
 autocmd vimenter * NERDTree
 map <C-\> :NERDTreeToggle<CR>
@@ -125,28 +131,31 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
-"let NERDTreeQuitOnOpen = 1
 
 " ***************"
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'onedark',
+	\ 'colorscheme': 'darcula',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 	\ },
-  \ 'component_function': {
-  \   'filename': 'LightlineFilename',
-  \ },
-\ }
+	\ 'component_function': {
+	\   'cocstatus': 'coc#status',
+	\   'filetype': 'MyFiletype',
+	\   'fileformat': 'MyFileformat',
+	\ },
+	\ }
+" Use auocmd to force lightline update.
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 "***************"
 " Enable omni completion.
 "***************"
 augroup omnicomplete
 	autocmd!
-	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+	autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
@@ -164,9 +173,8 @@ let g:comfortable_motion_scroll_up_key = "k"
 "***************"
 " Vim IndentLine
 "***************"
-let g:indentLine_enabled = 0
-let g:indentLine_setColors = 0
-let g:indentLine_color_dark = 1 
+let g:indentLine_enabled = 1
+let g:indentLine_char_list = ['┆']
 
 "***************"
 " Map key
@@ -213,13 +221,6 @@ let g:user_emmet_settings = {
   \}
 
 "***************"
-" CtrlP
-"***************"
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_show_hidden = 1
-
-"***************"
 " VIM-CSS
 "***************"
 augroup VimCSS3Syntax
@@ -227,3 +228,19 @@ augroup VimCSS3Syntax
 
   autocmd FileType css setlocal iskeyword+=-
 augroup END
+
+"***************"
+" Jedi-Vim
+"***************"
+let g:jedi#smart_auto_mappings = 1
+let g:jedi#auto_initialization = 1
+let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 1
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#completions_command = "<C-Space>"
+
+"***************"
+" FZF
+"***************"
+nnoremap <C-p> :Files<Cr>
+let g:fzf_layout = { 'down': '~40%' }
