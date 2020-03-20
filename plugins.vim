@@ -10,7 +10,9 @@ Plug 'junegunn/fzf.vim'
 "***************"
 Plug 'mattn/emmet-vim'
 Plug 'hail2u/vim-css3-syntax'
-
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
