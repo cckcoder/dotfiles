@@ -3,7 +3,8 @@
 "***************"
 set termguicolors
 "colorscheme iceberg
-colorscheme dracula
+"colorscheme dracula
+colorscheme codedark
 "***************"
 " Encoding"
 " ***************"

@@ -67,6 +67,8 @@ Plug 'honza/vim-snippets'
 "***************"
 Plug 'cocopon/iceberg.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'tomasiser/vim-code-dark'
+
 "***************"
 " Autocomplete
 "***************"
