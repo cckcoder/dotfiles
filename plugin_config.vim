@@ -76,16 +76,6 @@ let g:mta_filetypes = {
     \}
 
 "***************"
-" Jedi-Vim
-"***************"
-let g:jedi#smart_auto_mappings = 1
-let g:jedi#auto_initialization = 1
-let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 1
-let g:jedi#use_tabs_not_buffers = 1
-let g:jedi#completions_command = "<C-Space>"
-
-"***************"
 " Vim-emmet
 " ***************"
 let g:user_emmet_settings = {
