@@ -108,18 +108,18 @@ let g:javascript_plugin_jsdoc = 1
 let g:used_javascript_libs = 'react,jquery'
 
 "***************"
-"	SYNTASTIC
+"	ALE
 "***************"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+let g:ale_completion_enabled = 1
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'python': ['pylint']
+\} 
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_filetype_changed = 0
 
 "***************"
 " Ultisnips
