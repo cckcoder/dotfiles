@@ -87,8 +87,9 @@ let g:user_emmet_settings = {
 "***************"
 " FZF
 "***************"
-nnoremap <C-p> :Files<Cr>
-let g:fzf_layout = { 'down': '~40%' }
+" nnoremap <C-p> :Files<Cr>
+nnoremap <C-p> :<C-u>FZF<Cr>
+let g:fzf_layout = { 'down': '~30%' }
 
 "***************"
 " VIM-SIGNIFY
