@@ -2,8 +2,6 @@
 " Colorscheme
 "***************"
 set termguicolors
-"colorscheme iceberg
-"colorscheme dracula
 colorscheme codedark
 "***************"
 " Encoding"
@@ -87,6 +85,8 @@ set tags=./tags;,tags;$HOME
 "***************"
 " Enable omni completion.
 "***************"
+set omnifunc=ale#completion#OmniFunc
+
 augroup omnicomplete
 	autocmd!
 	autocmd FileType css setlocal omnifunc=csscomplete#CompleteTags

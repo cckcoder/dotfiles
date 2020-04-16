@@ -16,7 +16,7 @@ Plug 'prettier/vim-prettier', {
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "***************"
