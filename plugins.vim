@@ -4,7 +4,7 @@ call plug#begin()
 "***************"
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
-
+Plug 'mileszs/ack.vim'
 "***************"
 " HTML & CSS
 "***************"
