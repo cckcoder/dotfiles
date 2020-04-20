@@ -2,7 +2,7 @@
 " Colorscheme
 "***************"
 set termguicolors
-colorscheme codedark
+colorscheme dracula
 "***************"
 " Encoding"
 " ***************"
