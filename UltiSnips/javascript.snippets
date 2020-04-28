@@ -1,4 +1,4 @@
-snippet debug "log"
+snippet clg "log"
 console.log(${1})
 endsnippet
 
@@ -8,12 +8,20 @@ for(let i=0; i<${1}.length; i++) {
 }
 endsnippet
 
+# React
+snippet conc "constructor"
+constructor(props) {
+	super(props)
+}
+endsnippet
+
 snippet rccp "Create React component class"
 import React, { Component } from 'react'
 
 class ${1} extends Component {
 	render() {
 		return (
+			${3}
 		)
 	}
 }
@@ -21,8 +29,22 @@ class ${1} extends Component {
 export default ${2};
 endsnippet
 
-snippet conc "constructor"
-constructor(props) {
-	super(props)
-}
+snippet rsc "Stateless React component"
+import React from 'react'
+
+const ${1} = () => (
+	return ${2}
+)
+endsnippet
+
+snippet useState "useState"
+const [${1}, ${2}] = useState(${3})
+endsnippet
+
+snippet imp "import module"
+import { ${1} } from '${2}'
+endsnippet
+
+snippet exp "export default"
+export default ${1}
 endsnippet
