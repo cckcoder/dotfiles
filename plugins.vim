@@ -34,7 +34,7 @@ Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
-
+Plug 'liuchengxu/vista.vim'
 "***************"
 " PYTHON
 "***************"

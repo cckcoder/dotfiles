@@ -1,5 +1,5 @@
 "***************"
-" Map key
+" Coc
 "***************"
 map <F6> :setlocal spell! spelllang=en_us<CR>
 inoremap <silent><expr> <TAB>
@@ -16,7 +16,6 @@ endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
-
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -49,11 +48,11 @@ nmap <leader>\ :noh<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>bf :Buffers<CR>
-nmap <leader>bt :BTags<CR>
+nmap <leader>bt :Vista finder coc<CR>
 nmap <Leader>l :ALELint<CR>
 map <leader>w <Plug>(easymotion-bd-w)
 
 "***************"
 " Tagbar
 "***************"
-nmap <C-m> :TagbarToggle<CR>
+nmap <C-m> :Vista coc<CR>
