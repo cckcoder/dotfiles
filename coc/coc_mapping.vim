@@ -1,6 +1,8 @@
 set cmdheight=1
 set signcolumn=yes
 
+call coc#add_extension('coc-sql' ,'coc-snippets' ,'coc-highlight' , 'coc-git' , 'coc-yaml' , 'coc-tsserver' , 'coc-python' , 'coc-phpls' , 'coc-json' , 'coc-html' , 'coc-css')
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
