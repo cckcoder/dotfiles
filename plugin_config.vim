@@ -128,9 +128,9 @@ let g:ale_lint_on_filetype_changed = 0
 " Ultisnips
 "***************"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
-let g:UltiSnipsExpandTrigger="<cr>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<cr>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1

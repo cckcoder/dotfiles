@@ -3,7 +3,7 @@ snippet debug "debug"
 echo "<pre>";
 print_r(${1});
 echo "</pre>";
-die(); 
+die();
 //End Debug
 endsnippet
 
@@ -25,4 +25,13 @@ endsnippet
 snippet foree "fore"
 foreach(${1} as ${2} => ${3}):
 endforeach;
+endsnippet
+
+snippet pubf "public function"
+public function ${1}() {
+}
+endsnippet
+
+snippet $th "$this"
+$this->${1};
 endsnippet
