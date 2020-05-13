@@ -58,12 +58,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
 "***************"
-" Snippet
-"***************"
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
-"***************"
 " Colorscheme
 "***************"
 Plug 'cocopon/iceberg.vim'

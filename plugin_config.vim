@@ -53,11 +53,6 @@ augroup VimCSS3Syntax
 augroup END
 
 "***************"
-"" Use new fuzzy based matche
-"***************"
- let g:ncm2#matcher = 'substrfuzzy'
-
-"***************"
 " Vim IndentLine
 "***************"
 let g:indentLine_enabled = 1
@@ -117,20 +112,12 @@ let g:ale_completion_enabled = 1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'python': ['pylint']
-\} 
+\}
 
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_save = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_filetype_changed = 0
-
-"***************"
-" Ultisnips
-"***************"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/UltiSnips']
-" let g:UltiSnipsExpandTrigger="<cr>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
