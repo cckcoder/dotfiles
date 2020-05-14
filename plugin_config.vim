@@ -19,14 +19,19 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 " ***************"
 " Vim light line
 " ***************"
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunctio
+
 let g:lightline = {
 	\ 'colorscheme': 'dracula',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 	\ },
 	\ 'component_function': {
 	\   'cocstatus': 'coc#status',
+	\   'currentfunction': 'CocCurrentFunction',
 	\   'filetype': 'MyFiletype',
 	\   'fileformat': 'MyFileformat',
   \   'method': 'NearestMethodOrFunction'
@@ -56,7 +61,7 @@ augroup END
 " Vim IndentLine
 "***************"
 let g:indentLine_enabled = 1
-let g:indentLine_char_list = ['┆']
+let g:indentLine_char_list = ['▏']
 "let g:indentLine_setColors = 0
 "let g:indentLine_color_dark = 1
 
@@ -86,7 +91,7 @@ let g:user_emmet_settings = {
 "***************"
 " nnoremap <C-p> :Files<Cr>
 nnoremap <C-p> :<C-u>FZF<Cr>
-let g:fzf_layout = { 'down': '~30%' }
+let g:fzf_layout = { 'down': '~40%' }
 
 "***************"
 " VIM-SIGNIFY
@@ -115,31 +120,24 @@ let g:ale_linters = {
 \}
 
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_save = 0
+let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_filetype_changed = 0
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
-
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
-
 " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
-
 " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_java = 1
-
 " Add your own custom formats or override the defaults
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
-
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
