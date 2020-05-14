@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
+
 "***************"
 " HTML & CSS
 "***************"
@@ -13,12 +14,14 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 "***************"
 " Tools
 "***************"
@@ -35,6 +38,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
+
 "***************"
 " PYTHON
 "***************"
@@ -58,13 +62,19 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
 "***************"
+" Snippets
+"***************"
 Plug 'honza/vim-snippets'
+
+"***************"
 " Colorscheme
 "***************"
 Plug 'cocopon/iceberg.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'fcpg/vim-orbital'
+Plug 'liuchengxu/space-vim-dark'
+
 "***************"
 " Autocomplete
 "***************"
