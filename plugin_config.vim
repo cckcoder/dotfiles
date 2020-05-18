@@ -17,6 +17,12 @@ let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
 " ***************"
+" Devicons
+" ***************"
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
+
+" ***************"
 " Vim light line
 " ***************"
 function! CocCurrentFunction()
@@ -39,6 +45,7 @@ let g:lightline = {
 	\ }
 " Use auocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
 " Config for Devicons
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
@@ -62,8 +69,6 @@ augroup END
 "***************"
 let g:indentLine_enabled = 1
 let g:indentLine_char_list = ['▏']
-"let g:indentLine_setColors = 0
-"let g:indentLine_color_dark = 1
 
 "***************"
 " Matching Tags
