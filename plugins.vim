@@ -79,7 +79,6 @@ Plug 'liuchengxu/space-vim-dark'
 " Autocomplete
 "***************"
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install'}
 
 "***************"
 " Devicons
