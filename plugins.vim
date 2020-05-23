@@ -21,7 +21,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
+Plug 'posva/vim-vue'
 "***************"
 " Tools
 "***************"

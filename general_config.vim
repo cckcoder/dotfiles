@@ -20,6 +20,7 @@ set termencoding=utf-8
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
+
 set hidden
 set nocp
 set wrap

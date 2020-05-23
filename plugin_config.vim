@@ -163,7 +163,12 @@ let g:vista_fzf_preview = ['right:50%']
 let g:vista_keep_fzf_colors = 1
 
 "***************"
+" VueJS SYNTAX
+"***************"
+
+"***************"
 " Font
 "***************"
 set guifont=JetBrainsMono:h12
+
 

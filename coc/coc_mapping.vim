@@ -1,7 +1,7 @@
-set cmdheight=1
+set cmdheight=2
 set signcolumn=yes
 
-call coc#add_extension('coc-sql' ,'coc-snippets' ,'coc-highlight' , 'coc-git' , 'coc-yaml' , 'coc-tsserver' , 'coc-python' , 'coc-phpls' , 'coc-json' , 'coc-html' , 'coc-css')
+call coc#add_extension('coc-sql' ,'coc-snippets' ,'coc-highlight' , 'coc-git' , 'coc-yaml' , 'coc-tsserver' , 'coc-python' , 'coc-phpls' , 'coc-json' , 'coc-html' , 'coc-css', 'coc-vetur')
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -46,3 +46,6 @@ let g:coc_snippet_next = '<leader>j'
 let g:coc_snippet_prev = '<c-k>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <leader>j <Plug>(coc-snippets-expand-jump)
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
