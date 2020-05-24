@@ -2,10 +2,7 @@
 " Colorscheme
 "***************"
 set termguicolors
-colorscheme dracula
-" let g:space_vim_dark_background = 233
-" colorscheme space-vim-dark
-" hi Comment cterm=italic guifg=#5C6370 ctermfg=59
+colorscheme darcula
 
 "***************"
 " Encoding"

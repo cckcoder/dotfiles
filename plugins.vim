@@ -22,6 +22,7 @@ Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'posva/vim-vue'
+
 "***************"
 " Tools
 "***************"
@@ -74,6 +75,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'fcpg/vim-orbital'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'joshdick/onedark.vim'
+Plug 'doums/darcula'
 
 "***************"
 " Autocomplete

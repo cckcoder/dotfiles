@@ -1,7 +1,21 @@
+set updatetime=300
 set cmdheight=2
 set signcolumn=yes
 
-call coc#add_extension('coc-sql' ,'coc-snippets' ,'coc-highlight' , 'coc-git' , 'coc-yaml' , 'coc-tsserver' , 'coc-python' , 'coc-phpls' , 'coc-json' , 'coc-html' , 'coc-css', 'coc-vetur')
+call coc#add_extension('coc-sql'
+  \,'coc-snippets'
+  \,'coc-highlight'
+  \,'coc-git'
+  \,'coc-yaml'
+  \,'coc-tsserver'
+  \,'coc-tslint-plugin'
+  \,'coc-python'
+  \,'coc-phpls'
+  \,'coc-json'
+  \,'coc-html'
+  \,'coc-css'
+  \,'coc-vetur'
+  \,'coc-marketplace')
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -17,14 +31,7 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
-" position. Coc only does snippet and additional edit on confirm.
-" <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
-if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)

@@ -30,7 +30,7 @@ function! CocCurrentFunction()
 endfunctio
 
 let g:lightline = {
-	\ 'colorscheme': 'dracula',
+	\ 'colorscheme': 'darculaOriginal',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
