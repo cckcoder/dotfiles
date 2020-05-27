@@ -43,7 +43,6 @@ Plug 'liuchengxu/vista.vim'
 "***************"
 " PYTHON
 "***************"
-Plug 'vim-python/python-syntax'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 "***************"

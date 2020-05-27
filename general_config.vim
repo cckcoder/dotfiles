@@ -56,9 +56,11 @@ set si
 "***************"
 " Performance Tuning
 "***************"
+set timeoutlen=1000
+set ttimeoutlen=0
+set ttyfast
 set lazyredraw
 set nocursorline
-
 set title
 set nobackup
 set noswapfile
@@ -102,10 +104,11 @@ augroup	end
 " Python config
 "***************"
 autocmd FileType python set sw=2 ts=2 sts=2
-let g:python_highlight_all = 1
 
 "***************"
 " PHP config
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
 let g:phpcomplete_search_tags_for_variables = 1
+
+set secure

@@ -8,6 +8,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen = 1
 
 "***************"
 " Nerd tree syntax Highlight
@@ -95,7 +96,7 @@ let g:user_emmet_settings = {
 " FZF
 "***************"
 " nnoremap <C-p> :Files<Cr>
-nnoremap <C-p> :<C-u>FZF<Cr>
+nnoremap <C-p> :Files<Cr>
 let g:fzf_layout = { 'down': '~40%' }
 
 "***************"
@@ -113,7 +114,10 @@ let g:jsx_pragma_required = 1
 " VIM-JAVASCRIPT
 "***************"
 let g:javascript_plugin_jsdoc = 1
-let g:used_javascript_libs = 'react,jquery'
+let g:javascript_plugin_flow = 1
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_arrow_function       = "⇒"
+let g:used_javascript_libs = 'react,jquery,vue'
 
 "***************"
 "	ALE
