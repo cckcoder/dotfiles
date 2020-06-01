@@ -38,7 +38,7 @@ augroup END
 
 set showmatch
 set undolevels=1000
-set wildmode=longest,list:longest
+set wildmode=list:longest,full
 set path+=**
 set nocompatible
 set wildmenu
