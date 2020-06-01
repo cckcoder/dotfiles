@@ -1,8 +1,14 @@
 "***************"
 " Colorscheme
 "***************"
-set termguicolors
-colorscheme darcula
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+syntax enable
+colorscheme OceanicNext
 
 "***************"
 " Encoding"
@@ -21,6 +27,8 @@ set hidden
 set nocp
 set wrap
 set relativenumber number
+set linespace=4 "Like line height in CSS
+set foldmethod=indent "Like Toggle code in VScode
 
 augroup numbertoggle
   autocmd!

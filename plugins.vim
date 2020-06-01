@@ -39,7 +39,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
-
+Plug 'tpope/vim-unimpaired'
 "***************"
 " PYTHON
 "***************"
@@ -76,7 +76,7 @@ Plug 'fcpg/vim-orbital'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'joshdick/onedark.vim'
 Plug 'doums/darcula'
-
+Plug 'mhartington/oceanic-next'
 "***************"
 " Autocomplete
 "***************"

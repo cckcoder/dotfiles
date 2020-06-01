@@ -31,7 +31,7 @@ function! CocCurrentFunction()
 endfunctio
 
 let g:lightline = {
-	\ 'colorscheme': 'darculaOriginal',
+	\ 'colorscheme': 'oceanicnext',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -115,8 +115,6 @@ let g:jsx_pragma_required = 1
 "***************"
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_arrow_function       = "⇒"
 let g:used_javascript_libs = 'react,jquery,vue'
 
 "***************"

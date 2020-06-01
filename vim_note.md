@@ -29,6 +29,13 @@
 - :tags to see all tags
 - see list of function or tags g-] 
 
+* FOLD
+- set foldmethod=indent
+- Hitting 'zo' it will open the current fold
+- Hitting 'zc' it will close the fold
+- Or hitting 'za' to toggle folds
+- Can open and close all folds in the file at same time using 'zR' and 'zM'
+
 * BUFFERS
 - :bn |  go to next buffer 
 - :b {filename}  | go to buffer {filename} 
