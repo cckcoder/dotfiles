@@ -33,15 +33,10 @@ Plug 'junegunn/fzf.vim'
 " Autocomplete
 "***************"
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 "***************"
 " Colorscheme
 "***************"
 Plug 'dracula/vim', { 'as': 'dracula' }
-
-"***************"
-" Autocomplete
-"***************"
 call plug#end()
 
 "***************"
@@ -109,11 +104,6 @@ set diffopt +=iwhite
 set wildignore+=*/env/*,*/node_modules/*
 
 "***************"
-" Mucomplete.
-"***************"
-let g:mucomplete#enable_auto_at_startup = 1
-
-"***************"
 "split navigations
 "***************"
 nnoremap <C-J> <C-W><C-J>
@@ -125,7 +115,6 @@ nnoremap <C-H> <C-W><C-H>
 " Nerd tree
 "***************"
 autocmd vimenter * NERDTree
-map <C-\> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeMinimalUI = 1
@@ -174,13 +163,19 @@ let g:comfortable_motion_scroll_up_key = "k"
 " Vim IndentLine
 "***************"
 let g:indentLine_enabled = 1
-let g:indentLine_char_list = ['┆']
+let g:indentLine_char_list = ['▏']
 
 "***************"
 " Map key
 "***************"
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 map <F6> :setlocal spell! spelllang=en_us<CR>
+"***************"
+" Leader
+"***************"
+let mapleader = ","
+nmap <leader>\ :noh<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
 
 "***************"
 " Matching Tags
@@ -230,21 +225,10 @@ augroup VimCSS3Syntax
 augroup END
 
 "***************"
-" Jedi-Vim
-"***************"
-let g:jedi#smart_auto_mappings = 1
-let g:jedi#auto_initialization = 1
-let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 1
-let g:jedi#use_tabs_not_buffers = 1
-let g:jedi#completions_command = "<C-Space>"
-
-"***************"
 " FZF
 "***************"
 nnoremap <C-p> :Files<Cr>
 let g:fzf_layout = { 'down': '~40%' }
-
 
 "***************"
 " Key Mapping
@@ -263,7 +247,6 @@ endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
-
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
