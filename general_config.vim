@@ -30,12 +30,6 @@ set relativenumber number
 set linespace=4 "Like line height in CSS
 set foldmethod=indent "Like Toggle code in VScode
 
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
-
 set showmatch
 set undolevels=1000
 set wildmode=list:longest,full
@@ -96,16 +90,6 @@ set tags=./tags;,tags;$HOME
 " Enable omni completion.
 "***************"
 set omnifunc=ale#completion#OmniFunc
-
-augroup omnicomplete
-	autocmd!
-	autocmd FileType css setlocal omnifunc=csscomplete#CompleteTags
-	autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-	autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteTags
-	autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-	autocmd FileType php setlocal omnifunc=phpcomplete#CompleteTags
-	autocmd FileType python setlocal omnifunc=jedi#completions
-augroup	end
 
 "***************"
 " Python config

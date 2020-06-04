@@ -29,7 +29,6 @@ inoremap <silent><expr> <TAB>
 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -56,5 +55,7 @@ let g:coc_snippet_prev = '<c-k>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <leader>j <Plug>(coc-snippets-expand-jump)
 
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+    \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
