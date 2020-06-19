@@ -5,10 +5,8 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-syntax enable
-colorscheme OceanicNext
+let g:gruvbox_italic=1
+autocmd vimenter * colorscheme gruvbox
 
 "***************"
 " Encoding"
@@ -101,5 +99,10 @@ autocmd FileType python set sw=2 ts=2 sts=2
 "***************"
 autocmd FileType php set sw=4 ts=4 sts=4
 let g:phpcomplete_search_tags_for_variables = 1
+
+"***************"
+" Coc json
+"***************"
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 set secure

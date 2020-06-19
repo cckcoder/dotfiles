@@ -31,7 +31,6 @@ function! CocCurrentFunction()
 endfunctio
 
 let g:lightline = {
-	\ 'colorscheme': 'oceanicnext',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -44,6 +43,7 @@ let g:lightline = {
   \   'method': 'NearestMethodOrFunction'
 	\ },
 	\ }
+let g:lightline.colorscheme = 'gruvbox'
 " Use auocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 

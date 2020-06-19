@@ -2,20 +2,24 @@ set updatetime=300
 set cmdheight=2
 set signcolumn=yes
 
-call coc#add_extension('coc-sql'
-  \,'coc-snippets'
-  \,'coc-highlight'
-  \,'coc-git'
-  \,'coc-yaml'
-  \,'coc-tsserver'
-  \,'coc-tslint-plugin'
-  \,'coc-python'
-  \,'coc-phpls'
-  \,'coc-json'
-  \,'coc-html'
-  \,'coc-css'
-  \,'coc-vetur'
-  \,'coc-marketplace')
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-highlight',
+  \ 'coc-git',
+  \ 'coc-yaml',
+  \ 'coc-tsserver',
+  \ 'coc-tslint-plugin',
+  \ 'coc-python',
+  \ 'coc-phpls',
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-vetur',
+  \ 'coc-marketplace',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-lists',
+  \ ]
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -41,7 +45,6 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use <C-l> for trigger snippet expand.
@@ -59,3 +62,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
     \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+"Coc will display diagnostics (errors and warnings)
+nnoremap <silent> K :call CocAction('doHover')<CR>

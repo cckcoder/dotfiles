@@ -11,9 +11,6 @@ Plug 'mileszs/ack.vim'
 "***************"
 Plug 'mattn/emmet-vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
@@ -40,6 +37,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
+Plug 'shinchu/lightline-gruvbox.vim'
 "***************"
 " PYTHON
 "***************"
@@ -48,11 +46,8 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 "***************"
 " JS
 "***************"
-Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
-Plug 'crusoexia/vim-javascript-lib'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'mxw/vim-jsx'
 
 "***************"
 " GIT & HG
@@ -69,14 +64,8 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'cocopon/iceberg.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'tomasiser/vim-code-dark'
-Plug 'fcpg/vim-orbital'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'joshdick/onedark.vim'
-Plug 'doums/darcula'
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
+
 "***************"
 " Autocomplete
 "***************"
