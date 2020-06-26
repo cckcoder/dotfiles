@@ -37,7 +37,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'shinchu/lightline-gruvbox.vim'
 "***************"
 " PYTHON
 "***************"
@@ -65,7 +64,7 @@ Plug 'honza/vim-snippets'
 " Colorscheme
 "***************"
 Plug 'morhetz/gruvbox'
-
+Plug 'phanviet/vim-monokai-pro'
 "***************"
 " Autocomplete
 "***************"
