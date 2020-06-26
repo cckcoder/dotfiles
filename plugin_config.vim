@@ -167,6 +167,7 @@ let g:vista_keep_fzf_colors = 1
 "***************"
 " VueJS SYNTAX
 "***************"
+let g:vue_pre_processors = 'detect_on_enter'
 
 "***************"
 " Font
