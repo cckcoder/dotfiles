@@ -59,6 +59,7 @@
 - :tabc | close tab
 - :tabe | open tab
 - :tabo | close all other tabs
+
 #Useful
 https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
 https://qiita.com/miyagaw61/items/bcd1fb86bbc69e1aa3a3
@@ -69,10 +70,14 @@ https://adminhacks.com/vim-javascript.html
 https://github.com/ap/vim-css-color
 https://github.com/tyru/caw.vim
 https://github.com/leafoftree/vim-vue-plugin
+
 #Install Neovim
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 https://www.linode.com/docs/tools-reference/tools/how-to-install-neovim-and-plugins-with-vim-plug/
+
 #remove Neovim
 https://www.thelinuxfaq.com/ubuntu/ubuntu-17-04-zesty-zapus/neovim?type=uninstall
+
 #Config
 https://www.davidosomething.com/blog/vim-for-javascript/
+https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
