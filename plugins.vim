@@ -65,6 +65,7 @@ Plug 'honza/vim-snippets'
 "***************"
 Plug 'morhetz/gruvbox'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'dracula/vim', { 'name': 'dracula' }
 "***************"
 " Autocomplete
 "***************"
@@ -77,3 +78,8 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
+"***************"
+" Colorscheme
+"***************"
+syntax enable
+colorscheme dracula
