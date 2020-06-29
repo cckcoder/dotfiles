@@ -31,7 +31,7 @@ function! CocCurrentFunction()
 endfunctio
 
 let g:lightline = {
-  \ 'colorscheme': 'monokai_pro',
+  \ 'colorscheme': 'nord',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
