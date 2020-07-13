@@ -113,6 +113,8 @@ let g:jsx_pragma_required = 1
 "***************"
 " VIM-JAVASCRIPT
 "***************"
+set conceallevel=1
+
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:used_javascript_libs = 'react,jquery,vue'

@@ -19,6 +19,7 @@ Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'posva/vim-vue'
+Plug 'StanAngeloff/php.vim'
 
 "***************"
 " Tools
@@ -63,8 +64,6 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'morhetz/gruvbox'
-Plug 'phanviet/vim-monokai-pro'
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 

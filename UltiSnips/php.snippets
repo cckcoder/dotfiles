@@ -18,6 +18,11 @@ echo "</pre>";
 die();
 endsnippet
 
+snippet dumm "php dump v2"
+dump(${1});
+die();
+endsnippet
+
 snippet conlog "log"
 console.log(${1})
 endsnippet
@@ -34,4 +39,10 @@ endsnippet
 
 snippet $th "$this"
 $this->${1};
+endsnippet
+
+snippet bdebug "debug on blade"
+@php
+	${1};
+@endphp
 endsnippet
