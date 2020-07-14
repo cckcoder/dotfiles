@@ -66,6 +66,7 @@ Plug 'honza/vim-snippets'
 "***************"
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
+Plug 'tomasiser/vim-code-dark'
 
 "***************"
 " Autocomplete
@@ -82,6 +83,4 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-colorscheme nord
-let g:nord_cursor_line_number_background = 1
-let g:nord_uniform_diff_background = 1
+colorscheme codedark
