@@ -24,11 +24,20 @@ let mapleader = ","
 nmap <leader>y :StripWhitespace<CR>
 nmap <leader>\ :noh<CR>
 nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>F :NERDTreeFind<CR>
 nmap <leader>bf :Buffers<CR>
 nmap <leader>bt :BTags<CR>
 nmap <Leader>l :ALELint<CR>
-map <leader>w <Plug>(easymotion-bd-w)
+
+"***************"
+" Easy Motion
+"***************"
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 "***************"
 " Tagbar

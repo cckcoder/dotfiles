@@ -66,7 +66,7 @@ Plug 'honza/vim-snippets'
 "***************"
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
-
+Plug 'doums/darcula'
 "***************"
 " Autocomplete
 "***************"
@@ -82,6 +82,32 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-colorscheme nord
-let g:nord_cursor_line_number_background = 1
-let g:nord_uniform_diff_background = 1
+set termguicolors
+colorscheme darcula
+
+"********************"
+" Colorscheme Config
+"***************"*****
+" Coc
+hi! link CocErrorSign ErrorSign
+hi! link CocWarningSign WarningSign
+hi! link CocInfoSign InfoSign
+hi! link CocHintSign InfoSign
+hi! link CocErrorFloat Pmenu
+hi! link CocWarningFloat Pmenu
+hi! link CocInfoFloat Pmenu
+hi! link CocHintFloat Pmenu
+hi! link CocHighlightText IdentifierUnderCaret
+hi! link CocHighlightRead IdentifierUnderCaret
+hi! link CocHighlightWrite IdentifierUnderCaretWrite
+hi! link CocErrorHighlight CodeError
+hi! link CocWarningHighlight CodeWarning
+hi! link CocInfoHighlight CodeInfo
+hi! link CocHintHighlight CodeHint
+" ALE
+hi! link ALEError Error
+hi! link ALEWarning CodeWarning
+hi! link ALEInfo CodeInfo
+hi! link ALEErrorSign ErrorSign
+hi! link ALEWarningSign WarningSign
+hi! link ALEInfoSign InfoSign

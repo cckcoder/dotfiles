@@ -1,3 +1,36 @@
+" ***************"
+" Vim light line
+" ***************"
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunctio
+
+let g:lightline = {
+  \ 'colorscheme': 'darculaOriginal',
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'cocstatus': 'coc#status',
+	\   'currentfunction': 'CocCurrentFunction',
+	\   'filetype': 'MyFiletype',
+	\   'fileformat': 'MyFileformat',
+  \   'method': 'NearestMethodOrFunction'
+	\ },
+	\ }
+" Use auocmd to force lightline update.
+autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
+" Config for Devicons
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
+
 "***************"
 " Nerd tree
 "***************"
@@ -22,39 +55,6 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 " ***************"
 let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_conceal_nerdtree_brackets = 1
-
-" ***************"
-" Vim light line
-" ***************"
-function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
-endfunctio
-
-let g:lightline = {
-  \ 'colorscheme': 'nord',
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-	\ },
-	\ 'component_function': {
-	\   'cocstatus': 'coc#status',
-	\   'currentfunction': 'CocCurrentFunction',
-	\   'filetype': 'MyFiletype',
-	\   'fileformat': 'MyFileformat',
-  \   'method': 'NearestMethodOrFunction'
-	\ },
-	\ }
-" Use auocmd to force lightline update.
-autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
-
-" Config for Devicons
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
 
 "***************"
 " VIM-CSS
@@ -105,16 +105,9 @@ let g:fzf_layout = { 'down': '~40%' }
 let g:signify_vcs_list = [ 'git', 'hg' ]
 
 "***************"
-" VIM-JSX
-"***************"
-let g:jsx_ext_required = 1
-let g:jsx_pragma_required = 1
-
-"***************"
 " VIM-JAVASCRIPT
 "***************"
 set conceallevel=1
-
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:used_javascript_libs = 'react,jquery,vue'
@@ -175,5 +168,3 @@ let g:vue_pre_processors = 'detect_on_enter'
 " Font
 "***************"
 set guifont=JetBrainsMono:h12
-
-

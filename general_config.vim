@@ -90,7 +90,9 @@ autocmd FileType python set sw=2 ts=2 sts=2
 autocmd FileType php set sw=4 ts=4 sts=4
 let g:phpcomplete_search_tags_for_variables = 1
 let g:php_syntax_extensions_enabled = []
+let g:php_var_selector_is_identifier = 1
 let php_htmlInStrings = 1
+let php_html_load = 1
 "***************"
 " Coc json
 "***************"
