@@ -45,3 +45,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "***************"
 nmap <C-m> :Vista coc<CR>
 
+"***************"
+" Gundo
+"***************"
+nmap <F5> :GundoToggle<cr>
