@@ -6,10 +6,10 @@ tnoremap <Esc> <C-\><C-n>
 "***************"
 "split navigations
 "***************"
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-L> <C-W><C-L>
+nmap <C-H> <C-W><C-H>
 
 "***************"
 " comfortable motion
@@ -22,12 +22,13 @@ let g:comfortable_motion_scroll_up_key = "k"
 "***************"
 let mapleader = ","
 nmap <leader>y :StripWhitespace<CR>
-nmap <leader>\ :noh<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>F :NERDTreeFind<CR>
-nmap <leader>bf :Buffers<CR>
-nmap <leader>bt :BTags<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>t :BTags<CR>
 nmap <Leader>l :ALELint<CR>
+nmap <a-s> :w<CR>
+nmap <c-l> :noh<CR>
 
 "***************"
 " Easy Motion
@@ -43,3 +44,4 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " Tagbar
 "***************"
 nmap <C-m> :Vista coc<CR>
+
