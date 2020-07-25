@@ -60,6 +60,11 @@
 - :tabe | open tab
 - :tabo | close all other tabs
 
+* Ex-mode (:)
+- Ctrl + f which opens an editable cmd window with a history
+    execute it. you can press Enter or Ctrl + c 
+    can learn more by looking up :help cmdline-editing
+
 #Useful
 https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
 https://qiita.com/miyagaw61/items/bcd1fb86bbc69e1aa3a3
