@@ -27,6 +27,7 @@ set wildmenu
 set cursorline
 set colorcolumn=180
 set complete=.,w,b,u,k
+set nopaste
 
 "***************"
 " Tabs and spacing
@@ -72,7 +73,9 @@ set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,.*jpeg
 "***************"
 " Tags
 "***************"
-set tags=./tags;,tags;$HOME
+set tags=tags
+" Auto Regenerate tags
+autocmd BufWritePost *.py *.php *.js *.css *.html silent! !ctags -R &
 
 "***************"
 " Enable omni completion.

@@ -38,6 +38,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
+Plug 'sjl/gundo.vim'
 "***************"
 " PYTHON
 "***************"

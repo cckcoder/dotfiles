@@ -115,7 +115,8 @@ let g:used_javascript_libs = 'react,jquery,vue'
 "***************"
 "	ALE
 "***************"
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled=1
+let g:ale_completion_excluded_words=1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'python': ['pylint']
