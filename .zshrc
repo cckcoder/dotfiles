@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 alias dot="cd ~/dotfiles/"
 alias cfv="vi ~/dotfiles/.vimrc"
 alias cfz="vi ~/dotfiles/.zshrc"
+alias cft="vi ~/dotfiles/.tmux.conf"
 alias proj="cd /opt/project/"
 
 tn() {
