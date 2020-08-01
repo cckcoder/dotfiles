@@ -65,7 +65,7 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'dracula/vim', { 'name': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'doums/darcula'
 "***************"
@@ -79,12 +79,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
-
 "***************"
 " Colorscheme
 "***************"
 set termguicolors
-colorscheme darcula
+"colorscheme darcula
+colorscheme dracula
 
 "********************"
 " Colorscheme Config

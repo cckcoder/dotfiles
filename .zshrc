@@ -3,8 +3,12 @@ then
   export ZSH="/home/codewiz/.oh-my-zsh"
 fi
 
-export ZSH="/home/dev2/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+if [[ "${whoami}" == "dev2" ]];
+then
+  export ZSH="/home/dev2/.oh-my-zsh"
+fi
+
+ZSH_THEME="dracula"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
