@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 alias cfb='vi $HOME/.bashrc'
 alias cfv='vi $HOME/dotfiles/.vimrc'
 alias cfz='vi $HOME/.zshrc'
+alias proj='cd /opt/project/'
 
 # Server
 alias nr='ssh root@192.168.80.240'

@@ -83,7 +83,7 @@ set omnifunc=ale#completion#OmniFunc
 "***************"
 " Python config
 "***************"
-autocmd FileType python set sw=2 ts=2 sts=2
+autocmd FileType python set sw=4 ts=4 sts=4
 
 "***************"
 " PHP config

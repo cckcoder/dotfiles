@@ -51,6 +51,7 @@
 - <Ctrl-w> r | rotate windows
 - :windo {cmd} | execute {cmd} for all windows
 - :sf {file} | split window add :find {file}
+- :sp | split window
 - :vert {cmd} | make any split {cmd} vertical
 
 * Tabs
