@@ -1,12 +1,4 @@
-if [[ "${whoami}" != "dev2" ]];
-then
-  export ZSH="/home/codewiz/.oh-my-zsh"
-fi
-
-if [[ "${whoami}" == "dev2" ]];
-then
-  export ZSH="/home/dev2/.oh-my-zsh"
-fi
+export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME="dracula"
 # Set list of themes to pick from when loading at random
