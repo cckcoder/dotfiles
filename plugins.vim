@@ -68,6 +68,7 @@ Plug 'honza/vim-snippets'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'doums/darcula'
+Plug 'joshdick/onedark.vim'
 "***************"
 " Autocomplete
 "***************"
@@ -82,9 +83,9 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-set termguicolors
-"colorscheme darcula
-colorscheme dracula
+syntax on
+let g:onedark_terminal_italics=1
+colorscheme onedark
 
 "********************"
 " Colorscheme Config
