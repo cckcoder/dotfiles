@@ -1,6 +1,6 @@
 export ZSH="/home/$USER/.oh-my-zsh"
 
-ZSH_THEME="dracula"
+ZSH_THEME="robbyrussell"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -108,6 +108,7 @@ alias cfb='vi $HOME/.bashrc'
 alias cfv='vi $HOME/dotfiles/.vimrc'
 alias cfz='vi $HOME/.zshrc'
 alias proj='cd /opt/project/'
+alias src='cd /src'
 
 # Server
 alias nr='ssh root@192.168.80.240'
