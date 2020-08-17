@@ -19,6 +19,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-lists',
+  \ 'coc-vimlsp',
   \ ]
 
 function! s:check_back_space() abort

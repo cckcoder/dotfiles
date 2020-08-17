@@ -119,7 +119,9 @@ let g:ale_completion_enabled=1
 let g:ale_completion_excluded_words=1
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'python': ['pylint']
+\   'python': ['pylint'],
+\   'php': ['phpcs'],
+\   'vim': ['vint']
 \}
 
 let g:ale_lint_on_text_changed = 'never'
