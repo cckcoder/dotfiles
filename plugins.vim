@@ -27,7 +27,6 @@ Plug 'StanAngeloff/php.vim'
 "***************"
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
-Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'

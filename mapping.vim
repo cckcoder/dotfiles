@@ -43,7 +43,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "***************"
 " Tagbar
 "***************"
-nmap <C-m> :Vista coc<CR>
+nmap <C-m> :Vista ctags<CR>
 
 "***************"
 " Gundo
