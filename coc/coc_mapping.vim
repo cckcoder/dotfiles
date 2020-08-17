@@ -15,11 +15,11 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-css',
   \ 'coc-vetur',
-  \ 'coc-marketplace',
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-lists',
   \ 'coc-vimlsp',
+  \ 'coc-fzf-preview',
   \ ]
 
 function! s:check_back_space() abort
@@ -75,3 +75,16 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+"***************"
+" Coc-fzf-preview
+" ***************"
+augroup fzf_preview
+  autocmd!
+  autocmd User fzf_preview#initialized call s:fzf_preview_settings()
+augroup END
+
+function! s:fzf_preview_settings() abort
+  let g:fzf_preview_command = 'COLORTERM=truecolor ' . g:fzf_preview_command
+  let g:fzf_preview_grep_preview_cmd = 'COLORTERM=truecolor ' . g:fzf_preview_grep_preview_cmd
+endfunction
