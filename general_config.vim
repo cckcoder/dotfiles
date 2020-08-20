@@ -11,6 +11,8 @@ set termencoding=utf-8
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
 
+set backspace=indent,eol,start
+
 set hidden
 set nocp
 set wrap
@@ -68,7 +70,7 @@ set diffopt +=iwhite
 "***************"
 " Vim ignore path
 "***************"
-set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,.*jpeg
+set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
 
 "***************"
 " Tags
