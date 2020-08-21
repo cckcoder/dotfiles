@@ -1,7 +1,7 @@
 "***************"
 " Encoding"
 " ***************"
-set encoding=utf-8 nobomb
+set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 
@@ -14,9 +14,7 @@ let g:python_host_prog = '/usr/bin/python2'
 set backspace=indent,eol,start
 
 set hidden
-set nocp
 set wrap
-set relativenumber number
 set linespace=4 "Like line height in CSS
 set foldmethod=indent "Like Toggle code in VScode
 
@@ -24,12 +22,24 @@ set showmatch
 set undolevels=1000
 set wildmode=list:longest,full
 set path+=**
-set nocompatible
 set wildmenu
-set cursorline
-set colorcolumn=180
 set complete=.,w,b,u,k
 set nopaste
+set cursorline
+set nocursorline
+set nobomb
+
+"***************"
+" Make it obvious where 80 characters is
+"***************"
+set textwidth=80
+set colorcolumn=180
+
+"***************"
+" Numbers
+"***************"
+set relativenumber number
+set numberwidth=5
 
 "***************"
 " Tabs and spacing
@@ -48,18 +58,19 @@ set si
 "***************"
 " Performance Tuning
 "***************"
-set timeoutlen=1000
 set ttimeoutlen=0
-set ttyfast
 set lazyredraw
-set nocursorline
 set title
 set nobackup
 set noswapfile
-set splitbelow
-set splitright
 set shortmess+=c
 set autoread
+
+"***************"
+" Splite Window
+"***************"
+set splitbelow
+set splitright
 
 "***************"
 " Search
@@ -75,7 +86,7 @@ set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
 "***************"
 " Tags
 "***************"
-set tags=tags
+set tags+=tags
 
 "***************"
 " Enable omni completion.
@@ -96,6 +107,7 @@ let g:php_syntax_extensions_enabled = []
 let g:php_var_selector_is_identifier = 1
 let php_htmlInStrings = 1
 let php_html_load = 1
+
 "***************"
 " Coc json
 "***************"

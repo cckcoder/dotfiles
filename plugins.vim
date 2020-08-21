@@ -69,6 +69,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'doums/darcula'
 Plug 'joshdick/onedark.vim'
+Plug 'liuchengxu/space-vim-dark'
+
 "***************"
 " Autocomplete
 "***************"
@@ -80,12 +82,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
-"***************"
-" Colorscheme
-"***************"
-syntax on
-let g:onedark_terminal_italics=1
-colorscheme onedark
 
 if (empty($TMUX))
   if (has("nvim"))
@@ -96,6 +92,12 @@ if (empty($TMUX))
   endif
 endif
 
+"***************"
+" Colorscheme
+"***************"
+let g:space_vim_dark_background = 234
+colorscheme space-vim-dark
+hi Comment cterm=italic
 
 "********************"
 " Colorscheme Config
@@ -116,6 +118,7 @@ hi! link CocErrorHighlight CodeError
 hi! link CocWarningHighlight CodeWarning
 hi! link CocInfoHighlight CodeInfo
 hi! link CocHintHighlight CodeHint
+
 " ALE
 hi! link ALEError Error
 hi! link ALEWarning CodeWarning
