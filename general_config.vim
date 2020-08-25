@@ -2,8 +2,6 @@
 " Encoding"
 " ***************"
 set encoding=utf-8
-set fileencoding=utf-8
-set termencoding=utf-8
 
 "***************"
 " General
@@ -12,14 +10,14 @@ let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
 let g:python_host_prog = '/usr/bin/python2'
 
 set backspace=indent,eol,start
-
 set hidden
 set wrap
 set linespace=4 "Like line height in CSS
 set foldmethod=indent "Like Toggle code in VScode
+set linebreak "Soft word wrap
+set display+=lastline,msgsep
 
 set showmatch
-set undolevels=1000
 set wildmode=list:longest,full
 set path+=**
 set wildmenu
@@ -28,6 +26,8 @@ set nopaste
 set cursorline
 set nocursorline
 set nobomb
+set langnoremap
+set ttyfast
 
 "***************"
 " Make it obvious where 80 characters is
@@ -86,7 +86,7 @@ set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
 "***************"
 " Tags
 "***************"
-set tags+=tags
+set tags=./tags,tags;$HOME
 
 "***************"
 " Enable omni completion.

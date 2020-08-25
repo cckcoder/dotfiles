@@ -96,8 +96,6 @@ let g:user_emmet_settings = {
 "***************"
 " FZF
 "***************"
-" nnoremap <C-p> :Files<Cr>
-nnoremap <C-p> :Files<Cr>
 let g:fzf_layout = { 'down': '~40%' }
 
 "***************"
@@ -167,6 +165,13 @@ let g:gundo_preview_height = 20
 let g:gundo_preview_bottom = 1
 
 "***************"
+" Gen Tags
+"***************"
+let g:gen_tags#ctags_auto_update = 1
+autocmd User GenTags#CtagsLoaded echo "hello world"
+
+"***************"
 " Font
 "***************"
 set guifont=JetBrainsMono:h12
+

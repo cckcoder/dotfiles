@@ -24,10 +24,8 @@ let mapleader = ","
 nmap <leader>y :StripWhitespace<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>F :NERDTreeFind<CR>
-nmap <leader>b :Buffers<CR>
-nmap <leader>t :BTags<CR>
 nmap <Leader>l :ALELint<CR>
-nmap <a-s> :w<CR>
+nmap <c-s> :w<CR>
 nmap <c-l> :noh<CR>
 
 "***************"
@@ -43,9 +41,18 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "***************"
 " Tagbar
 "***************"
-nmap <C-m> :Vista ctags<CR>
+nmap <C-m> :Vista<CR>
 
 "***************"
 " Gundo
 "***************"
 nmap <F5> :GundoToggle<cr>
+
+
+"***************"
+" Fzf
+"***************"
+nmap <leader>p :Files<Cr>
+nmap <leader>b :Buffers<CR>
+nmap <leader>t :BTags<CR>
+nmap <leader>T :Tags<CR>

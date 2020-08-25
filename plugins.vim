@@ -39,6 +39,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
+Plug 'jsfaint/gen_tags.vim'
+
 "***************"
 " PYTHON
 "***************"
