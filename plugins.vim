@@ -67,6 +67,7 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
+Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'doums/darcula'
@@ -97,9 +98,9 @@ endif
 "***************"
 " Colorscheme
 "***************"
-let g:space_vim_dark_background = 234
-colorscheme space-vim-dark
-hi Comment cterm=italic
+let g:gruvbox_italic=1
+colorscheme gruvbox
+set background=dark
 
 "********************"
 " Colorscheme Config

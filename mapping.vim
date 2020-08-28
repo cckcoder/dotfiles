@@ -27,6 +27,7 @@ nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :ALELint<CR>
 nmap <c-s> :w<CR>
 nmap <c-l> :noh<CR>
+nmap <leader>a :Ack! <c-r><c-w><CR>
 
 "***************"
 " Easy Motion
