@@ -27,7 +27,6 @@ nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :ALELint<CR>
 nmap <c-s> :w<CR>
 nmap <c-l> :noh<CR>
-nmap <leader>a :Ack! <c-r><c-w><CR>
 
 "***************"
 " Easy Motion
@@ -57,3 +56,8 @@ nmap <leader>p :Files<Cr>
 nmap <leader>b :Buffers<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
+
+"***************"
+" Ack
+"***************"
+nmap <leader>a :Ack!<Space>

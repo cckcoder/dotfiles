@@ -136,6 +136,7 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
+let NERDTreeIgnore=['\.git$[[dir]]']
 
 "***************"
 " Vista
@@ -168,3 +169,8 @@ let g:gundo_preview_bottom = 1
 " Gen Tags
 "***************"
 let g:gen_tags#ctags_auto_update = 1
+
+"***************"
+" Ack
+"***************"
+let g:ack_autoclose = 1
