@@ -68,11 +68,6 @@ Plug 'honza/vim-snippets'
 " Colorscheme
 "***************"
 Plug 'morhetz/gruvbox'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'arcticicestudio/nord-vim'
-Plug 'doums/darcula'
-Plug 'joshdick/onedark.vim'
-Plug 'liuchengxu/space-vim-dark'
 
 "***************"
 " Autocomplete

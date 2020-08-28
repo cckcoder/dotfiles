@@ -89,11 +89,6 @@ set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
 set tags=./tags,tags;$HOME
 
 "***************"
-" Enable omni completion.
-"***************"
-set omnifunc=ale#completion#OmniFunc
-
-"***************"
 " Python config
 "***************"
 autocmd FileType python set sw=4 ts=4 sts=4

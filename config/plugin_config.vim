@@ -168,10 +168,3 @@ let g:gundo_preview_bottom = 1
 " Gen Tags
 "***************"
 let g:gen_tags#ctags_auto_update = 1
-autocmd User GenTags#CtagsLoaded echo "hello world"
-
-"***************"
-" Font
-"***************"
-set guifont=JetBrainsMono:h12
-
