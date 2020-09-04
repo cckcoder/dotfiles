@@ -119,6 +119,7 @@ alias fr='ssh root@frontinella.com'
 alias kn='ssh root@192.168.80.184 -p 2222'
 alias gr='ssh root@192.168.80.238'
 alias ar='ssh root@araniella.com'
+alias pp='cd ~/youtube/music/flac'
 
 
 
