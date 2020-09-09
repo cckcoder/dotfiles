@@ -28,6 +28,11 @@ nmap <Leader>l :ALELint<CR>
 nmap <c-s> :w<CR>
 nmap <c-l> :noh<CR>
 
+map <space> /
+map <C-space> ?
+
+nmap <leader>bd :bdelete<cr>
+
 "***************"
 " Easy Motion
 "***************"
@@ -61,3 +66,4 @@ nmap <leader>T :Tags<CR>
 " Ack
 "***************"
 nmap <leader>a :Ack!<Space>
+

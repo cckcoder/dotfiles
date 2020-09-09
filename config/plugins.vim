@@ -25,7 +25,9 @@ Plug 'StanAngeloff/php.vim'
 "***************"
 " Tools
 "***************"
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } |
+  \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+  \ Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'yuttie/comfortable-motion.vim'
@@ -40,6 +42,7 @@ Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
+Plug 'machakann/vim-highlightedyank'
 
 "***************"
 " PYTHON
@@ -73,11 +76,6 @@ Plug 'morhetz/gruvbox'
 " Autocomplete
 "***************"
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"***************"
-" Devicons
-"***************"
-Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
