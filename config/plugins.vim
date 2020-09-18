@@ -21,6 +21,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
+Plug 'lepture/vim-jinja'
 
 "***************"
 " Tools
