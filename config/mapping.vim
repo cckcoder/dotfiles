@@ -58,7 +58,7 @@ nmap <F5> :GundoToggle<cr>
 " Fzf
 "***************"
 nmap <leader>p :Files<Cr>
-nmap <leader>b :FzfPreviewAllBuffers<CR>
+nmap <leader>b :Buffers<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
 
