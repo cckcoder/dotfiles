@@ -217,3 +217,6 @@ zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
 PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+export GTAGSCONF=/usr/share/gtags/gtags.conf
+export GTAGSLABEL=ctags
