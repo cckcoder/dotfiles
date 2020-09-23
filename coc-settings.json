@@ -4,5 +4,5 @@
   "eslint.autoFixOnSave": true,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown"]
+  "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml"]
 }

@@ -26,11 +26,12 @@ nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :ALELint<CR>
 nmap <c-s> :w<CR>
+nmap <c-q> :wq!<CR>
 nmap <c-l> :noh<CR>
-
+nmap <TAB> :bnext<CR>
+nmap <S-TAB> :bprevious<CR>
 map <space> /
 map <C-space> ?
-
 nmap <leader>bd :bdelete<cr>
 
 "***************"
@@ -53,12 +54,11 @@ nmap <C-m> :Vista<CR>
 "***************"
 nmap <F5> :GundoToggle<cr>
 
-
 "***************"
 " Fzf
 "***************"
-nmap <leader>p :Files<Cr>
-nmap <leader>b :Buffers<CR>
+map <leader>p :Files<Cr>
+map <leader>b :Buffers<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
 

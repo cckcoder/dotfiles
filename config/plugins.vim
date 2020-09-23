@@ -4,6 +4,8 @@ call plug#begin()
 "***************"
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+
 Plug 'mileszs/ack.vim'
 
 "***************"
@@ -75,7 +77,8 @@ Plug 'morhetz/gruvbox'
 " Autocomplete
 "***************"
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" Keeping up to date with master
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 if (empty($TMUX))
