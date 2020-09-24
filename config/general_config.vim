@@ -2,6 +2,7 @@
 " Encoding"
 " ***************"
 set encoding=utf-8
+set fileencoding=utf-8
 
 "***************"
 " General
@@ -16,6 +17,8 @@ set linespace=4 "Like line height in CSS
 set foldmethod=indent "Like Toggle code in VScode
 set linebreak "Soft word wrap
 set display+=lastline,msgsep
+set pumheight=10
+set cmdheight=2
 
 set showmatch
 set wildmode=list:longest,full
@@ -24,10 +27,6 @@ set wildmenu
 set complete=.,w,b,u,k
 set nopaste
 set cursorline
-set nocursorline
-set nobomb
-set langnoremap
-set ttyfast
 
 "***************"
 " Make it obvious where 80 characters is
@@ -45,7 +44,6 @@ set numberwidth=5
 " Tabs and spacing
 "***************"
 set laststatus=2
-set autochdir
 set autoindent expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set shiftround
@@ -58,10 +56,12 @@ set si
 "***************"
 " Performance Tuning
 "***************"
-set ttimeoutlen=0
+set updatetime=300
+set timeoutlen=300
 set lazyredraw
 set title
 set nobackup
+set nowritebackup
 set noswapfile
 set shortmess+=c
 set autoread
