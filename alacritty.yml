@@ -43,7 +43,7 @@ colors:
     white: "#828282"
 
 font:
-  size: 13.0
+  size: 13.5
 
   normal:
     family: "JetBrains Mono"
