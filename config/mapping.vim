@@ -26,7 +26,8 @@ nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :ALELint<CR>
 nmap <c-s> :w<CR>
-nmap <c-q> :wq!<CR>
+nmap zz :update<CR>
+nmap <Leader>q :wq!<CR>
 nmap <c-l> :noh<CR>
 nmap <TAB> :bnext<CR>
 nmap <S-TAB> :bprevious<CR>

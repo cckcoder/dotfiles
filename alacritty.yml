@@ -43,20 +43,20 @@ colors:
     white: "#828282"
 
 font:
-  size: 13.5
+  size: 12
 
   offset:
     x: 0
     y: 1
 
   normal:
-    family: "JetBrains Mono"
+    family: "Fira Code"
     style: Regular
 
   bold:
-    family: "JetBrains Mono"
+    family: "Fira Code"
     style: Bold
 
   italic:
-    family: "JetBrains Mono"
+    family: "Fira Code"
     style: Italic

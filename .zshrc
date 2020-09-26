@@ -1,4 +1,5 @@
 export ZSH="/home/$USER/.oh-my-zsh"
+source ~/.zplug/init.zsh
 
 ZSH_THEME="spaceship"
 # Set list of themes to pick from when loading at random
@@ -223,6 +224,3 @@ export GTAGSCONF=/usr/share/gtags/gtags.conf
 export GTAGSLABEL=ctags
 fpath=($fpath "/home/dev2/.zfunctions")
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
