@@ -1,6 +1,6 @@
 export ZSH="/home/$USER/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -71,6 +71,7 @@ plugins=(
   pyenv
   python
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -220,3 +221,8 @@ PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 export GTAGSCONF=/usr/share/gtags/gtags.conf
 export GTAGSLABEL=ctags
+fpath=($fpath "/home/dev2/.zfunctions")
+
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
