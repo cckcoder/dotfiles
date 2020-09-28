@@ -1,6 +1,8 @@
 export ZSH="/home/$USER/.oh-my-zsh"
 source ~/.zplug/init.zsh
 
+zplug "qoomon/zsh-lazyload"
+
 ZSH_THEME="spaceship"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
 alias cfb='vi $HOME/.bashrc'
 alias cfv='vi $HOME/dotfiles/.vimrc'
 alias cfz='vi $HOME/.zshrc'
+alias sfz='source $HOME/.zshrc'
 alias proj='cd /opt/project/'
 alias src='cd /src'
 
@@ -142,12 +145,6 @@ alias cblog='cd /mnt/disk_2/codewiz_blog'
 
 # Docker ps
 alias dops='docker ps'
-alias dock='docker-compose start'
-alias undock='docker-compose stop'
-alias redock='docker-compose restart'
-alias dockup='docker-compose up'
-alias dockupd='docker-compose up -d'
-alias dockdown='docker-compose dow'
 alias slbjundock='cd /mnt/disk_1/slbj/docker; docker-compose -f dev_docker-compose.yml stop'
 alias slbjdock='cd /mnt/disk_1/slbj/docker; docker-compose -f dev_docker-compose.yml start'
 alias slbjdow='cd /mnt/disk_1/slbj/docker; docker-compose -f dev_docker-compose.yml down'
@@ -156,7 +153,7 @@ alias slbjup='cd /mnt/disk_1/slbj/docker; docker-compose -f dev_docker-compose.y
 # Hg
 alias hgp='hg pull'
 alias hgpu='hg push'
-alias hgst='hg st | cat'
+alias hgst='hg st | bat'
 alias hgm='hg merge; hg ci -m"Merge."'
 
 # General
@@ -202,6 +199,42 @@ aupdate(){
 
 aupgrade(){
   sudo apt-get upgrade
+}
+
+dockst(){
+  if [ -z "$1" ];
+    then
+      docker-compose start;
+    else
+      docker-compose -f $1 start;
+  fi
+}
+
+docksp(){
+  if [ -z "$1" ];
+    then
+      docker-compose stop;
+    else
+      docker-compose -f $1 stop;
+  fi
+}
+
+dockup(){
+  if [ -z "$1" ];
+    then
+      docker-compose up -d;
+    else
+      docker-compose -f $1 up -d;
+  fi
+}
+
+dockdw(){
+  if [ -z "$1" ];
+    then
+      docker-compose down;
+    else
+      docker-compose -f $1 down;
+  fi
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
