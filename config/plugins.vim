@@ -73,6 +73,7 @@ Plug 'honza/vim-snippets'
 " Colorscheme
 "***************"
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 "***************"
 " Autocomplete
@@ -94,10 +95,8 @@ endif
 "***************"
 " Colorscheme
 "***************"
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='soft'
-colorscheme gruvbox
-set background=dark
+syntax enable
+colorscheme dracula
 
 "********************"
 " Colorscheme Config
