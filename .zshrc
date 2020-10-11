@@ -75,6 +75,7 @@ plugins=(
   python
   zsh-autosuggestions
   zsh-syntax-highlighting
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 alias cfb='vi $HOME/.bashrc'
 alias cfv='vi $HOME/dotfiles/.vimrc'
 alias cfz='vi $HOME/.zshrc'
+alias cft='vi $HOME/.tmux.conf'
 alias sfz='source $HOME/.zshrc'
 alias proj='cd /opt/project/'
 alias src='cd /src'

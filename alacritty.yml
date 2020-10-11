@@ -61,3 +61,6 @@ font:
   italic:
     family: "Fira Code"
     style: Italic
+
+env:
+  TERM: xterm-256color
