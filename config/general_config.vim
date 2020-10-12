@@ -14,7 +14,6 @@ set backspace=indent,eol,start
 set hidden
 set wrap
 set linespace=4 "Like line height in CSS
-set foldmethod=indent "Like Toggle code in VScode
 set linebreak "Soft word wrap
 set display+=lastline,msgsep
 set pumheight=10
@@ -52,6 +51,7 @@ set clipboard+=unnamedplus
 set ruler
 set completeopt=noinsert,menuone,noselect
 set si
+set showtabline=2
 
 "***************"
 " Performance Tuning

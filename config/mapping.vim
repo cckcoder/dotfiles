@@ -25,7 +25,6 @@ nmap <leader>y :StripWhitespace<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :noh<CR>
-nmap <c-s> :w<CR>
 nmap zz :update<CR>
 nmap <Leader>q :wq!<CR>
 nmap <TAB> :bnext<CR>
