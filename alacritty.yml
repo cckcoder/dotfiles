@@ -51,15 +51,15 @@ font:
     y: 2
 
   normal:
-    family: "Fira Code"
+    family: "JetBrainsMono"
     style: Regular
 
   bold:
-    family: "Fira Code"
+    family: "JetBrainsMono"
     style: Bold
 
   italic:
-    family: "Fira Code"
+    family: "JetBrainsMono"
     style: Italic
 
 env:
