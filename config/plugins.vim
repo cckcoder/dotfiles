@@ -63,6 +63,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'tpope/vim-rhubarb'
 
 "***************"
 " Snippets
