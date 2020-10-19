@@ -45,6 +45,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'machakann/vim-highlightedyank'
+Plug 'liuchengxu/vim-which-key'
 
 "***************"
 " PYTHON
