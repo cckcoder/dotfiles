@@ -33,15 +33,6 @@ map <space> /
 map <C-space> ?
 nmap <leader>bd :bdelete<cr>
 
-"***************"
-" Easy Motion
-"***************"
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
-
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 "***************"
 " Tagbar
