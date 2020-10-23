@@ -21,9 +21,8 @@ let g:comfortable_motion_scroll_up_key = "k"
 " Leader
 "***************"
 let mapleader = ","
+
 nmap <leader>y :StripWhitespace<CR>
-nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>F :NERDTreeFind<CR>
 nmap <Leader>l :noh<CR>
 nmap zz :update<CR>
 nmap <Leader>q :wq!<CR>
@@ -32,7 +31,6 @@ nmap <S-TAB> :bprevious<CR>
 map <space> /
 map <C-space> ?
 nmap <leader>bd :bdelete<cr>
-
 
 "***************"
 " Tagbar

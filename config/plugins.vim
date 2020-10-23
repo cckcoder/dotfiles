@@ -2,10 +2,9 @@ call plug#begin()
 "***************"
 " SEARCH FILE
 "***************"
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-
 Plug 'mileszs/ack.vim'
 
 "***************"
@@ -19,7 +18,6 @@ Plug 'hail2u/vim-css3-syntax'
 "***************"
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
@@ -27,9 +25,10 @@ Plug 'lepture/vim-jinja'
 "***************"
 " Tools
 "***************"
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } |
-  \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-  \ Plug 'ryanoasis/vim-devicons'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
+Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'yuttie/comfortable-motion.vim'
