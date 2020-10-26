@@ -58,6 +58,7 @@ set showtabline=2
 "***************"
 set updatetime=300
 set timeoutlen=500
+set ttimeoutlen=0
 set lazyredraw
 set title
 set nobackup
