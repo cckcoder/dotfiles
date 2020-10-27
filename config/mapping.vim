@@ -24,6 +24,7 @@ let mapleader = ","
 
 nmap <leader>y :StripWhitespace<CR>
 nmap <Leader>l :noh<CR>
+nmap <Leader>s :so %<CR>
 nmap zz :update<CR>
 nmap <Leader>q :wq!<CR>
 nmap <TAB> :bnext<CR>
