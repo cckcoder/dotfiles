@@ -21,6 +21,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 "***************"
 " Tools
