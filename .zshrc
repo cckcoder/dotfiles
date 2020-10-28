@@ -239,6 +239,16 @@ dockdw(){
   fi
 }
 
+dockre(){
+  if [ -z "$1" ];
+    then
+      docker-compose restart;
+    else
+      docker-compose -f $1 restart;
+  fi
+}
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
