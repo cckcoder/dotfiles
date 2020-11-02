@@ -66,6 +66,7 @@ set nowritebackup
 set noswapfile
 set shortmess+=c
 set autoread
+set nocompatible
 
 "***************"
 " Splite Window
