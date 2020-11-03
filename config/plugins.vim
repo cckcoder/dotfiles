@@ -46,6 +46,7 @@ Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'liuchengxu/vim-which-key'
+Plug 'frazrepo/vim-rainbow'
 
 "***************"
 " PYTHON
@@ -74,8 +75,7 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 
 "***************"
 " Autocomplete
@@ -89,30 +89,11 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-if (has("autocmd") && !has("gui_running"))
-  augroup colorset
-    autocmd!
-    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
-  augroup END
-endif
+let g:nord_italic = 1
+let g:nord_cursor_line_number_background = 1
+let g:nord_italic_comments = 1
 
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
-
-hi Comment cterm=italic
-let g:onedark_hide_endofbuffer=1
-let g:onedark_terminal_italics=1
-let g:onedark_termcolors=256
-
-syntax on
-colorscheme onedark
+colorscheme nord
 
 "********************"
 " Colorscheme Config

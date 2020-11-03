@@ -110,4 +110,9 @@ let php_html_load = 1
 "***************"
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
+"***************"
+" Rainbow
+"***************"
+let g:rainbow_active = 1
+
 set secure

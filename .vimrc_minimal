@@ -124,7 +124,7 @@ let NERDTreeAutoDeleteBuffer = 1
 " Vim light line
 " ***************"
 let g:lightline = {
-	\ 'colorscheme': 'darcula',
+	\ 'colorscheme': 'nord',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'currentfunction', 'readonly', 'filename', 'modified' ] ]
