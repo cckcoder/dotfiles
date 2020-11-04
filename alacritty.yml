@@ -51,7 +51,7 @@ colors:
     white: "#aeb3bb"
 
 font:
-  size: 13.5
+  size: 14
 
   offset:
     x: 0

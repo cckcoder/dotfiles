@@ -19,7 +19,8 @@ let g:coc_global_extensions = [
   \ 'coc-eslint',
   \ 'coc-lists',
   \ 'coc-vimlsp',
-  \ 'coc-marketplace'
+  \ 'coc-marketplace',
+  \ 'coc-vetur'
   \ ]
 
 function! s:check_back_space() abort

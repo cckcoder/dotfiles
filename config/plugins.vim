@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin(expand('~/.config/nvim/plugged'))
 "***************"
 " SEARCH FILE
 "***************"
@@ -21,7 +21,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
-Plug 'nvim-treesitter/nvim-treesitter'
 
 "***************"
 " Tools
@@ -93,6 +92,7 @@ let g:nord_italic = 1
 let g:nord_cursor_line_number_background = 1
 let g:nord_italic_comments = 1
 
+syntax enable
 colorscheme nord
 
 "********************"
