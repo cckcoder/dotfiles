@@ -75,7 +75,7 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 
 "***************"
 " Autocomplete
@@ -93,7 +93,6 @@ let g:nord_italic = 1
 let g:nord_cursor_line_number_background = 1
 let g:nord_italic_comments = 1
 
-syntax enable
 colorscheme nord
 
 "********************"
