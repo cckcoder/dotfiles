@@ -90,7 +90,6 @@ call plug#end()
 " Colorscheme
 "***************"
 let g:nord_italic = 1
-let g:nord_cursor_line_number_background = 1
 let g:nord_italic_comments = 1
 
 colorscheme nord
@@ -115,10 +114,3 @@ hi! link CocWarningHighlight CodeWarning
 hi! link CocInfoHighlight CodeInfo
 hi! link CocHintHighlight CodeHint
 
-" ALE
-hi! link ALEError Error
-hi! link ALEWarning CodeWarning
-hi! link ALEInfo CodeInfo
-hi! link ALEErrorSign ErrorSign
-hi! link ALEWarningSign WarningSign
-hi! link ALEInfoSign InfoSign

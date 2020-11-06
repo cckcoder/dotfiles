@@ -92,28 +92,9 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:used_javascript_libs = 'react,jquery,vue'
 
-"***************"
-"	ALE
-"***************"
-let g:ale_completion_enabled=1
-let g:ale_completion_excluded_words=1
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'python': ['pylint'],
-\   'php': ['phpcs'],
-\   'vim': ['vint']
-\}
-
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_filetype_changed = 0
-
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
-let NERDTreeIgnore=['\.git$[[dir]]']
-
 
 "***************"
 " VueJS SYNTAX
