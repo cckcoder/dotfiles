@@ -1,5 +1,3 @@
-set nocompatible
-
 call plug#begin()
 "***************"
 " SEARCH FILE
@@ -23,7 +21,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
-Plug 'nvim-treesitter/nvim-treesitter'
 
 "***************"
 " Tools
@@ -31,6 +28,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
+Plug 'liuchengxu/vim-which-key'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
@@ -47,17 +45,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'liuchengxu/vim-which-key'
-Plug 'frazrepo/vim-rainbow'
+Plug 'luochen1990/rainbow'
 
 "***************"
 " PYTHON
 "***************"
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-
-"***************"
-" JS
-"***************"
 
 "***************"
 " GIT & HG
@@ -75,44 +68,16 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'arcticicestudio/nord-vim'
 
 "***************"
 " Autocomplete
 "***************"
 Plug 'neoclide/coc.nvim'
+
 call plug#end()
 
 "***************"
 " Colorscheme
 "***************"
-if !has('gui_running')
-  set t_Co=256
-endif
-
-set background=dark
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='hard'
-autocmd vimenter * ++nested colorscheme gruvbox
-
-"********************"
-" Colorscheme Config
-"***************"*****
-" Coc
-hi! link CocErrorSign ErrorSign
-hi! link CocWarningSign WarningSign
-hi! link CocInfoSign InfoSign
-hi! link CocHintSign InfoSign
-hi! link CocErrorFloat Pmenu
-hi! link CocWarningFloat Pmenu
-hi! link CocInfoFloat Pmenu
-hi! link CocHintFloat Pmenu
-hi! link CocHighlightText IdentifierUnderCaret
-hi! link CocHighlightRead IdentifierUnderCaret
-hi! link CocHighlightWrite IdentifierUnderCaretWrite
-hi! link CocErrorHighlight CodeError
-hi! link CocWarningHighlight CodeWarning
-hi! link CocInfoHighlight CodeInfo
-hi! link CocHintHighlight CodeHint
-
+colorscheme nord

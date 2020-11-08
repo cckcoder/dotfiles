@@ -2,6 +2,25 @@ set updatetime=300
 set cmdheight=2
 set signcolumn=yes
 
+"********************"
+" Colorscheme Config
+"***************"*****
+hi! link CocErrorSign ErrorSign
+hi! link CocWarningSign WarningSign
+hi! link CocInfoSign InfoSign
+hi! link CocHintSign InfoSign
+hi! link CocErrorFloat Pmenu
+hi! link CocWarningFloat Pmenu
+hi! link CocInfoFloat Pmenu
+hi! link CocHintFloat Pmenu
+hi! link CocHighlightText IdentifierUnderCaret
+hi! link CocHighlightRead IdentifierUnderCaret
+hi! link CocHighlightWrite IdentifierUnderCaretWrite
+hi! link CocErrorHighlight CodeError
+hi! link CocWarningHighlight CodeWarning
+hi! link CocInfoHighlight CodeInfo
+hi! link CocHintHighlight CodeHint
+
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-highlight',
@@ -18,8 +37,6 @@ let g:coc_global_extensions = [
   \ 'coc-vimlsp',
   \ 'coc-marketplace',
   \ 'coc-tsserver',
-  \ 'coc-tslint-plugin',
-  \ 'coc-vetur',
   \ ]
 
 function! s:check_back_space() abort

@@ -1,49 +1,8 @@
-" ***************"
-" Vim light line
-" ***************"
-function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
-endfunctio
-
-let g:lightline = {
-  \ 'colorscheme': 'gruvbox',
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-	\ },
-	\ 'component_function': {
-	\   'cocstatus': 'coc#status',
-	\   'currentfunction': 'CocCurrentFunction',
-	\   'filetype': 'MyFiletype',
-	\   'fileformat': 'MyFileformat',
-  \   'method': 'NearestMethodOrFunction'
-	\ },
-  \ 'separator': { 'left': '', 'right': '' },
-  \ 'subseparator': { 'left': '', 'right': '' }
-  \ }
-" Use auocmd to force lightline update.
-autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
-
-" Config for Devicons
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
-
-" ***************"
-" Devicons
-" ***************"
-let g:webdevicons_enable = 1
-
 "***************"
 " VIM-CSS
 "***************"
 augroup VimCSS3Syntax
   autocmd!
-
   autocmd FileType css setlocal iskeyword+=-
 augroup END
 
@@ -52,7 +11,6 @@ augroup END
 "***************"
 let g:indentLine_enabled = 1
 let g:indentLine_char_list = ['▏']
-
 "***************"
 " Matching Tags
 "***************"
@@ -84,7 +42,7 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 "***************"
 let g:signify_vcs_list = [ 'git', 'hg' ]
 
-set conceallevel=1
+"set conceallevel=1
 
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1

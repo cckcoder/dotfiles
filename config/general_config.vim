@@ -105,15 +105,8 @@ let g:php_var_selector_is_identifier = 1
 let php_htmlInStrings = 1
 let php_html_load = 1
 
-
 "***************"
 " Coc json
 "***************"
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-"***************"
-" Rainbow
-"***************"
-let g:rainbow_active = 1
-
-set secure
