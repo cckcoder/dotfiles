@@ -66,7 +66,7 @@ set nowritebackup
 set noswapfile
 set shortmess+=c
 set autoread
-set nocompatible
+
 
 "***************"
 " Splite Window
@@ -104,6 +104,7 @@ let g:php_syntax_extensions_enabled = []
 let g:php_var_selector_is_identifier = 1
 let php_htmlInStrings = 1
 let php_html_load = 1
+
 
 "***************"
 " Coc json

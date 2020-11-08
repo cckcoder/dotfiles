@@ -1,4 +1,6 @@
-call plug#begin(expand('~/.config/nvim/plugged'))
+set nocompatible
+
+call plug#begin()
 "***************"
 " SEARCH FILE
 "***************"
@@ -56,8 +58,6 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 "***************"
 " JS
 "***************"
-Plug 'pangloss/vim-javascript'
-Plug 'othree/javascript-libraries-syntax.vim'
 
 "***************"
 " GIT & HG
@@ -75,24 +75,26 @@ Plug 'honza/vim-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 "***************"
 " Autocomplete
 "***************"
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Keeping up to date with master
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim'
 call plug#end()
-
 
 "***************"
 " Colorscheme
 "***************"
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
+if !has('gui_running')
+  set t_Co=256
+endif
 
-colorscheme nord
+set background=dark
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='hard'
+autocmd vimenter * ++nested colorscheme gruvbox
 
 "********************"
 " Colorscheme Config

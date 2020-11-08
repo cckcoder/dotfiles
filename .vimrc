@@ -1,4 +1,5 @@
-filetype plugin on
+filetype plugin indent on
+syntax on
 
 source ~/dotfiles/config/plugins.vim
 source ~/dotfiles/config/general_config.vim

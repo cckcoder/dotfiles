@@ -6,7 +6,7 @@ function! CocCurrentFunction()
 endfunctio
 
 let g:lightline = {
-  \ 'colorscheme': 'nord',
+  \ 'colorscheme': 'gruvbox',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -84,22 +84,11 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 "***************"
 let g:signify_vcs_list = [ 'git', 'hg' ]
 
-"***************"
-" VIM-JAVASCRIPT
-"***************"
 set conceallevel=1
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_flow = 1
-let g:used_javascript_libs = 'react,jquery,vue'
 
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
-
-"***************"
-" VueJS SYNTAX
-"***************"
-let g:vue_pre_processors = 'detect_on_enter'
 
 "***************"
 " Gundo

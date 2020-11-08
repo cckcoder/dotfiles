@@ -7,20 +7,19 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-git',
   \ 'coc-yaml',
-  \ 'coc-tsserver',
-  \ 'coc-tslint-plugin',
   \ 'coc-python',
   \ 'coc-phpls',
   \ 'coc-json',
   \ 'coc-html',
   \ 'coc-css',
-  \ 'coc-vetur',
   \ 'coc-prettier',
   \ 'coc-eslint',
   \ 'coc-lists',
   \ 'coc-vimlsp',
   \ 'coc-marketplace',
-  \ 'coc-vetur'
+  \ 'coc-tsserver',
+  \ 'coc-tslint-plugin',
+  \ 'coc-vetur',
   \ ]
 
 function! s:check_back_space() abort
