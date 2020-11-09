@@ -99,5 +99,7 @@ hi default link DefxIconsOpenedTreeIcon Directory
 hi default link DefxIconsNestedTreeIcon Directory
 hi default link DefxIconsClosedTreeIcon Directory
 
-
+function DefxCurrent()
+  Defx `expand('%:p:h')` -search=`expand('%:p')
+endfunction
 

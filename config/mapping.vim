@@ -32,6 +32,8 @@ nmap <S-TAB> :bprevious<CR>
 map <space> /
 map <C-space> ?
 nmap <leader>bd :bdelete<cr>
+imap kj <Esc>
+cmap kj <C-C>
 
 "***************"
 " Tagbar

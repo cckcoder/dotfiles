@@ -27,10 +27,18 @@ let g:which_key_map.v = {
 	\ '?' : ['Windows'    , 'fzf-window']            ,
 	\}
 
+let g:which_key_map.P = {
+	\ 'i' : ['PlugInstall'    , ':PlugInstall'],
+	\ 'u' : ['PlugUpdate'    , ':PlugUpdate'],
+	\ 'c' : ['PlugClean'    , ':PlugClean'],
+	\}
+
 let g:which_key_map.n = {
   \ 'name': 'folder_manager',
-  \ 'f' : [':Defx -listed', 'defx']
+  \ 'f' : [':Defx -listed', 'defx'],
+  \ 'c' : [':call DefxCurrent()', 'DefxCurrent']
   \}
+
 
 " Register which key map
 call which_key#register(',', "g:which_key_map")
