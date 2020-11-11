@@ -11,9 +11,9 @@ source ~/dotfiles/config/mapping.vim
 "   PLUG-IN   "
 """""""""""""""
 source ~/dotfiles/config/coc.vim
-source ~/dotfiles/config/vue.vim
+"source ~/dotfiles/config/vue.vim
 source ~/dotfiles/config/plugin_config.vim
-source ~/dotfiles/config/vim_ale.vim
+"source ~/dotfiles/config/vim_ale.vim
 source ~/dotfiles/config/vim_vista.vim
 source ~/dotfiles/config/vim_which_key.vim
 source ~/dotfiles/config/vim_defx.vim
