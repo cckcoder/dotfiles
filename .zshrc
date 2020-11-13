@@ -125,11 +125,11 @@ alias at='ssh root@atraxrobustus.com'
 alias dr='ssh root@draconarius.com'
 alias fr='ssh root@frontinella.com'
 alias kn='ssh root@192.168.80.184 -p 2222'
-alias gr='ssh root@192.168.80.238'
+#alias gr='ssh root@192.168.80.238'
 alias ar='ssh root@araniella.com'
 alias pp='cd ~/youtube/music/flac'
-
-
+alias gra='ssh root@103.22.183.243'
+alias egg='ssh root@51.222.14.247'
 
 # Project
 alias api3='cd /mnt/disk_1/api3; source env/bin/activate'
@@ -249,6 +249,9 @@ dockre(){
   fi
 }
 
+yt() {
+  youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

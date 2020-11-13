@@ -59,6 +59,7 @@ set showtabline=2
 set updatetime=300
 set timeoutlen=500
 set ttimeoutlen=0
+set ttyfast
 set lazyredraw
 set title
 set nobackup
@@ -93,20 +94,29 @@ set tags=./tags,tags;$HOME
 "***************"
 " Python config
 "***************"
-autocmd FileType python set sw=4 ts=4 sts=4
+augroup ft_python
+  autocmd!
+  autocmd FileType python set sw=4 ts=4 sts=4
+augroup END
 
 "***************"
 " PHP config
 "***************"
-autocmd FileType php set sw=4 ts=4 sts=4
-let g:phpcomplete_search_tags_for_variables = 1
-let g:php_syntax_extensions_enabled = []
-let g:php_var_selector_is_identifier = 1
-let php_htmlInStrings = 1
-let php_html_load = 1
+augroup ft_php
+  autocmd!
+  autocmd FileType php set sw=4 ts=4 sts=4
+  let g:phpcomplete_search_tags_for_variables = 1
+  let g:php_syntax_extensions_enabled = []
+  let g:php_var_selector_is_identifier = 1
+  let php_htmlInStrings = 1
+  let php_html_load = 1
+augroup END
 
 "***************"
 " Coc json
 "***************"
-autocmd FileType json syntax match Comment +\/\/.\+$+
+augroup ft_json
+  autocmd!
+  autocmd FileType json syntax match Comment +\/\/.\+$+
+augroup END
 
