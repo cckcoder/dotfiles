@@ -16,7 +16,6 @@ Plug 'hail2u/vim-css3-syntax'
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
-Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'

@@ -37,6 +37,7 @@ let g:coc_global_extensions = [
   \ 'coc-vimlsp',
   \ 'coc-marketplace',
   \ 'coc-tsserver',
+  \ 'coc-vetur',
   \ ]
 
 function! s:check_back_space() abort
