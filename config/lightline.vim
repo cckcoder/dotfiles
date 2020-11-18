@@ -1,5 +1,5 @@
 let g:lightline = {
-  \ 'colorscheme': 'nord',
+  \ 'colorscheme': 'monokai_tasty',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
