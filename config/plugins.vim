@@ -69,6 +69,7 @@ Plug 'honza/vim-snippets'
 " Colorscheme
 "***************"
 Plug 'patstockwell/vim-monokai-tasty'
+Plug 'tomasiser/vim-code-dark'
 
 "***************"
 " Autocomplete
@@ -80,6 +81,6 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-
-let g:vim_monokai_tasty_italic = 1
-colorscheme vim-monokai-tasty
+colorscheme codedark
+"let g:vim_monokai_tasty_italic = 1
+"colorscheme vim-monokai-tasty
