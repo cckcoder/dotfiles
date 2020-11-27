@@ -164,6 +164,7 @@ alias dot='cd $HOME/dotfiles'
 alias sysupd='sudo apt-get update -y'
 alias lsc='ls -1'
 alias m='meld .'
+alias pacup='sudo pacman --noconfirm -Syyu'
 
 # TMUX
 alias tls='tmux ls'
