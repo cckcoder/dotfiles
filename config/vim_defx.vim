@@ -1,4 +1,6 @@
 autocmd FileType defx call s:defx_my_settings()
+autocmd BufWritePost * call defx#redraw()
+
 function! s:defx_my_settings() abort
   " Define mappings
   nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
@@ -99,7 +101,12 @@ hi default link DefxIconsOpenedTreeIcon Directory
 hi default link DefxIconsNestedTreeIcon Directory
 hi default link DefxIconsClosedTreeIcon Directory
 
+function DefxExplorer()
+  Defx -split=vertical -winwidth=35 -direction=topleft
+endfunction
+
 function DefxCurrent()
-  Defx `expand('%:p:h')` -search=`expand('%:p')
+  Defx -split=vertical -winwidth=35 -direction=topleft `expand('%:p:h')` -search=`expand('%:p')
+
 endfunction
 

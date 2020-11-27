@@ -64,3 +64,4 @@ let g:gen_tags#ctags_auto_update = 1
 " Ack
 "***************"
 let g:ack_autoclose = 1
+let g:ackprg = 'ag --vimgrep'

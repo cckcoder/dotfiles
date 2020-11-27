@@ -56,5 +56,5 @@ nmap <leader>T :Tags<CR>
 "***************"
 " Ack
 "***************"
-nmap <leader>a :Ack!<Space>
+nmap <leader>a :Ag!<Space>
 

@@ -65,10 +65,7 @@ ZSH_THEME="spaceship"
 plugins=(
   git
   mercurial
-  debian
-  bundler
  	laravel
-  docker-compose
   fzf
   pip
   pyenv

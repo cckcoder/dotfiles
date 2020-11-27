@@ -34,7 +34,7 @@ let g:which_key_map.P = {
 
 let g:which_key_map.n = {
   \ 'name': 'folder_manager',
-  \ 'f' : [':Defx -listed', 'defx'],
+  \ 'f' : [':call DefxExplorer()', 'DefxExplorer'],
   \ 'c' : [':call DefxCurrent()', 'DefxCurrent']
   \}
 
