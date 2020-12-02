@@ -66,9 +66,6 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
 "Coc will display diagnostics (errors and warnings)
 nnoremap <silent> K :call CocAction('doHover')<CR>
 

@@ -67,6 +67,7 @@ set nowritebackup
 set noswapfile
 set shortmess+=c
 set autoread
+set re=1
 
 
 "***************"
