@@ -38,6 +38,7 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace',
   \ 'coc-tsserver',
   \ 'coc-vetur',
+  \ 'coc-syntax',
   \ ]
 
 function! s:check_back_space() abort
