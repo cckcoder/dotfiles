@@ -70,6 +70,8 @@ Plug 'honza/vim-snippets'
 "***************"
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'doums/darcula'
 
 "***************"
 " Autocomplete
@@ -81,6 +83,4 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-colorscheme codedark
-"let g:vim_monokai_tasty_italic = 1
-"colorscheme vim-monokai-tasty
+source ~/dotfiles/config/theme.vim
