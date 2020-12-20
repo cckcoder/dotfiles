@@ -1,3 +1,5 @@
+set nocompatible
+
 call plug#begin()
 "***************"
 " SEARCH FILE
@@ -20,6 +22,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
+Plug 'dense-analysis/ale'
 
 "***************"
 " Tools
@@ -72,6 +75,7 @@ Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'doums/darcula'
+Plug 'pineapplegiant/spaceduck'
 
 "***************"
 " Autocomplete

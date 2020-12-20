@@ -1,3 +1,1 @@
-let g:LanguageClient_serverCommands = {
-    \ 'vue': ['vls']
-    \ }
+let g:vue_pre_processors = 'detect_on_enter'
