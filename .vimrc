@@ -21,6 +21,8 @@ source ~/dotfiles/config/vim_defx.vim
 source ~/dotfiles/config/vim_easy_motion.vim
 source ~/dotfiles/config/lightline.vim
 source ~/dotfiles/config/vim_rainbow.vim
+source ~/dotfiles/config/matchup.vim
+source ~/dotfiles/config/hexokinase.vim
 
 
 set secure

@@ -5,5 +5,6 @@
   "eslint.enable": false,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml", "php"]
+  "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml", "php"],
+  "suggest.noselect":false,
 }

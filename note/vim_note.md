@@ -1,35 +1,43 @@
 #Trick & Tip
-* SCROLLING + SCREENS:
-- Screen positions H M L
-- Scrolling Ctrl-U/D/B/F
+
+- SCROLLING + SCREENS:
+
+* Screen positions H M L
+* Scrolling Ctrl-U/D/B/F
 
 #Delete ^M
+
 - :e ++ff=dos
 
 * EDITING
+
 - e[dit] {file}
 - f[ind] {file}
 - goto file: gf
 - Alternate buffer: Ctrl-^
 
 * SEARCHING
+
 - /{pattern}
 - ?{pattern}
-- Search forward for word under cursor: *
+- Search forward for word under cursor: \*
 - Search backward for word under cursor: #
 - Goto declaration: gd
 
 * MARKS:
+
 - m{a-zA-Z} sets up a custom location
 - \`{a-zA-Z} to jump to mark
 
 * TAGS:
+
 - Ctrl-] to jump to keyword definition
 - Ctrl-t to pop from the tag stack
 - :tags to see all tags
-- see list of function or tags g-] 
+- see list of function or tags g-]
 
 * FOLD
+
 - set foldmethod=indent
 - Hitting 'zo' it will open the current fold
 - Hitting 'zc' it will close the fold
@@ -37,13 +45,15 @@
 - Can open and close all folds in the file at same time using 'zR' and 'zM'
 
 * BUFFERS
-- :bn |  go to next buffer 
-- :b {filename}  | go to buffer {filename} 
-- :bd  | delete current buffer 
-- :buffers  | pring out all buffers
-- :bufdo {cmd}  | execute {cmd} for all buffers
+
+- :bn | go to next buffer
+- :b {filename} | go to buffer {filename}
+- :bd | delete current buffer
+- :buffers | pring out all buffers
+- :bufdo {cmd} | execute {cmd} for all buffers
 
 * WINDOWS, BUFFER, VIEWPORTS
+
 - <Ctrl-w> s | split window
 - <Ctrl-w> v | split window vertically
 - <Ctrl-w> q | close window
@@ -55,6 +65,7 @@
 - :vert {cmd} | make any split {cmd} vertical
 
 * Tabs
+
 - gt | go to next tab
 - gT | go to prev tab
 - :tabc | close tab
@@ -62,9 +73,10 @@
 - :tabo | close all other tabs
 
 * Ex-mode (:)
+
 - Ctrl + f which opens an editable cmd window with a history
-    execute it. you can press Enter or Ctrl + c 
-    can learn more by looking up :help cmdline-editing
+  execute it. you can press Enter or Ctrl + c
+  can learn more by looking up :help cmdline-editing
 
 #Useful
 https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
@@ -87,3 +99,8 @@ https://www.thelinuxfaq.com/ubuntu/ubuntu-17-04-zesty-zapus/neovim?type=uninstal
 #Config
 https://www.davidosomething.com/blog/vim-for-javascript/
 https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
+
+#PlugIn
+for vim-hexokinase
+https://github.com/RRethy/vim-hexokinase
+
