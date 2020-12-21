@@ -1,5 +1,3 @@
-set updatetime=300
-set cmdheight=2
 set signcolumn=yes
 
 "********************"
