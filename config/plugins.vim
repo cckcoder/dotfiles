@@ -36,7 +36,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'yggdroot/indentline'
-Plug 'tpope/vim-endwise'
 Plug 'valloric/matchtagalways'
 Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
@@ -80,7 +79,7 @@ Plug 'pineapplegiant/spaceduck'
 "***************"
 " Autocomplete
 "***************"
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 

@@ -2,7 +2,7 @@
 " NVIM SETUP
 "***************"
 tnoremap <Esc> <C-\><C-n>
-
+tnoremap kj <Esc>
 "***************"
 "split navigations
 "***************"
@@ -57,4 +57,6 @@ nmap <leader>T :Tags<CR>
 " Ack
 "***************"
 nmap <leader>a :Ag!<Space>
+
+
 

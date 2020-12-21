@@ -57,7 +57,7 @@ set showtabline=2
 " Performance Tuning
 "***************"
 set updatetime=300
-set timeoutlen=100
+set timeoutlen=500
 set ttimeoutlen=0
 set ttyfast
 set lazyredraw
@@ -68,7 +68,6 @@ set noswapfile
 set shortmess+=c
 set autoread
 set re=1
-
 
 "***************"
 " Splite Window
