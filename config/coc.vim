@@ -14,7 +14,6 @@ endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
-
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
@@ -44,6 +43,17 @@ let g:coc_snippet_prev = '<c-k>'
 imap <leader>j <Plug>(coc-snippets-expand-jump)
 
 let g:coc_snippet_next = '<tab>'
+"********************"
+" Keymap Config
+"***************"*****
+nmap <expr> <silent> <leader>d <SID>select_current_word()
+function! s:select_current_word()
+  if !get(g:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
+
 
 "********************"
 " Colorscheme Config
@@ -70,7 +80,8 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-git',
   \ 'coc-yaml',
-  \ 'coc-python',
+  \ 'coc-pyright',
+  \ 'coc-sh',
   \ 'coc-phpls',
   \ 'coc-json',
   \ 'coc-html',

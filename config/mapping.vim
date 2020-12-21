@@ -12,12 +12,6 @@ nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 
 "***************"
-" comfortable motion
-"***************"
-let g:comfortable_motion_scroll_down_key = "j"
-let g:comfortable_motion_scroll_up_key = "k"
-
-"***************"
 " Leader
 "***************"
 let mapleader = ","
