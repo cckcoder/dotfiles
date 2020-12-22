@@ -33,7 +33,6 @@ Plug 'kristijanhusak/defx-git'
 Plug 'liuchengxu/vim-which-key'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'yggdroot/indentline'
 Plug 'psliwka/vim-smoothie'
 Plug 'valloric/matchtagalways'
@@ -50,6 +49,7 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 "***************"
 " PYTHON
