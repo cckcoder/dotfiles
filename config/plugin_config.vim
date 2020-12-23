@@ -1,13 +1,4 @@
 "***************"
-" VIM-CSS
-"***************"
-augroup VimCSS3Syntax
-  autocmd!
-
-  autocmd FileType css setlocal iskeyword+=-
-augroup END
-
-"***************"
 " Vim IndentLine
 "***************"
 let g:indentLine_enabled = 1
