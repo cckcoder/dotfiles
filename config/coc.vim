@@ -106,4 +106,5 @@ let g:coc_global_extensions = [
   \ 'coc-vetur',
   \ 'coc-syntax',
   \ 'coc-bookmark',
+  \ 'coc-dictionary',
   \ ]
