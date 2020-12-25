@@ -18,3 +18,8 @@ https://github.com/jesseduffield/lazygit/issues/6
 
 https://github.com/jarun/nnn
 
+# Interesting plugin
+
+https://github.com/kristijanhusak/vim-dadbod-completion#readme
+https://github.com/neoclide/coc-lists
+

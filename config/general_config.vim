@@ -62,12 +62,16 @@ set ttimeoutlen=0
 set ttyfast
 set lazyredraw
 set title
-set nobackup
 set nowritebackup
-set noswapfile
 set shortmess+=c
 set autoread
 set re=1
+
+"***************"
+" Turn off Swap Files
+"***************"
+set noswapfile
+set nobackup
 
 "***************"
 " Splite Window

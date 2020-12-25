@@ -41,3 +41,19 @@ let g:which_key_map.n = {
 
 " Register which key map
 call which_key#register(',', "g:which_key_map")
+
+
+
+""""""""""""""""
+" COC-Bookmark "
+""""""""""""""""
+let g:which_key_map.m = {
+  \ 'name': 'VimPlug',
+	\ 'l' : [':CocList bookmark'    , 'Bookmark List'],
+	\ 't' : [':CocCommand bookmark.toggle'    , 'Bookmark Toggle'],
+	\ 'n' : [':CocCommand bookmark.next'    , 'Next Bookmark'],
+	\ 'p' : [':CocCommand bookmark.prev'    , 'Previous Bookmark'],
+	\ 'c' : [':CocCommand bookmark.clearForCurrentFile'    , 'Bookmark Clean'],
+	\ 'C' : [':CocCommand bookmark.clearForAllFiles'    , 'Bookmark Clean All Files'],
+	\}
+
