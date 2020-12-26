@@ -33,6 +33,7 @@ nnoremap <silent> K :call CocAction('doHover')<CR>
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 nmap <leader>rn <Plug>(coc-rename)
+
 "***************"
 " Coc-Snippet
 " ***************"
@@ -104,4 +105,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-syntax',
+  \ 'coc-bookmark',
+  \ 'coc-dictionary',
   \ ]
