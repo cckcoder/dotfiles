@@ -4,7 +4,9 @@ if exists('+termguicolors')
       set termguicolors
 endif
 
-colorscheme spaceduck
+let g:onedark_terminal_italics=1
+syntax on
+colorscheme onedark
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe

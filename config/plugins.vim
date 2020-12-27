@@ -76,6 +76,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'doums/darcula'
 Plug 'pineapplegiant/spaceduck'
+Plug 'joshdick/onedark.vim'
 
 "***************"
 " Autocomplete
