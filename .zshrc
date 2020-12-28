@@ -40,6 +40,7 @@ alias cfa='vi $HOME/dotfiles/alacritty.yml'
 alias sfz='source $HOME/.zshrc'
 alias proj='cd /opt/project/'
 alias src='cd /src'
+alias lg='lazygit'
 
 # Server
 alias nr='ssh root@192.168.80.240'
