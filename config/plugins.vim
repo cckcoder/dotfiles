@@ -21,7 +21,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
-Plug 'dense-analysis/ale'
 
 "***************"
 " Tools

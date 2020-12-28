@@ -86,6 +86,13 @@ set hlsearch incsearch ignorecase smartcase
 set diffopt +=iwhite
 
 "***************"
+" Fold
+"***************"
+set foldmethod=syntax
+set foldlevel=1
+set foldclose=all
+
+"***************"
 " Vim ignore path
 "***************"
 set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
