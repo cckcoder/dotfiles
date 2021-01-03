@@ -3,6 +3,7 @@
 "***************"
 tnoremap <Esc> <C-\><C-n>
 tnoremap kj <Esc>
+
 "***************"
 "split navigations
 "***************"

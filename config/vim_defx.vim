@@ -75,6 +75,8 @@ call defx#custom#option('_', {
       \ 'columns': 'indent:mark:icon:icons:filename:git:size',
       \ 'resume': 1,
       \ 'show_ignored_files': 1,
+      \ 'winwidth': 35,
+      \ 'direction': 'botright',
       \ })
 
 call defx#custom#column('git', 'indicators', {
@@ -102,11 +104,10 @@ hi default link DefxIconsNestedTreeIcon Directory
 hi default link DefxIconsClosedTreeIcon Directory
 
 function DefxExplorer()
-  Defx -split=vertical -winwidth=35 -direction=topleft
+  Defx -split=vertical
 endfunction
 
 function DefxCurrent()
-  Defx -split=vertical -winwidth=35 -direction=topleft `expand('%:p:h')` -search=`expand('%:p')
-
+  Defx -split=vertical `expand('%:p:h')` -search=`expand('%:p')
 endfunction
 
