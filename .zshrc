@@ -2,7 +2,6 @@ export ZSH="/home/$USER/.oh-my-zsh"
 source ~/.zplug/init.zsh
 
 zplug "qoomon/zsh-lazyload"
-
 ZSH_THEME="spaceship"
 
 
