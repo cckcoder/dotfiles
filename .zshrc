@@ -50,7 +50,7 @@ alias fr='ssh root@frontinella.com'
 alias kn='ssh root@192.168.80.184 -p 2222'
 #alias gr='ssh root@192.168.80.238'
 alias ar='ssh root@araniella.com'
-alias pp='cd ~/youtube/music/flac'
+alias pp='cd ~/youtube'
 alias gra='ssh root@103.22.183.243'
 alias egg='ssh root@51.222.14.247'
 
