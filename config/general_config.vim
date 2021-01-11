@@ -57,7 +57,7 @@ set showtabline=2
 " Performance Tuning
 "***************"
 set updatetime=300
-set timeoutlen=200
+set timeoutlen=300
 set ttimeoutlen=0
 set ttyfast
 set lazyredraw
