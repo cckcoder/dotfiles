@@ -43,7 +43,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
