@@ -1,5 +1,28 @@
 set signcolumn=yes
 
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-git',
+  \ 'coc-yaml',
+  \ 'coc-pyright',
+  \ 'coc-sh',
+  \ 'coc-phpls',
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-lists',
+  \ 'coc-vimlsp',
+  \ 'coc-marketplace',
+  \ 'coc-tsserver',
+  \ 'coc-vetur',
+  \ 'coc-syntax',
+  \ 'coc-bookmark',
+  \ 'coc-dictionary',
+  \ 'coc-explorer',
+  \ ]
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -86,25 +109,6 @@ hi! link CocWarningHighlight CodeWarning
 hi! link CocInfoHighlight CodeInfo
 hi! link CocHintHighlight CodeHint
 
-
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-git',
-  \ 'coc-yaml',
-  \ 'coc-pyright',
-  \ 'coc-sh',
-  \ 'coc-phpls',
-  \ 'coc-json',
-  \ 'coc-html',
-  \ 'coc-css',
-  \ 'coc-prettier',
-  \ 'coc-eslint',
-  \ 'coc-lists',
-  \ 'coc-vimlsp',
-  \ 'coc-marketplace',
-  \ 'coc-tsserver',
-  \ 'coc-vetur',
-  \ 'coc-syntax',
-  \ 'coc-bookmark',
-  \ 'coc-dictionary',
-  \ ]
+"********************"
+" Coc-explorer
+"********************"

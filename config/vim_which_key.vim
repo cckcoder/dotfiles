@@ -32,10 +32,11 @@ let g:which_key_map.P = {
 	\ 'c' : ['PlugClean'    , ':PlugClean'],
 	\}
 
-let g:which_key_map.n = {
-  \ 'name': 'folder_manager',
-  \ 'f' : [':call DefxExplorer()', 'DefxExplorer'],
-  \ 'c' : [':call DefxCurrent()', 'DefxCurrent']
+let g:which_key_map.e = {
+  \ 'name': 'Explorer',
+  \ 'e' : [':CocCommand explorer', 'Explorer'],
+  \ 'f' : [':CocCommand explorer --preset floating<CR>', 'Explorer Floating'],
+  \ 'b' : [':CocCommand explorer --preset buffer<CR>', 'Explorer Buffer']
   \}
 
 

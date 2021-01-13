@@ -7,4 +7,14 @@
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml", "php"],
   "suggest.noselect": false,
+  // Explorer
+  "explorer.width": 30,
+  /*"explorer.icon.enableVimDevicons": true,*/
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+  "explorer.position": "right"
 }

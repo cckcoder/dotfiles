@@ -25,9 +25,6 @@ Plug 'lepture/vim-jinja'
 "***************"
 " Tools
 "***************"
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
 Plug 'liuchengxu/vim-which-key'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
@@ -38,7 +35,7 @@ Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'easymotion/vim-easymotion'
-Plug 'liuchengxu/vista.vim'
+"Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'

@@ -33,7 +33,7 @@ cmap kj <C-C>
 "***************"
 " Tagbar
 "***************"
-nmap <C-m> :Vista<CR>
+"nmap <C-m> :Vista<CR>
 
 "***************"
 " Gundo
