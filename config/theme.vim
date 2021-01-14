@@ -4,8 +4,7 @@ if exists('+termguicolors')
       set termguicolors
 endif
 
-syntax enable
-colorscheme dracula
+colorscheme spaceduck
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe
