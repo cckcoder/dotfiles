@@ -73,6 +73,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'doums/darcula'
 Plug 'pineapplegiant/spaceduck'
 Plug 'joshdick/onedark.vim'
+Plug 'haishanh/night-owl.vim'
+Plug 'liuchengxu/space-vim-dark'
 
 "***************"
 " Autocomplete
