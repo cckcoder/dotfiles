@@ -30,7 +30,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'yggdroot/indentline'
 Plug 'psliwka/vim-smoothie'
-"Plug 'valloric/matchtagalways'
 Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
@@ -73,6 +72,7 @@ Plug 'pineapplegiant/spaceduck'
 Plug 'joshdick/onedark.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'ajh17/spacegray.vim'
 
 "***************"
 " Autocomplete
