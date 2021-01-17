@@ -48,7 +48,6 @@ Plug 'ap/vim-buftabline'
 "***************"
 " PYTHON
 "***************"
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 "***************"
 " GIT & HG
