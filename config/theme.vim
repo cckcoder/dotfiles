@@ -4,8 +4,7 @@ if exists('+termguicolors')
       set termguicolors
 endif
 
-syntax enable
-colorscheme night-owl
+colorscheme codedark
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe
