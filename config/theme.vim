@@ -6,9 +6,8 @@ endif
 
 
 
-let g:spacegray_underline_search = 1
-let g:spacegray_use_italics = 1
-colorscheme spacegray
+syntax enable
+colorscheme dracula
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe
