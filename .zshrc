@@ -44,7 +44,7 @@ alias lg='lazygit'
 
 # Server
 alias nr='ssh root@192.168.80.240'
-alias ti='ssh root@192.168.80.241'
+alias ti='kitty +kitten ssh root@192.168.80.241'
 alias at='ssh root@atraxrobustus.com'
 alias dr='ssh root@draconarius.com'
 alias fr='ssh root@frontinella.com'

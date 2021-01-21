@@ -9,7 +9,7 @@ let &t_ut=''
 " General
 "***************"
 let g:python3_host_prog = expand('$HOME/neovim3/bin/python3')
-"let g:python_host_prog = '/usr/bin/python2'
+let g:python_host_prog = expand('$HOME/neovim2/bin/python')
 
 set backspace=indent,eol,start
 set hidden
