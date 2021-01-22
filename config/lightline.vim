@@ -11,7 +11,7 @@ let g:lightline = {
 	\   'fileformat': 'MyFileformat',
   \   'method': 'NearestMethodOrFunction'
 	\ },
-  \ 'separator': { 'left': '', 'right': '' },
+	\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
   \ 'subseparator': { 'left': '', 'right': '' }
   \ }
 
