@@ -19,9 +19,8 @@ let mapleader = ","
 
 nmap <leader>y :StripWhitespace<CR>
 nmap <Leader>l :noh<CR>
-nmap <Leader>s :so %<CR>
+nmap <Leader>so :so %<CR>
 nmap zz :w<CR>
-nmap <Leader>q :wq!<CR>
 nmap <TAB> :bnext<CR>
 nmap <S-TAB> :bprevious<CR>
 map <space> /
@@ -29,11 +28,6 @@ map <C-space> ?
 nmap <leader>bd :bdelete<cr>
 imap kj <Esc>
 cmap kj <C-C>
-
-"***************"
-" Tagbar
-"***************"
-"nmap <C-m> :Vista<CR>
 
 "***************"
 " Gundo

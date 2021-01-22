@@ -6,6 +6,12 @@ vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual ','<CR>
 " Define a separator
 let g:which_key_sep = '→'
 
+let g:which_key_map.q = {
+	\'name': 'Quit',
+	\ 'q' : [':wq!', 'Quit Normal' ],
+	\ 'a' : [':qa!', 'Quit All not save' ],
+	\}
+
 let g:which_key_map.v = {
 	\ 'name' : '+windows' ,
 	\ 'w' : ['<C-W>w'     , 'other-window']          ,
@@ -27,9 +33,10 @@ let g:which_key_map.v = {
 
 let g:which_key_map.P = {
   \ 'name': 'VimPlug',
-	\ 'i' : ['PlugInstall'    , ':PlugInstall'],
-	\ 'u' : ['PlugUpdate'    , ':PlugUpdate'],
-	\ 'c' : ['PlugClean'    , ':PlugClean'],
+	\ 'i' : [':PlugInstall'    , 'PlugInstall'],
+	\ 'u' : [':PlugUpdate'    , ':lugUpdate'],
+	\ 'c' : [':PlugClean'    , 'PlugClean'],
+	\ 'r' : [':UpdateRemotePlugin'    , 'UpdateRemotePlugins'],
 	\}
 
 let g:which_key_map.e = {
@@ -39,17 +46,11 @@ let g:which_key_map.e = {
   \ 'b' : [':CocCommand explorer --preset buffer<CR>', 'Explorer Buffer']
   \}
 
-
-" Register which key map
-call which_key#register(',', "g:which_key_map")
-
-
-
 """"""""""""""""
 " COC-Bookmark "
 """"""""""""""""
 let g:which_key_map.m = {
-  \ 'name': 'VimPlug',
+  \ 'name': 'Coc-Bookmark',
 	\ 'l' : [':CocList bookmark'    , 'Bookmark List'],
 	\ 't' : [':CocCommand bookmark.toggle'    , 'Bookmark Toggle'],
 	\ 'n' : [':CocCommand bookmark.next'    , 'Next Bookmark'],
@@ -57,4 +58,18 @@ let g:which_key_map.m = {
 	\ 'c' : [':CocCommand bookmark.clearForCurrentFile'    , 'Bookmark Clean'],
 	\ 'C' : [':CocCommand bookmark.clearForAllFiles'    , 'Bookmark Clean All Files'],
 	\}
+
+""""""""""""""""
+" Anyjump
+""""""""""""""""
+let g:which_key_map.A = {
+  \ 'name': 'Anyjump',
+	\ 'j' : [':AnyJump'    , 'Jump to difinition'],
+	\ 'b' : [':AnyJumpBack'    , 'Jump Back'],
+	\}
+
+" Register which key map
+call which_key#register(',', "g:which_key_map")
+
+
 
