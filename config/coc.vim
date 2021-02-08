@@ -18,7 +18,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-syntax',
-  \ 'coc-bookmark',
   \ 'coc-dictionary',
   \ 'coc-explorer',
   \ ]

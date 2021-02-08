@@ -48,6 +48,7 @@ Plug 'ap/vim-buftabline'
 "***************"
 " PYTHON
 "***************"
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 "***************"
 " GIT & HG
