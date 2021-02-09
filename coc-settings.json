@@ -4,6 +4,8 @@
   "python.venvPath": "${workspaceFolder}/.env",
   "eslint.autoFixOnSave": true,
   "eslint.enable": false,
+  // Coc
+  "coc.preferences.extensionUpdateCheck": "weekly",
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml", "php"],
