@@ -1,6 +1,5 @@
 {
   "suggest.autoTrigger": "always",
-  "python.jediEnabled": false,
   "python.venvPath": "${workspaceFolder}/.env",
   "eslint.autoFixOnSave": true,
   "eslint.enable": false,
