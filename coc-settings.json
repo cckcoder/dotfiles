@@ -18,5 +18,9 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "explorer.position": "right"
+  "explorer.position": "right",
+  // Jedi
+  "jedi.enable": true,
+  "jedi.executable.command": "jedi-language-server",
+  "jedi.trace.server": "off"
 }
