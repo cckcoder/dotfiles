@@ -75,6 +75,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'ajh17/spacegray.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 
 "***************"
 " Autocomplete

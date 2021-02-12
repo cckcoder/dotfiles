@@ -5,7 +5,9 @@ if exists('+termguicolors')
 endif
 
 syntax on
-colorscheme onedark
+set background=dark
+colorscheme palenight
+let g:palenight_terminal_italics=1
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe

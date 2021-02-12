@@ -37,29 +37,42 @@ font:
 colors:
   # Default colors
   primary:
-    background: "0x1e2127"
-    foreground: "0xabb2bf"
+    background: "0x292d3e"
+    foreground: "0x959dcb"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: "0x292d3e"
+    cursor: "0x959dcb"
 
   # Normal colors
   normal:
-    black: "0x1e2127"
-    red: "0xe06c75"
-    green: "0x98c379"
-    yellow: "0xd19a66"
-    blue: "0x61afef"
-    magenta: "0xc678dd"
-    cyan: "0x56b6c2"
-    white: "0xabb2bf"
+    black: "0x292d3e"
+    red: "0xf07178"
+    green: "0xc3e88d"
+    yellow: "0xffcb6b"
+    blue: "0x82aaff"
+    magenta: "0xc792ea"
+    cyan: "0x89ddff"
+    white: "0x959dcb"
 
   # Bright colors
   bright:
-    black: "0x5c6370"
-    red: "0xe06c75"
-    green: "0x98c379"
-    yellow: "0xd19a66"
-    blue: "0x61afef"
-    magenta: "0xc678dd"
-    cyan: "0x56b6c2"
+    black: "0x676e95"
+    red: "0xf07178"
+    green: "0xc3e88d"
+    yellow: "0xffcb6b"
+    blue: "0x82aaff"
+    magenta: "0xc792ea"
+    cyan: "0x89ddff"
     white: "0xffffff"
+
+  indexed_colors:
+    - { index: 16, color: "0xf78c6c" }
+    - { index: 17, color: "0xff5370" }
+    - { index: 18, color: "0x444267" }
+    - { index: 19, color: "0x32374d" }
+    - { index: 20, color: "0x8796b0" }
+    - { index: 21, color: "0x959dcb" }
 
 live_config_reload: true
