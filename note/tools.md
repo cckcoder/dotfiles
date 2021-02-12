@@ -23,3 +23,10 @@ https://github.com/jarun/nnn
 https://github.com/kristijanhusak/vim-dadbod-completion#readme
 https://github.com/neoclide/coc-lists
 
+# PipX
+
+https://github.com/pipxproject/pipx
+
+# Jedi Language Server
+
+https://github.com/pappasam/jedi-language-server
