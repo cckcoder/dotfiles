@@ -44,6 +44,7 @@ Plug 'andymass/vim-matchup'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ap/vim-buftabline'
+Plug 'MattesGroeger/vim-bookmarks'
 
 "***************"
 " PYTHON

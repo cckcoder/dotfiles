@@ -13,6 +13,7 @@ source ~/dotfiles/config/mapping.vim
 source ~/dotfiles/config/vim_autocmd.vim
 source ~/dotfiles/config/anyjump.vim
 source ~/dotfiles/config/coc.vim
+source ~/dotfiles/config/bookmark.vim
 source ~/dotfiles/config/vue.vim
 source ~/dotfiles/config/vim_easy_motion.vim
 source ~/dotfiles/config/lightline.vim
