@@ -89,7 +89,7 @@ set diffopt +=iwhite
 "***************"
 " Fold
 "***************"
-set foldmethod=syntax
+set foldmethod=manual
 set foldlevel=1
 set foldclose=all
 

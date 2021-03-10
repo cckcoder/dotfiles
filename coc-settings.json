@@ -22,5 +22,8 @@
   // Jedi
   "jedi.enable": true,
   "jedi.executable.command": "jedi-language-server",
-  "jedi.trace.server": "off"
+  "jedi.trace.server": "off",
+  // Snippet
+  "snippets.userSnippetsDirectory": "$HOME/dotfiles/snippets"
+
 }
