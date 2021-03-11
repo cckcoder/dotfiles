@@ -7,11 +7,18 @@
   "coc.preferences.extensionUpdateCheck": "weekly",
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes":["javascript", "css", "markdown", "html", "yaml", "php"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "css",
+    "markdown",
+    "html",
+    "yaml",
+    "php",
+    "json"
+  ],
   "suggest.noselect": false,
   // Explorer
   "explorer.width": 30,
-  /*"explorer.icon.enableVimDevicons": true,*/
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
@@ -52,6 +59,5 @@
       "value": "  ",
       "enumMember": "  ",
       "default": "  "
-    },
-
+    }
 }
