@@ -24,6 +24,34 @@
   "jedi.executable.command": "jedi-language-server",
   "jedi.trace.server": "off",
   // Snippet
-  "snippets.userSnippetsDirectory": "$HOME/dotfiles/snippets"
+  "snippets.userSnippetsDirectory": "$HOME/dotfiles/snippets",
+  "suggest.completionItemKindLabels": {
+      "method": "  ",
+      "function": "  ",
+      "variable": "[]",
+      "field": "  ",
+      "typeParameter": "<>",
+      "constant": "  ",
+      "class": "  ",
+      "interface": " 蘒",
+      "struct": "  ",
+      "event": "  ",
+      "operator": "  ",
+      "module": "  ",
+      "property": "  ",
+      "enum": " 練",
+      "reference": "  ",
+      "keyword": "  ",
+      "file": "  ",
+      "folder": " ﱮ ",
+      "color": "  ",
+      "unit": " 塞 ",
+      "snippet": "  ",
+      "text": "  ",
+      "constructor": "  ",
+      "value": "  ",
+      "enumMember": "  ",
+      "default": "  "
+    },
 
 }
