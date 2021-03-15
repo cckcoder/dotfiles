@@ -48,4 +48,8 @@ nmap <leader>T :Tags<CR>
 nmap <leader>a :Ag!<Space>
 
 
+"***************"
+" Manual MAP
+"***************"
+:map <F5> i{{ <Esc>Ea }}<Esc>
 
