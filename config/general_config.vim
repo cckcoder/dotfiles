@@ -27,6 +27,7 @@ set wildmenu
 set complete=.,w,b,u,k
 set nopaste
 set cursorline
+set scrolloff=8
 
 "***************"
 " Make it obvious where 80 characters is
@@ -63,7 +64,6 @@ set ttimeoutlen=0
 set ttyfast
 set lazyredraw
 set title
-set nowritebackup
 set shortmess+=c
 set autoread
 set re=1
@@ -73,6 +73,7 @@ set re=1
 "***************"
 set noswapfile
 set nobackup
+set nowritebackup
 
 "***************"
 " Splite Window
