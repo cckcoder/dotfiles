@@ -1,7 +1,7 @@
-let g:maplocalleader = ','
-let g:which_key_map =  {}
-nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
-vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual ','<CR>
+let g:maplocalleader = ' '
+let g:which_key_map = {}
+nnoremap <silent> <localleader> :<c-u>WhichKey  ' '<CR>
+vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual ' '<CR>
 
 " Define a separator
 let g:which_key_sep = '→'
@@ -34,17 +34,17 @@ let g:which_key_map.v = {
 let g:which_key_map.P = {
   \ 'name': 'VimPlug',
 	\ 'i' : [':PlugInstall'    , 'PlugInstall'],
-	\ 'u' : [':PlugUpdate'    , ':lugUpdate'],
+	\ 'u' : [':PlugUpdate'    , ':PlugUpdate'],
 	\ 'c' : [':PlugClean'    , 'PlugClean'],
 	\ 'r' : [':UpdateRemotePlugin'    , 'UpdateRemotePlugins'],
 	\}
 
-let g:which_key_map.e = {
-  \ 'name': 'Explorer',
-  \ 'e' : [':CocCommand explorer', 'Explorer'],
-  \ 'f' : [':CocCommand explorer --preset floating<CR>', 'Explorer Floating'],
-  \ 'b' : [':CocCommand explorer --preset buffer<CR>', 'Explorer Buffer']
-  \}
+"let g:which_key_map.e = {
+  "\ 'name': 'Explorer',
+  "\ 'e' : [':CocCommand explorer', 'Explorer'],
+  "\ 'f' : [':CocCommand explorer --preset floating<CR>', 'Explorer Floating'],
+  "\ 'b' : [':CocCommand explorer --preset buffer<CR>', 'Explorer Buffer']
+  "\}
 
 """"""""""""""""
 " COC-Bookmark "
@@ -69,7 +69,7 @@ let g:which_key_map.A = {
 	\}
 
 " Register which key map
-call which_key#register(',', "g:which_key_map")
+call which_key#register(' ', "g:which_key_map")
 
 
 

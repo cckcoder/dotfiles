@@ -21,6 +21,7 @@ let g:coc_global_extensions = [
   \ 'coc-syntax',
   \ 'coc-dictionary',
   \ 'coc-explorer',
+  \ 'coc-java',
   \ ]
 
 inoremap <silent><expr> <TAB>
