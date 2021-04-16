@@ -35,7 +35,6 @@ Plug 'psliwka/vim-smoothie'
 Plug 'raimondi/delimitmate'
 Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'jsfaint/gen_tags.vim'
@@ -46,6 +45,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
 
 "***************"
 " PYTHON

@@ -60,12 +60,12 @@ let g:which_key_map.m = {
 	\}
 
 """"""""""""""""
-" Anyjump
+" Anyjump & Aerojump
 """"""""""""""""
 let g:which_key_map.A = {
   \ 'name': 'Anyjump',
-	\ 'j' : [':AnyJump'    , 'Jump to difinition'],
-	\ 'b' : [':AnyJumpBack'    , 'Jump Back'],
+	\ 'j' : [':AnyJump', 'Jump to difinition'],
+	\ 'b' : [':AnyJumpBack', 'Jump Back'],
 	\}
 
 " Register which key map
