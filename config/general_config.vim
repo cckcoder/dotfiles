@@ -113,6 +113,14 @@ augroup ft_python
 augroup END
 
 "***************"
+" Vue config
+"***************"
+augroup ft_vue
+  autocmd!
+  autocmd FileType vue set sw=4 ts=4 sts=4
+augroup END
+
+"***************"
 " PHP config
 "***************"
 augroup ft_php

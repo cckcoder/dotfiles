@@ -5,6 +5,7 @@ set nocompatible
 source ~/dotfiles/config/plugins.vim
 source ~/dotfiles/config/general_config.vim
 source ~/dotfiles/config/mapping.vim
+luafile ~/dotfiles/config/lua/treesitter.lua
 
 
 """""""""""""""
