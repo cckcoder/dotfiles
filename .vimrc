@@ -5,7 +5,6 @@ set nocompatible
 source ~/dotfiles/config/plugins.vim
 source ~/dotfiles/config/general_config.vim
 source ~/dotfiles/config/mapping.vim
-luafile ~/dotfiles/config/lua/treesitter.lua
 
 
 """""""""""""""
@@ -23,5 +22,11 @@ source ~/dotfiles/config/matchup.vim
 source ~/dotfiles/config/hexokinase.vim
 source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
+
+"""""""""""""""
+"   Lua config   "
+"""""""""""""""
+luafile ~/dotfiles/config/lua/treesitter.lua
+
 
 set secure
