@@ -23,9 +23,9 @@ source ~/dotfiles/config/hexokinase.vim
 source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
 
-"""""""""""""""
-"   Lua config   "
-"""""""""""""""
+""""""""""""""""
+"  Lua config  "
+""""""""""""""""
 luafile ~/dotfiles/config/lua/treesitter.lua
 
 
