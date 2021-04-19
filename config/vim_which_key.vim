@@ -39,12 +39,6 @@ let g:which_key_map.P = {
 	\ 'r' : [':UpdateRemotePlugin'    , 'UpdateRemotePlugins'],
 	\}
 
-"let g:which_key_map.e = {
-  "\ 'name': 'Explorer',
-  "\ 'e' : [':CocCommand explorer', 'Explorer'],
-  "\ 'f' : [':CocCommand explorer --preset floating<CR>', 'Explorer Floating'],
-  "\ 'b' : [':CocCommand explorer --preset buffer<CR>', 'Explorer Buffer']
-  "\}
 
 """"""""""""""""
 " COC-Bookmark "
@@ -70,6 +64,3 @@ let g:which_key_map.A = {
 
 " Register which key map
 call which_key#register(' ', "g:which_key_map")
-
-
-

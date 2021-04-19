@@ -35,44 +35,57 @@ font:
     style: Italic
 
 colors:
-  # Default colors
   primary:
-    background: "0x292d3e"
-    foreground: "0x959dcb"
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
+    background: "0x282a36"
+    foreground: "0xf8f8f2"
   cursor:
-    text: "0x292d3e"
-    cursor: "0x959dcb"
-
-  # Normal colors
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: "0x44475a"
+      background: "0x50fa7b"
+    focused_match:
+      foreground: "0x44475a"
+      background: "0xffb86c"
+    bar:
+      background: "0x282a36"
+      foreground: "0xf8f8f2"
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: "0x44475a"
   normal:
-    black: "0x292d3e"
-    red: "0xf07178"
-    green: "0xc3e88d"
-    yellow: "0xffcb6b"
-    blue: "0x82aaff"
-    magenta: "0xc792ea"
-    cyan: "0x89ddff"
-    white: "0x959dcb"
-
-  # Bright colors
+    black: "0x000000"
+    red: "0xff5555"
+    green: "0x50fa7b"
+    yellow: "0xf1fa8c"
+    blue: "0xbd93f9"
+    magenta: "0xff79c6"
+    cyan: "0x8be9fd"
+    white: "0xbfbfbf"
   bright:
-    black: "0x676e95"
-    red: "0xf07178"
-    green: "0xc3e88d"
-    yellow: "0xffcb6b"
-    blue: "0x82aaff"
-    magenta: "0xc792ea"
-    cyan: "0x89ddff"
-    white: "0xffffff"
-
-  indexed_colors:
-    - { index: 16, color: "0xf78c6c" }
-    - { index: 17, color: "0xff5370" }
-    - { index: 18, color: "0x444267" }
-    - { index: 19, color: "0x32374d" }
-    - { index: 20, color: "0x8796b0" }
-    - { index: 21, color: "0x959dcb" }
+    black: "0x4d4d4d"
+    red: "0xff6e67"
+    green: "0x5af78e"
+    yellow: "0xf4f99d"
+    blue: "0xcaa9fa"
+    magenta: "0xff92d0"
+    cyan: "0x9aedfe"
+    white: "0xe6e6e6"
+  dim:
+    black: "0x14151b"
+    red: "0xff2222"
+    green: "0x1ef956"
+    yellow: "0xebf85b"
+    blue: "0x4d5b86"
+    magenta: "0xff46b0"
+    cyan: "0x59dffc"
+    white: "0xe6e6d1"
 
 live_config_reload: true

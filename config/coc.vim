@@ -109,7 +109,3 @@ hi! link CocErrorHighlight CodeError
 hi! link CocWarningHighlight CodeWarning
 hi! link CocInfoHighlight CodeInfo
 hi! link CocHintHighlight CodeHint
-
-"********************"
-" Coc-explorer
-"********************"
