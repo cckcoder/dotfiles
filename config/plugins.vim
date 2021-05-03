@@ -22,6 +22,7 @@ Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pechorin/any-jump.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "***************"
 " Tools
@@ -89,4 +90,5 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
+
 source ~/dotfiles/config/theme.vim
