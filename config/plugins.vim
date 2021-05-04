@@ -25,15 +25,21 @@ Plug 'pechorin/any-jump.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "***************"
+" Status Line
+"***************"
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
+
+
+"***************"
 " Tools
 "***************"
 Plug 'liuchengxu/vim-which-key'
-Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'yggdroot/indentline'
 Plug 'psliwka/vim-smoothie'
 Plug 'raimondi/delimitmate'
-Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'

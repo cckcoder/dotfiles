@@ -4,8 +4,7 @@ if exists('+termguicolors')
       set termguicolors
 endif
 
-syntax on
-colorscheme onedark
+colorscheme codedark
 
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe

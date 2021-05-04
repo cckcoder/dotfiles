@@ -16,13 +16,13 @@ source ~/dotfiles/config/coc.vim
 source ~/dotfiles/config/bookmark.vim
 source ~/dotfiles/config/vue.vim
 source ~/dotfiles/config/aerojump.vim
-source ~/dotfiles/config/lightline.vim
 source ~/dotfiles/config/vim_rainbow.vim
 source ~/dotfiles/config/matchup.vim
 source ~/dotfiles/config/hexokinase.vim
 source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
 
-luafile ~/dotfiles/config/nvim_tree.lua
+luafile ~/dotfiles/config/lua/nvim_tree.lua
+luafile ~/dotfiles/config/lua/galaxyLineConfig.lua
 
 set secure
