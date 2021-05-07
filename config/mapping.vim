@@ -54,6 +54,7 @@ nnoremap <leader>p :Files<Cr>
 nnoremap <leader>bf :Buffers<CR>
 nnoremap <leader>t :BTags<CR>
 nnoremap <leader>T :Tags<CR>
+nnoremap <leader>m :Marks<CR>
 
 
 "***************"
