@@ -30,3 +30,7 @@ https://github.com/pipxproject/pipx
 # Jedi Language Server
 
 https://github.com/pappasam/jedi-language-server
+
+# Google chrome native for manjaro
+
+https://itsfoss.com/install-chrome-arch-linux/

@@ -49,7 +49,6 @@ Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'MattesGroeger/vim-bookmarks'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
 
