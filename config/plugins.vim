@@ -31,6 +31,10 @@ Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
+"***************"
+" BufferLine
+"***************"
+Plug 'akinsho/nvim-bufferline.lua'
 
 "***************"
 " Tools
@@ -49,8 +53,8 @@ Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'folke/lsp-colors.nvim'
 
 "***************"
 " PYTHON
@@ -84,6 +88,7 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'ajh17/spacegray.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
 
 "***************"
 " Autocomplete
