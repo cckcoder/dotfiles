@@ -51,7 +51,6 @@ set shiftround
 set smarttab
 set clipboard+=unnamedplus
 set ruler
-set completeopt=noinsert,menuone,noselect
 set si
 set showtabline=2
 

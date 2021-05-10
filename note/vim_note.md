@@ -104,3 +104,13 @@ https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
 for vim-hexokinase
 https://github.com/RRethy/vim-hexokinase
 
+
+
+# Lsp
+https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+
+## Python Config
+`npm install -g pyright`
+
+## Ref
+https://github.com/ChristianChiarulli/LunarVim/blob/master/init.lua

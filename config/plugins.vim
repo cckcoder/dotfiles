@@ -93,7 +93,8 @@ Plug 'mhartington/oceanic-next'
 "***************"
 " Autocomplete
 "***************"
-
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
 "***************"
