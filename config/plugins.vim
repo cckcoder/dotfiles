@@ -56,10 +56,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'folke/lsp-colors.nvim'
 
-"***************"
-" PYTHON
-"***************"
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 "***************"
 " GIT & HG

@@ -25,6 +25,8 @@ source ~/dotfiles/config/vim_which_key.vim
 luafile ~/dotfiles/config/lua/nvim_tree.lua
 luafile ~/dotfiles/config/lua/galaxyLineConfig.lua
 luafile ~/dotfiles/config/lua/compe_config.lua
+luafile ~/dotfiles/config/lua/lsp/pyright.lua
+
 lua require'bufferline'.setup{}
 
 set secure

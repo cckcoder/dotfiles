@@ -12,7 +12,7 @@ require'compe'.setup {
   allow_prefix_unmatch = false;
   max_abbr_width = 1000;
   max_kind_width = 1000;
-  max_menu_width = 1000000;
+  max_menu_width = 1000;
   documentation = true;
 
   source = {
@@ -24,7 +24,7 @@ require'compe'.setup {
     spell = true;
     tags = true;
     treesitter = true;
-    vsnip = true;
+    vsnip = false;
     ultisnips = true;
   };
 }
