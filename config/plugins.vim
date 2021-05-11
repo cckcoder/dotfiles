@@ -68,7 +68,7 @@ Plug 'tpope/vim-rhubarb'
 "***************"
 " Snippets
 "***************"
-Plug 'honza/vim-snippets'
+Plug 'hrsh7th/vim-vsnip'
 
 "***************"
 " Colorscheme

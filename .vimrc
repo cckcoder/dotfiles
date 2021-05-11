@@ -22,10 +22,11 @@ source ~/dotfiles/config/hexokinase.vim
 source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
 
-luafile ~/dotfiles/config/lua/nvim_tree.lua
-luafile ~/dotfiles/config/lua/galaxyLineConfig.lua
-luafile ~/dotfiles/config/lua/compe_config.lua
-luafile ~/dotfiles/config/lua/lsp/pyright.lua
+luafile ~/dotfiles/lua/CompeConfig.lua
+luafile ~/dotfiles/lua/NvimTree.lua
+luafile ~/dotfiles/lua/GalaxyLineConfig.lua
+luafile ~/dotfiles/lua/LspConfig.lua
+luafile ~/dotfiles/lua/LspColors.lua
 
 lua require'bufferline'.setup{}
 
