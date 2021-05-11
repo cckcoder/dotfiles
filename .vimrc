@@ -23,6 +23,7 @@ source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
 
 luafile ~/dotfiles/lua/CompeConfig.lua
+luafile ~/dotfiles/lua/NvimTreeSistter.lua
 luafile ~/dotfiles/lua/NvimTree.lua
 luafile ~/dotfiles/lua/GalaxyLineConfig.lua
 luafile ~/dotfiles/lua/LspConfig.lua

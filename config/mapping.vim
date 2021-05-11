@@ -66,7 +66,7 @@ nmap <leader>a :Ag!<Space>
 "***************"
 " Explorer
 "***************"
-nnoremap <leader>e :CocCommand explorer<CR>
+nnoremap <leader>e :NvimTreeToggle<CR>
 
 
 "***************"

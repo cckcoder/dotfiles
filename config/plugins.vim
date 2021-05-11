@@ -23,12 +23,13 @@ Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pechorin/any-jump.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
+Plug 'nvim-treesitter/playground'
 "***************"
 " Status Line
 "***************"
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ryanoasis/vim-devicons'
 
 "***************"
@@ -55,6 +56,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'folke/lsp-colors.nvim'
+
 
 
 "***************"
