@@ -56,7 +56,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ripxorip/aerojump.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'folke/lsp-colors.nvim'
-
+Plug 'kosayoda/nvim-lightbulb'
 
 
 "***************"
