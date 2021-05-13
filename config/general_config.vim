@@ -116,7 +116,15 @@ augroup END
 "***************"
 augroup ft_vue
   autocmd!
-  autocmd FileType vue set sw=4 ts=4 sts=4
+  autocmd FileType vue set sw=2 ts=2 sts=2
+augroup END
+
+"***************"
+" HTML config
+"***************"
+augroup ft_html
+  autocmd!
+  autocmd FileType html set sw=2 ts=2 sts=2
 augroup END
 
 "***************"
