@@ -96,7 +96,7 @@ set foldclose=all
 "***************"
 " Vim ignore path
 "***************"
-set wildignore+=**/env/*,**/node_modules/**,.git,.hg,*.png,*.jpg,*.gif,*.jpeg
+set wildignore+=**/env/*,**/node_modules/**,.git/*,*/.hg,*.png,*.jpg,*.gif,*.jpeg
 
 "***************"
 " Tags

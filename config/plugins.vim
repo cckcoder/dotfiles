@@ -98,5 +98,10 @@ call plug#end()
 "***************"
 " Colorscheme
 "***************"
-
 source ~/dotfiles/config/theme.vim
+
+
+" ***************"
+" Devicons
+" ***************"
+let g:webdevicons_enable = 1
