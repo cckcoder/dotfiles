@@ -57,6 +57,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'folke/lsp-colors.nvim'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'phaazon/hop.nvim'
+Plug 'moll/vim-bbye'
 
 
 "***************"

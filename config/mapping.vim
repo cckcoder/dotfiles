@@ -29,7 +29,7 @@ nnoremap <Leader>so :so %<CR>
 nmap zz :w!<CR>
 nmap <TAB> :bnext<CR>
 nmap <S-TAB> :bprevious<CR>
-nnoremap <leader>bd :bdelete<cr>
+nnoremap <leader>bd :Bdelete<cr>
 nnoremap <leader><TAB> :cnext<cr>
 nnoremap <leader><S-TAB> :cprev<cr>
 nnoremap <leader>E :copen<cr>
