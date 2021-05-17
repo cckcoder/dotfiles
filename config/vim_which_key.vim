@@ -8,8 +8,9 @@ let g:which_key_sep = '→'
 
 let g:which_key_map.q = {
 	\'name': 'Quit',
+	\ 'a' : [':wqa!', 'Save and Quit all' ],
 	\ 'q' : [':wq!', 'Quit Normal' ],
-	\ 'a' : [':qa!', 'Quit All not save' ],
+	\ 'Q' : [':qa!', 'Quit All not save' ],
 	\}
 
 let g:which_key_map.v = {
@@ -37,21 +38,9 @@ let g:which_key_map.P = {
 	\ 'u' : [':PlugUpdate'    , ':PlugUpdate'],
 	\ 'c' : [':PlugClean'    , 'PlugClean'],
 	\ 'r' : [':UpdateRemotePlugin'    , 'UpdateRemotePlugins'],
+	\ 'h' : [':checkhealth'    , 'CheckHealth'],
 	\}
 
-
-""""""""""""""""
-" COC-Bookmark "
-""""""""""""""""
-let g:which_key_map.m = {
-  \ 'name': 'Coc-Bookmark',
-	\ 'l' : [':CocList bookmark'    , 'Bookmark List'],
-	\ 't' : [':CocCommand bookmark.toggle'    , 'Bookmark Toggle'],
-	\ 'n' : [':CocCommand bookmark.next'    , 'Next Bookmark'],
-	\ 'p' : [':CocCommand bookmark.prev'    , 'Previous Bookmark'],
-	\ 'c' : [':CocCommand bookmark.clearForCurrentFile'    , 'Bookmark Clean'],
-	\ 'C' : [':CocCommand bookmark.clearForAllFiles'    , 'Bookmark Clean All Files'],
-	\}
 
 """"""""""""""""
 " Anyjump & Aerojump
@@ -60,6 +49,12 @@ let g:which_key_map.A = {
   \ 'name': 'Anyjump',
 	\ 'j' : [':AnyJump', 'Jump to difinition'],
 	\ 'b' : [':AnyJumpBack', 'Jump Back'],
+	\}
+
+
+let g:which_key_map.n = {
+	\'name': 'NvimTree',
+	\ 'f' : [':NvimTreeFindFile', 'Find current file'],
 	\}
 
 " Register which key map

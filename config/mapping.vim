@@ -1,8 +1,7 @@
 "***************"
 " NVIM SETUP
 "***************"
-tnoremap <Esc> <C-\><C-n>
-tnoremap kj <Esc>
+tnoremap kj <C-\><C-n>
 
 
 "***************"
@@ -24,7 +23,7 @@ let mapleader = " "
 " Remap
 "***************"
 nmap <leader>y :StripWhitespace<CR>
-nmap <silent> <C-L> :noh<CR>
+nmap <silent> <Leader>l :noh<CR>
 nnoremap <Leader>so :so %<CR>
 nmap zz :w!<CR>
 nmap <TAB> :bnext<CR>
@@ -39,6 +38,8 @@ vnoremap <leader>p "_dP
 vnoremap <leader>y "+y
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+inoremap kj <Esc>
 
 
 "***************"
