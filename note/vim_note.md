@@ -93,6 +93,9 @@ https://github.com/leafoftree/vim-vue-plugin
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 https://www.linode.com/docs/tools-reference/tools/how-to-install-neovim-and-plugins-with-vim-plug/
 
+# Install via wget
+`wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim `
+
 #remove Neovim
 https://www.thelinuxfaq.com/ubuntu/ubuntu-17-04-zesty-zapus/neovim?type=uninstall
 
