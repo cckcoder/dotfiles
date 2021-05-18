@@ -1,0 +1,20 @@
+{
+  "debug": {
+    "prefix": ["dd"],
+    "body": [
+      "dd($1);"
+    ],
+    "description": "debug"
+  },
+  "debug V2": {
+    "prefix": ["ddb"],
+    "body": [
+      "echo <pre>;",
+      "dd($1);",
+      "echo </pre>;",
+      "die();",
+    ],
+    "description": "debug"
+  }
+
+}

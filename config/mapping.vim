@@ -23,24 +23,38 @@ let mapleader = " "
 " Remap
 "***************"
 nmap <leader>y :StripWhitespace<CR>
-nmap <silent> <Leader>l :noh<CR>
+nnoremap <silent> <Leader>l :noh<CR>
+vnoremap <silent> <Leader>l <C-[>
+inoremap kj <Esc>
 nnoremap <Leader>so :so %<CR>
-nmap zz :w!<CR>
-nmap <TAB> :bnext<CR>
-nmap <S-TAB> :bprevious<CR>
-nnoremap <leader>bd :Bdelete<cr>
-nnoremap <leader><TAB> :cnext<cr>
-nnoremap <leader><S-TAB> :cprev<cr>
-nnoremap <leader>E :copen<cr>
+nnoremap zz :w!<CR>
 nnoremap <leader>Y gg"+yG
-
-vnoremap <leader>p "_dP
 vnoremap <leader>y "+y
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-inoremap kj <Esc>
 
+"***************"
+" Quick Fix
+"***************"
+nnoremap <leader><TAB> :cnext<cr>
+nnoremap <leader><S-TAB> :cprev<cr>
+nnoremap <leader>E :copen<cr>
+
+
+"***************"
+" Tab
+"***************"
+nnoremap tn :tabnew<CR>
+nnoremap tc :tabclose<CR>
+
+
+"***************"
+" Buffer
+"***************"
+nmap <TAB> :bnext<CR>
+nmap <S-TAB> :bprevious<CR>
+nnoremap <leader>bd :Bdelete<cr>
 
 "***************"
 " Gundo

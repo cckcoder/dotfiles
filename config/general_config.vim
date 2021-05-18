@@ -142,10 +142,6 @@ augroup ft_php
 augroup END
 
 "***************"
-" Coc json
+" Vsnip
 "***************"
-augroup ft_json
-  autocmd!
-  autocmd FileType json syntax match Comment +\/\/.\+$+
-augroup END
-
+let g:vsnip_snippet_dir = expand('~/dotfiles/vsnip')
