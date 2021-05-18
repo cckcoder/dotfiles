@@ -72,6 +72,8 @@ Plug 'tpope/vim-rhubarb'
 " Snippets
 "***************"
 Plug 'hrsh7th/vim-vsnip'
+Plug 'rafamadriz/friendly-snippets'
+
 
 "***************"
 " Colorscheme
