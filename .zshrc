@@ -95,6 +95,7 @@ alias sysupd='sudo apt-get update -y'
 alias lsc='ls -1'
 alias m='meld .'
 alias pacup='sudo pacman --noconfirm -Syyu'
+alias reb='reboot'
 fft() {
   find -type d -name "$1*"
 }
