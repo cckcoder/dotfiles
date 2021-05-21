@@ -85,6 +85,7 @@ alias hgp='hg pull'
 alias hgpu='hg push'
 alias hgst='hg st | bat'
 alias hgm='hg merge; hg ci -m"Merge."'
+alias hgup='hg up'
 
 # General
 alias dow='cd ~/Downloads'
