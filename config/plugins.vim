@@ -96,6 +96,8 @@ Plug 'mhartington/oceanic-next'
 "***************"
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'glepnir/lspsaga.nvim'
+
 call plug#end()
 
 "***************"

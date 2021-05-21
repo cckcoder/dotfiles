@@ -1,0 +1,10 @@
+{
+  "debug": {
+    "prefix": ["dd"],
+    "body": [
+      "print($1)",
+      "return"
+    ],
+    "description": "debug"
+  }
+}

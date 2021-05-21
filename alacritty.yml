@@ -67,4 +67,7 @@ colors:
     cyan: "0x99faf2"
     white: "0xffffff"
 
+
+ligature: true
+
 live_config_reload: true
