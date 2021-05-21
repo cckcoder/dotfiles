@@ -87,6 +87,10 @@ alias hgst='hg st | bat'
 alias hgm='hg merge; hg ci -m"Merge."'
 alias hgup='hg up'
 
+hgci() {
+  hg ci -m "$1*"
+}
+
 # General
 alias dow='cd ~/Downloads'
 alias d1='cd /mnt/disk_1'
