@@ -18,7 +18,6 @@ Plug 'mattn/emmet-vim'
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
 Plug 'sheerun/vim-polyglot'
-Plug 'posva/vim-vue'
 Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pechorin/any-jump.vim'
