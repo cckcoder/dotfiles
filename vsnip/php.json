@@ -12,9 +12,8 @@
       "echo <pre>;",
       "dd($1);",
       "echo </pre>;",
-      "die();",
+      "die();"
     ],
     "description": "debug"
   }
-
 }

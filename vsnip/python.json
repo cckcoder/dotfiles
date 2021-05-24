@@ -6,5 +6,12 @@
       "return"
     ],
     "description": "debug"
+  },
+  "print": {
+    "prefix": ["pr"],
+    "body": [
+      "print($1)"
+    ],
+    "description": "print"
   }
 }
