@@ -4,8 +4,6 @@ if exists('+termguicolors')
       set termguicolors
 endif
 
-colorscheme darcula
-
 " Git Gutter
 hi! link GitGutterAdd GitAddStripe
 hi! link GitGutterChange GitChangeStripe

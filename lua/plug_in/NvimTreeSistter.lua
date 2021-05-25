@@ -6,6 +6,9 @@ require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
   },
+  matchup = {
+    enable = true
+  },
   playground = {
     enable = true,
     disable = {},

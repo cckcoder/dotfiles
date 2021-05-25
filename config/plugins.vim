@@ -5,7 +5,6 @@ call plug#begin()
 " SEARCH FILE
 "***************"
 Plug 'airblade/vim-rooter'
-Plug 'mileszs/ack.vim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -78,18 +77,15 @@ Plug 'rafamadriz/friendly-snippets'
 "***************"
 " Colorscheme
 "***************"
-Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'doums/darcula'
 Plug 'pineapplegiant/spaceduck'
-Plug 'joshdick/onedark.vim'
-Plug 'haishanh/night-owl.vim'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'ajh17/spacegray.vim'
+"Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
+Plug 'navarasu/onedark.nvim'
 
 "***************"
 " Autocomplete
