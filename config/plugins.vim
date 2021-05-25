@@ -4,10 +4,11 @@ call plug#begin()
 "***************"
 " SEARCH FILE
 "***************"
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'mileszs/ack.vim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 "***************"
 " HTML & CSS

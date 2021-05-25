@@ -22,12 +22,9 @@ let mapleader = " "
 "***************"
 " Remap
 "***************"
-nmap <leader>y :StripWhitespace<CR>
 nnoremap <silent> <Leader>l :noh<CR>
 vnoremap <silent> <Leader>l <C-[>
-inoremap kj <Esc>
 nnoremap <Leader>so :so %<CR>
-nnoremap zz :w!<CR>
 nnoremap <leader>Y gg"+yG
 vnoremap <leader>y "+y
 vnoremap J :m '>+1<CR>gv=gv
@@ -43,20 +40,6 @@ nnoremap <leader>E :copen<cr>
 
 
 "***************"
-" Tab
-"***************"
-nnoremap tn :tabnew<CR>
-nnoremap tc :tabclose<CR>
-
-
-"***************"
-" Buffer
-"***************"
-nmap <TAB> :bnext<CR>
-nmap <S-TAB> :bprevious<CR>
-nnoremap <leader>bd :Bdelete<cr>
-
-"***************"
 " Gundo
 "***************"
 nmap <F5> :GundoToggle<cr>
@@ -65,23 +48,7 @@ nmap <F5> :GundoToggle<cr>
 "***************"
 " Fzf
 "***************"
-nnoremap <leader>p :Files<Cr>
-nnoremap <leader>bf :Buffers<CR>
 nnoremap <leader>t :BTags<CR>
-nnoremap <leader>T :Tags<CR>
-nnoremap <leader>m :Marks<CR>
-
-
-"***************"
-" Ack
-"***************"
-nmap <leader>a :Ag!<Space>
-
-
-"***************"
-" Explorer
-"***************"
-nnoremap <leader>e :NvimTreeToggle<CR>
 
 
 "***************"
