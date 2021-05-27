@@ -9,9 +9,9 @@
   "debug V2": {
     "prefix": ["ddb"],
     "body": [
-      "echo <pre>;",
-      "dd($1);",
-      "echo </pre>;",
+      "echo \"<pre>\";",
+      "print_r($1);",
+      "echo \"</pre>\";",
       "die();"
     ],
     "description": "debug"

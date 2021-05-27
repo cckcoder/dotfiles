@@ -46,12 +46,6 @@ nmap <F5> :GundoToggle<cr>
 
 
 "***************"
-" Fzf
-"***************"
-nnoremap <leader>t :BTags<CR>
-
-
-"***************"
 " nvim-compe
 "***************"
 inoremap <silent><expr> <C-Space> compe#complete()

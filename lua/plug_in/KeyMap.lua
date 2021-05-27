@@ -23,6 +23,7 @@ map('n', '<leader>p', ':Telescope find_files<cr>', options)
 map('n', '<leader>fb', ':Telescope buffers<cr>', options)
 map('n', '<leader>fm', ':Telescope marks<cr>', options)
 map('n', '<leader>fg', ':Telescope live_grep<cr>', options)
+map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 --[Explorer]--
 map('n', '<leader>e', ':NvimTreeToggle<CR>', options)

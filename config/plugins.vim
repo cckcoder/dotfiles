@@ -18,11 +18,11 @@ Plug 'mattn/emmet-vim'
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
 Plug 'sheerun/vim-polyglot'
-Plug 'StanAngeloff/php.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pechorin/any-jump.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
+
 "***************"
 " Status Line
 "***************"
