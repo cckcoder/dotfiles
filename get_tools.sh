@@ -1,1 +1,1 @@
-pacman -S ripgrep
+pacman -S ripgrep gawk
