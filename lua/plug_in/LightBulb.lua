@@ -7,11 +7,11 @@ require'nvim-lightbulb'.update_lightbulb {
     },
     float = {
         enabled = false,
-        text = "💡",
+        text = "ﯦ",
         win_opts = {},
     },
     virtual_text = {
         enabled = false,
-        text = "💡",
+        text = "ﯦ",
     }
 }

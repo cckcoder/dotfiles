@@ -8,7 +8,7 @@ require'compe'.setup {
   preselect = 'enable';
   throttle_time = 80;
   source_timeout = 200;
-  incomplete_delay = 400;
+  incomplete_delay = 200;
   allow_prefix_unmatch = false;
   max_abbr_width = 100;
   max_kind_width = 100;
@@ -16,15 +16,15 @@ require'compe'.setup {
   documentation = true;
 
   source = {
-    path = true;
-    buffer = true;
-    calc = true;
-    nvim_lsp = true;
-    nvim_lua = true;
-    spell = true;
-    tags = true;
-    treesitter = true;
-    vsnip = true;
+    path = {kind = "... (Path)"};
+    buffer = {kind = " (Buffer)"};
+    calc = {kind = " (Calc)"};
+    vsnip = {kind = "ﲅ (Vsnip)"};
+    nvim_lsp = {kind = " (LSP)"};
+    nvim_lua = {kind = " (Nvim Lua)"};
+    spell = {kind = " (Spell)"};
+    tags = {kind = "理(Tags)"};
+    treesitter = {kind = "繁(Treesitter)"};
     ultisnips = false;
   };
 }
