@@ -34,3 +34,6 @@ https://github.com/pappasam/jedi-language-server
 # Google chrome native for manjaro
 
 https://itsfoss.com/install-chrome-arch-linux/
+
+# gnomepomodoro
+https://gnomepomodoro.org/
