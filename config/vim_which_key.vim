@@ -42,16 +42,6 @@ let g:which_key_map.P = {
 	\}
 
 
-""""""""""""""""
-" Anyjump & Aerojump
-""""""""""""""""
-let g:which_key_map.A = {
-  \ 'name': 'Anyjump',
-	\ 'j' : [':AnyJump', 'Jump to difinition'],
-	\ 'b' : [':AnyJumpBack', 'Jump Back'],
-	\}
-
-
 let g:which_key_map.n = {
 	\'name': 'NvimTree',
 	\ 'f' : [':NvimTreeFindFile', 'Find current file'],

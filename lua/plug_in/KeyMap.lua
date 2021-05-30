@@ -10,7 +10,6 @@ map('n', 'tc', ':tabclose<cr>', options)
 map('n', '<TAB>', ':bnext<cr>', options)
 map('n', '<S-TAB>', ':bprevious<cr>', options)
 map('n', '<leader>db', ':bdelete!<cr>', options)
-map('n', '<leader>a', ':Ag! ', options)
 map('n', '<leader>y', ':StripWhitespace<CR>', options)
 map('n', 'zz', ':w!<cr>', options)
 
@@ -31,3 +30,9 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
 --[LspSaga]--
 map('n', '<A-d>', ':Lspsaga open_floaterm<CR>', options)
 map('n', '<A-c>', ':Lspsaga close_floaterm<CR>', options)
+
+--[anyjump]--
+map('n', '<leader>J', ':AnyJump<CR>', options)
+map('x', '<leader>J', ':AnyJumpVisual<CR>', options)
+map('n', '<leader>jb', ':AnyJumpBack<CR>', options)
+map('n', '<leader>jl', ':AnyJumpLastResults<CR>', options)
