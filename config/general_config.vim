@@ -17,7 +17,7 @@ set wrap
 set linespace=4 "Like line height in CSS
 set linebreak "Soft word wrap
 set display+=lastline,msgsep
-set pumheight=10
+set pumheight=15
 set cmdheight=2
 
 set showmatch
@@ -45,13 +45,12 @@ set numberwidth=5
 " Tabs and spacing
 "***************"
 set laststatus=2
-set autoindent expandtab
+set autoindent expandtab si
 set tabstop=2 shiftwidth=2 softtabstop=2
 set shiftround
 set smarttab
 set clipboard+=unnamedplus
 set ruler
-set si
 set showtabline=2
 
 "***************"

@@ -1,3 +1,3 @@
-vim.cmd[[colorscheme darcula]]
+vim.cmd('colorscheme onedark')
 
 

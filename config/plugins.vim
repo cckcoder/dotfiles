@@ -30,6 +30,7 @@ Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'ryanoasis/vim-devicons'
+Plug 'folke/trouble.nvim'
 
 "***************"
 " BufferLine
@@ -58,7 +59,6 @@ Plug 'kosayoda/nvim-lightbulb'
 Plug 'phaazon/hop.nvim'
 Plug 'moll/vim-bbye'
 Plug 'onsails/lspkind-nvim'
-
 
 "***************"
 " GIT & HG

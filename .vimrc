@@ -1,6 +1,5 @@
 filetype plugin on
 syntax enable
-set nocompatible
 
 
 source ~/dotfiles/config/plugins.vim
@@ -11,7 +10,6 @@ source ~/dotfiles/config/mapping.vim
 """""""""""""""
 "   PLUG-IN   "
 """""""""""""""
-source ~/dotfiles/config/vim_autocmd.vim
 source ~/dotfiles/config/anyjump.vim
 source ~/dotfiles/config/bookmark.vim
 source ~/dotfiles/config/vim_rainbow.vim

@@ -8,11 +8,11 @@ require'compe'.setup {
   preselect = 'enable';
   throttle_time = 80;
   source_timeout = 200;
-  incomplete_delay = 200;
+  incomplete_delay = 300;
   allow_prefix_unmatch = false;
-  max_abbr_width = 100;
-  max_kind_width = 100;
-  max_menu_width = 100;
+  max_abbr_width = 400;
+  max_kind_width = 400;
+  max_menu_width = 400;
   documentation = true;
 
   source = {
@@ -25,7 +25,6 @@ require'compe'.setup {
     spell = {kind = " (Spell)"};
     tags = {kind = "理(Tags)"};
     treesitter = {kind = "繁(Treesitter)"};
-    ultisnips = false;
   };
 }
 
@@ -42,9 +41,6 @@ local check_back_space = function()
     end
 end
 
--- Use (s-)tab to:
---- move to prev/next item in completion menuone
---- jump to prev/next snippet's placeholder
 _G.tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-n>"
