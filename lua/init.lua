@@ -12,6 +12,7 @@ require('plug_in.TeleScope')
 require('plug_in.KeyMap')
 require('plug_in.LspKind')
 require('plug_in.Trouble')
+require('plug_in.SymbolsOutline')
 
 vim.g.loaded_matchit = 1
 

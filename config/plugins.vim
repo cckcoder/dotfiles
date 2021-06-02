@@ -17,7 +17,6 @@ Plug 'mattn/emmet-vim'
 "***************"
 " SYNTAX CHECK & HIGHLIGHT
 "***************"
-Plug 'sheerun/vim-polyglot'
 Plug 'lepture/vim-jinja'
 Plug 'pechorin/any-jump.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -59,6 +58,7 @@ Plug 'kosayoda/nvim-lightbulb'
 Plug 'phaazon/hop.nvim'
 Plug 'moll/vim-bbye'
 Plug 'onsails/lspkind-nvim'
+Plug 'simrat39/symbols-outline.nvim'
 
 "***************"
 " GIT & HG
@@ -87,6 +87,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'navarasu/onedark.nvim'
+Plug 'romgrk/doom-one.vim'
 
 "***************"
 " Autocomplete

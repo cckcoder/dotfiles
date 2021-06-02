@@ -18,6 +18,6 @@ source ~/dotfiles/config/hexokinase.vim
 source ~/dotfiles/config/plugin_config.vim
 source ~/dotfiles/config/vim_which_key.vim
 
-luafile ~/dotfiles/lua/config.lua
+luafile ~/dotfiles/lua/init.lua
 
 set secure
