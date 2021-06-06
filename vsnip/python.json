@@ -13,5 +13,11 @@
       "print($1)"
     ],
     "description": "print"
+  },
+  "async func": {
+    "prefix": ["adef"],
+    "body": [
+      "async def $1($2):"
+    ]
   }
 }

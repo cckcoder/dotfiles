@@ -37,3 +37,6 @@ https://itsfoss.com/install-chrome-arch-linux/
 
 # gnomepomodoro
 https://gnomepomodoro.org/
+
+# Nvim-Awesome
+* [Nvim Awesome](https://nvim-awesome.vercel.app/)
