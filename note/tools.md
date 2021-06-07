@@ -39,4 +39,11 @@ https://itsfoss.com/install-chrome-arch-linux/
 https://gnomepomodoro.org/
 
 # Nvim-Awesome
+
 * [Nvim Awesome](https://nvim-awesome.vercel.app/)
+* [Indentation](https://github.com/lukas-reineke/indent-blankline.nvim)
+* [Signature](https://github.com/ray-x/lsp_signature.nvim)
+* [Markdown](https://github.com/euclio/vim-markdown-composer)
+* [Lsp-Installer](https://github.com/williamboman/nvim-lsp-installer)
+* [Vimrc to lua](https://github.com/svermeulen/vimpeccable)
+
