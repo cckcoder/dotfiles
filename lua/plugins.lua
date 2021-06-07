@@ -16,4 +16,18 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+  --[[ Reload Config ]]--
+
+  --[[ Complete ]]--
+  use 'hrsh7th/nvim-compe'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+  }
+
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } 
+  use 'hrsh7th/vim-vsnip'
+  use 'rafamadriz/friendly-snippets'
+  use 'neovim/nvim-lspconfig'
+
 end)
