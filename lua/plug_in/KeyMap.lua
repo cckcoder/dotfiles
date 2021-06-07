@@ -21,6 +21,7 @@ map('n', '<leader>h', ':noh<cr>', options)
 --[Insert Mode]--
 map('i', 'kj', '<ESC>', options)
 
+
 --[TeleScope]--
 map('n', '<leader>p', ':Telescope find_files<cr>', options)
 map('n', '<leader>b', ':Telescope buffers<cr>', options)
@@ -28,8 +29,10 @@ map('n', '<leader>sm', ':Telescope marks<cr>', options)
 map('n', '<leader>a', ':Telescope live_grep<cr>', options)
 map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
+
 --[Explorer]--
 map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
+
 
 --[LspSaga]--
 map('n', '<A-d>', ':Lspsaga open_floaterm<CR>', options2)
@@ -40,11 +43,22 @@ map('n', '<A-c>', ':Lspsaga close_floaterm<CR>', options2)
 map('n', '[e', ':Lspsaga diagnostic_jump_next<CR>', options2)
 map('n', ']e', ':Lspsaga diagnostic_jump_prev<CR>', options2)
 
+
 --[anyjump]--
 map('n', '<leader>AA', ':AnyJump<CR>', options)
 map('x', '<leader>AA', ':AnyJumpVisual<CR>', options)
 map('n', '<leader>jb', ':AnyJumpBack<CR>', options)
 map('n', '<leader>jl', ':AnyJumpLastResults<CR>', options)
 
+
 --[SymbolsOutLine]--
 map('n', '<leader>ol', ':SymbolsOutline<CR>', options)
+
+
+--[[Compe]]--
+vim.cmd('inoremap <silent><expr> <C-Space> compe#complete()')
+vim.cmd("inoremap <silent><expr> <CR>      compe#confirm('<CR>')")
+vim.cmd("inoremap <silent><expr> <C-e>     compe#close('<C-e>')")
+vim.cmd("inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })")
+vim.cmd("inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })")
+

@@ -9,3 +9,4 @@ require('plug_in/CompeConfig')
 require('plug_in/TeleScope')
 require('plug_in/NvimTreeSistter')
 require('plug_in/LspConfig')
+require 'colorizer'.setup{ '*'; }

@@ -3,6 +3,7 @@ vim.cmd('set clipboard+=unnamedplus')
 vim.cmd('set autoindent expandtab si')
 
 
+vim.o.termguicolors = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.smarttab = true

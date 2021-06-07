@@ -11,8 +11,6 @@ end
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use {'dracula/vim', as = 'dracula'}
-
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
@@ -29,5 +27,10 @@ return require('packer').startup(function()
   use 'hrsh7th/vim-vsnip'
   use 'rafamadriz/friendly-snippets'
   use 'neovim/nvim-lspconfig'
+  use 'norcalli/nvim-colorizer.lua'
 
+
+  --[[Theme]]--
+  use {'dracula/vim', as = 'dracula'}
+  use {'ray-x/aurora', as = 'aurora' }
 end)
