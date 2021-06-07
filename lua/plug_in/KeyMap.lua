@@ -1,3 +1,5 @@
+
+vim.g.mapleader = ' '
 local map = vim.api.nvim_set_keymap
 
 options = { noremap = true }
@@ -13,6 +15,7 @@ map('n', '<S-TAB>', ':bprevious<cr>', options)
 map('n', '<leader>db', ':bdelete!<cr>', options)
 map('n', '<leader>y', ':StripWhitespace<CR>', options)
 map('n', 'zz', ':w!<cr>', options)
+map('n', '<leader>h', ':noh<cr>', options)
 
 
 --[Insert Mode]--
