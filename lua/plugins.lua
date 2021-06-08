@@ -39,6 +39,7 @@ return require('packer').startup(function()
   use 'raimondi/delimitmate'
   use 'andymass/vim-matchup'
   use 'kosayoda/nvim-lightbulb'
+  use 'pechorin/any-jump.vim'
   use {
     'phaazon/hop.nvim', 
     as = 'hop',

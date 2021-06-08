@@ -29,6 +29,19 @@ wk.register({
     r = { ":Lspsaga rename<CR>", "Saga Rename"},
     p = { ":Lspsaga preview_definition<CR>", "Saga Preview Definit"},
     d = { ":Lspsaga hover_doc<CR>", "Saga Hoverdoc"},
+  },
+  j = {
+    name = "AnyJump",
+    j = { ":AnyJump<CR>", "AnyJump" },
+    j = { ":AnyJump<CR>", "AnyJump" },
+    b = { ":AnyJumpBack<CR>", "AnyJumpBack" },
+    l = { ":AnyJumpLastResults<CR>", "AnyJumpLastResults" }
   }
 
 }, { prefix = "<leader>"})
+
+--[anyjump]--
+--map('n', '<leader>AA', ':AnyJump<CR>', options)
+--map('x', '<leader>AA', ':AnyJumpVisual<CR>', options)
+--map('n', '<leader>jb', ':AnyJumpBack<CR>', options)
+--map('n', '<leader>jl', ':AnyJumpLastResults<CR>', options)

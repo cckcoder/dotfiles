@@ -44,11 +44,6 @@ map('n', '[e', ':Lspsaga diagnostic_jump_next<CR>', options2)
 map('n', ']e', ':Lspsaga diagnostic_jump_prev<CR>', options2)
 
 
---[anyjump]--
-map('n', '<leader>AA', ':AnyJump<CR>', options)
-map('x', '<leader>AA', ':AnyJumpVisual<CR>', options)
-map('n', '<leader>jb', ':AnyJumpBack<CR>', options)
-map('n', '<leader>jl', ':AnyJumpLastResults<CR>', options)
 
 
 --[SymbolsOutLine]--
