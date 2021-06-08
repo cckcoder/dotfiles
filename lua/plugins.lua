@@ -14,7 +14,6 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
-  --[[ Reload Config ]]--
 
   --[[ Complete ]]--
   use 'hrsh7th/nvim-compe'
@@ -32,5 +31,34 @@ return require('packer').startup(function()
 
   --[[Theme]]--
   use {'dracula/vim', as = 'dracula'}
-  use {'ray-x/aurora', as = 'aurora' }
+
+
+  --[[Tools]]--
+  use 'tpope/vim-unimpaired'
+  use 'machakann/vim-highlightedyank'
+  use 'raimondi/delimitmate'
+  use 'andymass/vim-matchup'
+  use 'kosayoda/nvim-lightbulb'
+  use {
+    'phaazon/hop.nvim', 
+    as = 'hop',
+    config = function() require("hop").setup({}) end
+  }
+  use 'airblade/vim-rooter'
+  use {
+    'glepnir/galaxyline.nvim',
+    branch = 'main',
+    config = function() require'my_statusline' end,
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
+  use {
+    "folke/which-key.nvim",
+    config = function() require("which-key").setup {} end
+  }
+  use { 
+    'onsails/lspkind-nvim',
+    as = 'lspkind',
+    config = function() require("lspkind").setup {} end
+  }
+  use { 'glepnir/lspsaga.nvim' }
 end)
