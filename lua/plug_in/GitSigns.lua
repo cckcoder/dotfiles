@@ -47,7 +47,7 @@
             ['+'] = '₊',
         },
         numhl = false,
-       linehl = false,
+        linehl = false,
         keymaps = {
             -- Default keymap options
             noremap = true,

@@ -33,6 +33,9 @@ return require('packer').startup(function()
     use {'dracula/vim', as = 'dracula'}
 
 
+    --[[Git and HG]]--
+    use { 'mhinz/vim-signify' }
+
     --[[Tools]]--
     use 'tpope/vim-unimpaired'
     use 'machakann/vim-highlightedyank'
@@ -40,6 +43,7 @@ return require('packer').startup(function()
     use 'andymass/vim-matchup'
     use 'kosayoda/nvim-lightbulb'
     use 'pechorin/any-jump.vim'
+    use 'yggdroot/indentline'
     use {
         'phaazon/hop.nvim', 
         as = 'hop',
@@ -66,8 +70,6 @@ return require('packer').startup(function()
         'zsugabubus/crazy8.nvim',
         event = { 'BufRead' } 
     }
-    use {
-        'lewis6991/gitsigns.nvim',
-        requires = { 'nvim-lua/plenary.nvim' }
-    }
+
 end)
+

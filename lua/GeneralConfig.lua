@@ -2,10 +2,9 @@ local opt = vim.opt
 local fn = vim.fn
 local cmd = vim.cmd
 
-vim.cmd('set encoding=utf-8')
-vim.cmd('set autoindent expandtab si')
 
 --[[Utils]]--
+opt.encoding = "utf-8"
 opt.clipboard = "unnamedplus"
 opt.completeopt = { "menuone", "noselect" }
 vim.o.termguicolors = true
@@ -48,6 +47,7 @@ vim.o.wildignore = "**/env/*,**/node_modules/**,.git/*,*/.hg,*.png,*.jpg,*.gif,*
 vim.g.vsnip_snippet_dir = "~/dotfiles/vsnip"
 
 --[[Indentation]]--
+opt.autoindent = true
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.smartindent = true -- Insert indents automatically
