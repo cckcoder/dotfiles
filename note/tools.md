@@ -47,3 +47,7 @@ https://gnomepomodoro.org/
 * [Lsp-Installer](https://github.com/williamboman/nvim-lsp-installer)
 * [Vimrc to lua](https://github.com/svermeulen/vimpeccable)
 
+# Example Nvim config
+
+* [disrupted](https://github.com/disrupted/dotfiles)
+* [NvChad](https://github.com/siduck76/NvChad)
