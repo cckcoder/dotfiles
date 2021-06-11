@@ -16,7 +16,7 @@ dynamic_title: true
 decorations: full
 
 font:
-  size: 13
+  size: 12
 
   offset:
     x: 0

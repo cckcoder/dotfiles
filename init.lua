@@ -14,6 +14,7 @@ require('plug_in/WhichKey')
 require('plug_in/LspKind')
 require('plug_in/LspSaga')
 require('plug_in/LightBulb')
+require('plug_in/GitSigns')
 require 'colorizer'.setup{ '*'; }
 
 vim.cmd('let g:loaded_matchit = 1')

@@ -63,4 +63,6 @@ vim.cmd("nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll
 vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
 
 
---[[Saga Scroll]]--
+--[[Better indenting]]--
+map('v', '<', '<gv', options)
+map('v', '>', '>gv', options)

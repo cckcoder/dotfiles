@@ -10,56 +10,64 @@ end
 
 
 return require('packer').startup(function()
-  use 'wbthomason/packer.nvim'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
+    use 'wbthomason/packer.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'kyazdani42/nvim-tree.lua'
 
 
-  --[[ Complete ]]--
-  use 'hrsh7th/nvim-compe'
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-  }
+    --[[ Complete ]]--
+    use 'hrsh7th/nvim-compe'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+    }
 
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } 
-  use 'hrsh7th/vim-vsnip'
-  use 'rafamadriz/friendly-snippets'
-  use 'neovim/nvim-lspconfig'
-  use 'norcalli/nvim-colorizer.lua'
-
-
-  --[[Theme]]--
-  use {'dracula/vim', as = 'dracula'}
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } 
+    use 'hrsh7th/vim-vsnip'
+    use 'rafamadriz/friendly-snippets'
+    use 'neovim/nvim-lspconfig'
+    use 'norcalli/nvim-colorizer.lua'
 
 
-  --[[Tools]]--
-  use 'tpope/vim-unimpaired'
-  use 'machakann/vim-highlightedyank'
-  use 'raimondi/delimitmate'
-  use 'andymass/vim-matchup'
-  use 'kosayoda/nvim-lightbulb'
-  use 'pechorin/any-jump.vim'
-  use {
-    'phaazon/hop.nvim', 
-    as = 'hop',
-    config = function() require("hop").setup({}) end
-  }
-  use 'airblade/vim-rooter'
-  use {
-    'glepnir/galaxyline.nvim',
-    branch = 'main',
-    config = function() require'my_statusline' end,
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
-  use {
-    "folke/which-key.nvim",
-    config = function() require("which-key").setup {} end
-  }
-  use { 
-    'onsails/lspkind-nvim',
-    as = 'lspkind',
-    config = function() require("lspkind").setup {} end
-  }
-  use { 'glepnir/lspsaga.nvim' }
+    --[[Theme]]--
+    use {'dracula/vim', as = 'dracula'}
+
+
+    --[[Tools]]--
+    use 'tpope/vim-unimpaired'
+    use 'machakann/vim-highlightedyank'
+    use 'raimondi/delimitmate'
+    use 'andymass/vim-matchup'
+    use 'kosayoda/nvim-lightbulb'
+    use 'pechorin/any-jump.vim'
+    use {
+        'phaazon/hop.nvim', 
+        as = 'hop',
+        config = function() require("hop").setup({}) end
+    }
+    use 'airblade/vim-rooter'
+    use {
+        'glepnir/galaxyline.nvim',
+        branch = 'main',
+        config = function() require'my_statusline' end,
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
+    use {
+        "folke/which-key.nvim",
+        config = function() require("which-key").setup {} end
+    }
+    use { 
+        'onsails/lspkind-nvim',
+        as = 'lspkind',
+        config = function() require("lspkind").setup {} end
+    }
+    use { 'glepnir/lspsaga.nvim' }
+    use { 
+        'zsugabubus/crazy8.nvim',
+        event = { 'BufRead' } 
+    }
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = { 'nvim-lua/plenary.nvim' }
+    }
 end)

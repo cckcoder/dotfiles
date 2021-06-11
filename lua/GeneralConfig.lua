@@ -1,22 +1,29 @@
-vim.cmd('set encoding=utf-8')
-vim.cmd('set clipboard+=unnamedplus')
-vim.cmd('set autoindent expandtab si')
-vim.cmd('set tabstop=2 shiftwidth=2 softtabstop=2')
+local opt = vim.opt
+local fn = vim.fn
+local cmd = vim.cmd
 
+vim.cmd('set encoding=utf-8')
+vim.cmd('set autoindent expandtab si')
+
+--[[Utils]]--
+opt.clipboard = "unnamedplus"
+opt.completeopt = { "menuone", "noselect" }
 vim.o.termguicolors = true
-vim.o.ignorecase = true
-vim.o.smartcase = true
+if fn.filereadable '~/neovim3/bin/python3.9' then
+    vim.g.python3_host_prog = '~/neovim3/bin/python3.9'
+end
+
 vim.o.smarttab = true
 vim.o.shiftround = true
 vim.o.incsearch = true
-vim.o.completeopt = "menuone,noselect"
 vim.o.cursorline = true
 vim.o.linespace = 4
 vim.o.linebreak = true
 vim.o.hidden = true
-vim.o.showmatch = true
 vim.o.wildmenu = true
 vim.o.autoread = true
+opt.pumblend = 7
+opt.pumheight = 20 
 
 --[[Number Group]]--
 vim.o.number = true
@@ -40,3 +47,27 @@ vim.o.wildignore = "**/env/*,**/node_modules/**,.git/*,*/.hg,*.png,*.jpg,*.gif,*
 --[[Vsnip]]--
 vim.g.vsnip_snippet_dir = "~/dotfiles/vsnip"
 
+--[[Indentation]]--
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.smartindent = true -- Insert indents automatically
+opt.tabstop = 4 -- Number of spaces tabs count for
+opt.softtabstop = 4
+opt.shiftround = true -- Round indent
+opt.joinspaces = false -- No double spaces with join after a dot
+
+--[[Display]]--
+opt.wrap = true
+opt.lazyredraw = true
+opt.list = true
+
+--[[Backup]]--
+opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
+
+--[[Search]]--
+opt.ignorecase = true
+opt.smartcase = true
+opt.wrapscan = true
+opt.showmatch = true

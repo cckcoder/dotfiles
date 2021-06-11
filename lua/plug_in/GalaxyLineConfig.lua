@@ -164,6 +164,8 @@ gls.left[3] = {
     separator_highlight = {colors.purple,colors.bg},
     condition = buffer_not_empty,
     highlight = {colors.grey,colors.bg},
+    separator = '  ',
+    separator_highlight = { colors.section_bg, colors.bg },
   }
 }
 
@@ -204,7 +206,7 @@ gls.left[6] = {
         provider = get_current_file_name,
         condition = buffer_not_empty,
         highlight = { colors.fg, colors.section_bg },
-        separator = '',
+        separator = ' ',
         separator_highlight = { colors.section_bg, colors.bg },
     },
 }
@@ -297,7 +299,7 @@ gls.right[2] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = '  ',
-    separator_highlight = {colors.purple,colors.bg},
+    separator_highlight = {colors.grey,colors.bg},
     highlight = {colors.grey,colors.bg},
   },
 }
@@ -305,7 +307,7 @@ gls.right[3] = {
   PerCent = {
     provider = 'LinePercent',
     separator = ' ',
-    separator_highlight = {colors.purple,colors.bg},
+    separator_highlight = {colors.grey,colors.bg},
     highlight = {colors.grey,colors.bg},
   }
 }
