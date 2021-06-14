@@ -37,9 +37,6 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
 --[LspSaga]--
 map('n', '<A-d>', ':Lspsaga open_floaterm<CR>', options2)
 map('n', '<A-c>', ':Lspsaga close_floaterm<CR>', options2)
---map('n', ';fd', ':Lspsaga lsp_finder<CR>', options2)
---map('n', ';pd', ':Lspsaga preview_definition<CR>', options2)
---map('n', ';ca', ':Lspsaga code_action<CR>', options2)
 map('n', '[e', ':Lspsaga diagnostic_jump_next<CR>', options2)
 map('n', ']e', ':Lspsaga diagnostic_jump_prev<CR>', options2)
 

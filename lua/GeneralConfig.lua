@@ -60,6 +60,7 @@ opt.joinspaces = false -- No double spaces with join after a dot
 opt.wrap = true
 opt.lazyredraw = true
 opt.list = true
+opt.showcmd = true
 
 --[[Backup]]--
 opt.swapfile = false

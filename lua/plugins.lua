@@ -31,7 +31,7 @@ return require('packer').startup(function()
 
     --[[Theme]]--
     use {'dracula/vim', as = 'dracula'}
-
+    use 'doums/darcula'
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }
