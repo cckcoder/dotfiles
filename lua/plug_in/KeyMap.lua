@@ -16,6 +16,10 @@ map('n', '<leader>db', ':bdelete!<cr>', options)
 map('n', '<leader>y', ':StripWhitespace<CR>', options)
 map('n', 'zz', ':w!<cr>', options)
 map('n', '<leader>h', ':noh<cr>', options)
+map('n', '<C-j>', '<C-w>j', options)
+map('n', '<C-k>', '<C-w>k', options)
+map('n', '<C-h>', '<C-w>h', options)
+map('n', '<C-l>', '<C-w>l', options)
 
 
 --[Insert Mode]--
@@ -60,6 +64,12 @@ vim.cmd("nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll
 vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
 
 
+--[Visual Mode]--
 --[[Better indenting]]--
 map('v', '<', '<gv', options)
 map('v', '>', '>gv', options)
+map('v', 'J', ":m '>+1<CR>gv=gv", options)
+map('v', 'K', ":m '<-2<CR>gv=gv", options)
+
+
+--[Visual Mode]--

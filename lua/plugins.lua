@@ -32,6 +32,11 @@ return require('packer').startup(function()
     --[[Theme]]--
     use {'dracula/vim', as = 'dracula'}
     use 'doums/darcula'
+    use { 
+        "npxbr/gruvbox.nvim",
+        requires = {"rktjmp/lush.nvim"}
+    }
+    use "rafamadriz/neon"
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }
