@@ -16,6 +16,7 @@ require('plug_in/LspSaga')
 require('plug_in/LightBulb')
 require('plug_in/IndentLine')
 require('plug_in/Signify')
+require('plug_in/SymbolsOutline')
 require 'colorizer'.setup{ '*'; }
 
 vim.cmd('let g:loaded_matchit = 1')

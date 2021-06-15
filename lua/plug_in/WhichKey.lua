@@ -36,12 +36,9 @@ wk.register({
     j = { ":AnyJump<CR>", "AnyJump" },
     b = { ":AnyJumpBack<CR>", "AnyJumpBack" },
     l = { ":AnyJumpLastResults<CR>", "AnyJumpLastResults" }
+  },
+  o = {
+    name = "SymbolOutLine",
+    l = { ":SymbolsOutline<CR>", "SymbolOutLine" },
   }
-
 }, { prefix = "<leader>"})
-
---[anyjump]--
---map('n', '<leader>AA', ':AnyJump<CR>', options)
---map('x', '<leader>AA', ':AnyJumpVisual<CR>', options)
---map('n', '<leader>jb', ':AnyJumpBack<CR>', options)
---map('n', '<leader>jl', ':AnyJumpLastResults<CR>', options)

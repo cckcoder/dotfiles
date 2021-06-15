@@ -75,6 +75,7 @@ return require('packer').startup(function()
         'zsugabubus/crazy8.nvim',
         event = { 'BufRead' } 
     }
+    use { 'simrat39/symbols-outline.nvim' }
 
 end)
 

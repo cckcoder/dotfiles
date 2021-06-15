@@ -47,8 +47,6 @@ map('n', ']e', ':Lspsaga diagnostic_jump_prev<CR>', options2)
 
 
 
---[SymbolsOutLine]--
-map('n', '<leader>ol', ':SymbolsOutline<CR>', options)
 
 
 --[[Compe]]--
