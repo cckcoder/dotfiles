@@ -18,6 +18,13 @@ local colors = {
   red = '#D16969',
 }
 
+local sep = {
+  right_filled = '', -- e0b2
+  left_filled = ' ', -- e0b0
+  right = '  ', -- e0b3
+  left = '  ', -- e0b1
+}
+
 local function get_mode_color()
   local mode_color = {
     n = colors.purple, 
@@ -138,14 +145,8 @@ gls.left[1] = {
       vim.api.nvim_command('hi GalaxyViMode guibg='..mode_color[vim.fn.mode()])
       return '  CodeWizz  '
     end,
-    separator = ' ',
-    separator_highlight = {color_mode, function()
-      if not buffer_not_empty() then
-        return colors.bg
-      end
-      return colors.bg
-    end},
-    highlight = {colors.gray ,colors.bg,'bold'},
+    separator = sep.left_filled,
+    separator_highlight = {colors.purple , colors.bg }
   },
 }
 
@@ -164,7 +165,7 @@ gls.left[3] = {
     separator_highlight = {colors.purple,colors.bg},
     condition = buffer_not_empty,
     highlight = {colors.grey,colors.bg},
-    separator = '  ',
+    separator = sep.left,
     separator_highlight = { colors.section_bg, colors.bg },
   }
 }
@@ -206,7 +207,7 @@ gls.left[6] = {
         provider = get_current_file_name,
         condition = buffer_not_empty,
         highlight = { colors.fg, colors.section_bg },
-        separator = ' ',
+        separator = sep.left,
         separator_highlight = { colors.section_bg, colors.bg },
     },
 }
@@ -298,7 +299,7 @@ gls.right[1]= {
 gls.right[2] = {
   LineInfo = {
     provider = 'LineColumn',
-    separator = '  ',
+    separator = sep.right,
     separator_highlight = {colors.grey,colors.bg},
     highlight = {colors.grey,colors.bg},
   },
@@ -306,7 +307,7 @@ gls.right[2] = {
 gls.right[3] = {
   PerCent = {
     provider = 'LinePercent',
-    separator = ' ',
+    separator = sep.right,
     separator_highlight = {colors.grey,colors.bg},
     highlight = {colors.grey,colors.bg},
   }
