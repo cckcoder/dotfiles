@@ -1,4 +1,6 @@
 local gl = require('galaxyline')
+local fileinfo = require("galaxyline.provider_fileinfo")
+local devicon = require("nvim-web-devicons")
 local gls = gl.section
 local utils = require('plug_in/Utils')
 
@@ -20,42 +22,18 @@ local colors = {
 
 local sep = {
   right_filled = '', -- e0b2
-  left_filled = ' ', -- e0b0
+  left_filled = '', -- e0b0
   right = '  ', -- e0b3
   left = '  ', -- e0b1
 }
 
-local function get_mode_color()
-  local mode_color = {
-    n = colors.purple, 
-    i = colors.green,
-    v = colors.blue,
-    [''] = colors.blue,
-    V = colors.blue,
-    c = colors.purple,
-    no = colors.magenta,
-    s = colors.orange,
-    S = colors.orange,
-    [''] = colors.orange,
-    ic = colors.yellow,
-    R = colors.red,
-    Rv = colors.red,
-    cv = colors.red,
-    ce=colors.red, 
-    r = colors.cyan,
-    rm = colors.cyan, 
-    ['r?'] = colors.cyan,
-    ['!']  = colors.red,
-    t = colors.red
-  }
-  return mode_color[vim.fn.mode()]
+local function highlight(group, fg, bg, gui)
+  local cmd = string.format('highlight %s guifg=%s guibg=%s', group, fg, bg)
+  if gui ~= nil then
+    cmd = cmd .. ' gui=' .. gui
+  end
+  vim.cmd(cmd)
 end
-
-local color_mode = function()
-  return get_mode_color()
-end
-
-
 
 local function file_readonly()
     if vim.bo.filetype == 'help' then
@@ -119,7 +97,6 @@ end
 gls.left[1] = {
   ViMode = {
     provider = function()
-      -- auto change color according the vim mode
       local mode_color = {
         n = colors.purple, 
         i = colors.green,
@@ -142,47 +119,31 @@ gls.left[1] = {
         ['!']  = colors.red,
         t = colors.red
       }
-      vim.api.nvim_command('hi GalaxyViMode guibg='..mode_color[vim.fn.mode()])
-      return '  CodeWizz  '
+      highlight('GalaxyViMode', colors.grey, mode_color[vim.fn.mode()], 'bold')
+      highlight('GalaxyViModeInv', mode_color[vim.fn.mode()], colors.bg, 'bold')
+      return string.format(' %s ',  ' CodeWizz  ')
     end,
     separator = sep.left_filled,
-    separator_highlight = {colors.purple , colors.bg }
+    separator_highlight = 'GalaxyViModeInv',
   },
 }
 
 gls.left[2] = {
-  GitIcon = {
-    provider = function() return ' ' end,
-    condition = buffer_not_empty,
-    highlight = {colors.orange,colors.bg},
-  }
-}
-
-gls.left[3] = {
-  GitBranch = {
-    provider = 'GitBranch',
-    separator = ' ',
-    separator_highlight = {colors.purple,colors.bg},
-    condition = buffer_not_empty,
-    highlight = {colors.grey,colors.bg},
-    separator = sep.left,
-    separator_highlight = { colors.section_bg, colors.bg },
-  }
-}
-
-gls.left[4] = {
   FileIcon = {
-    provider = { function() 
-        return '' 
-    end, 'FileIcon' },
-    highlight = {
-      require('galaxyline.provider_fileinfo').get_file_icon,
-      colors.section_bg,
+    provider = function()
+        local fname, ext = vim.fn.expand '%:t', vim.fn.expand '%:e'
+        local icon, iconhl = devicon.get_icon(fname, ext)
+        if icon == nil then
+            return ''
+        end
+        local fg = vim.fn.synIDattr(vim.fn.hlID(iconhl), 'fg')
+        highlight('GalaxyFileIcon', fg, colors.bg)
+        return ' '.. icon ..' '
+    end
     },
   }
-}
 
-gls.left[5] = {
+gls.left[3] = {
   FilePath = {
     provider = function()
       local fp = vim.fn.fnamemodify(vim.fn.expand '%', ':~:.:h')
@@ -199,10 +160,11 @@ gls.left[5] = {
         return is_file() and checkwidth()
     end,
     highlight = { colors.middlegrey, colors.section_bg },
+    highlight = { colors.middlegrey, colors.section_bg },
   },
 }
 
-gls.left[6] = {
+gls.left[4] = {
     FileName = {
         provider = get_current_file_name,
         condition = buffer_not_empty,
@@ -211,6 +173,30 @@ gls.left[6] = {
         separator_highlight = { colors.section_bg, colors.bg },
     },
 }
+
+gls.left[5] = {
+  GitIcon = {
+    provider = function() 
+        return ' ' 
+    end,
+    condition = buffer_not_empty,
+    highlight = {colors.orange,colors.bg},
+  }
+}
+
+gls.left[6] = {
+  GitBranch = {
+    provider = 'GitBranch',
+    separator = ' ',
+    separator_highlight = {colors.purple,colors.bg},
+    condition = buffer_not_empty,
+    highlight = {colors.grey,colors.bg},
+    separator = sep.left,
+    separator_highlight = { colors.section_bg, colors.bg },
+  }
+}
+
+
 
 --[[
 gls.left[6] = {
