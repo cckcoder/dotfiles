@@ -43,6 +43,7 @@ return require('packer').startup(function()
 
     --[[Tools]]--
     use 'tpope/vim-unimpaired'
+    use 'mattn/emmet-vim'
     use 'machakann/vim-highlightedyank'
     use 'raimondi/delimitmate'
     use 'andymass/vim-matchup'
