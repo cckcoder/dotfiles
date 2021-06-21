@@ -50,6 +50,7 @@ return require('packer').startup(function()
     use 'kosayoda/nvim-lightbulb'
     use 'pechorin/any-jump.vim'
     use 'yggdroot/indentline'
+    use 'tpope/vim-surround'
     use {
         'phaazon/hop.nvim', 
         as = 'hop',
