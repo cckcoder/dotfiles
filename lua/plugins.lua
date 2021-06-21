@@ -32,6 +32,8 @@ return require('packer').startup(function()
     --[[Theme]]--
     use {'dracula/vim', as = 'dracula'}
     use 'doums/darcula'
+    use 'wadackel/vim-dogrun'
+    use 'tyrannicaltoucan/vim-deep-space'
     use { 
         "npxbr/gruvbox.nvim",
         requires = {"rktjmp/lush.nvim"}
