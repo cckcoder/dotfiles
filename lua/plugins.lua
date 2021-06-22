@@ -34,6 +34,8 @@ return require('packer').startup(function()
     use 'doums/darcula'
     use 'wadackel/vim-dogrun'
     use 'tyrannicaltoucan/vim-deep-space'
+    use 'sainnhe/gruvbox-material'
+    use 'NTBBloodbath/doom-one.nvim'
     use { 
         "npxbr/gruvbox.nvim",
         requires = {"rktjmp/lush.nvim"}
