@@ -39,4 +39,19 @@ https://itsfoss.com/install-chrome-arch-linux/
 https://gnomepomodoro.org/
 
 # Nvim-Awesome
+
 * [Nvim Awesome](https://nvim-awesome.vercel.app/)
+* [Indentation](https://github.com/lukas-reineke/indent-blankline.nvim)
+* [Signature](https://github.com/ray-x/lsp_signature.nvim)
+* [Markdown](https://github.com/euclio/vim-markdown-composer)
+* [Lsp-Installer](https://github.com/williamboman/nvim-lsp-installer)
+* [Vimrc to lua](https://github.com/svermeulen/vimpeccable)
+
+# Example Nvim config
+
+* [disrupted](https://github.com/disrupted/dotfiles)
+* [NvChad](https://github.com/siduck76/NvChad)
+* [kraftwerk28](https://github.com/kraftwerk28/dotfiles)
+
+# Udacity free
+* [Nano degree](https://github.com/mikesprague/udacity-nanodegrees#data-structures-and-algorithms-nanodegree)
