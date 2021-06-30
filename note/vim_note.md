@@ -117,3 +117,10 @@ https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 
 ## Ref
 https://github.com/ChristianChiarulli/LunarVim/blob/master/init.lua
+
+## Vim Tips
+
+### delete blank line
+* [vim-delete-line](https://linuxize.com/post/vim-delete-line/)
+`:g /word/d`
+`:g/^$/d`

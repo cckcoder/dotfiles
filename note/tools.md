@@ -46,6 +46,7 @@ https://gnomepomodoro.org/
 * [Markdown](https://github.com/euclio/vim-markdown-composer)
 * [Lsp-Installer](https://github.com/williamboman/nvim-lsp-installer)
 * [Vimrc to lua](https://github.com/svermeulen/vimpeccable)
+* [the.exa](https://the.exa.website/)
 
 # Example Nvim config
 
