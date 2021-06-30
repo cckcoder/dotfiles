@@ -59,6 +59,7 @@ alias egg='ssh root@51.222.14.247'
 
 # Project
 alias api3='cd /mnt/disk_1/api3; source env/bin/activate'
+alias apif='cd /mnt/disk_1/sapif; source env/bin/activate'
 alias gms='cd /mnt/disk_1/GMS'
 alias gmsd='cd /mnt/disk_1/GMS/dockers; docker-compose start'
 alias gmsdd='cd /mnt/disk_1/GMS/dockers; docker-compose stop'

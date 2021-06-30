@@ -17,10 +17,13 @@ require'compe'.setup {
 
   source = {
     path = {kind = "... (Path)"};
-    buffer = {kind = " (Buffer)"};
+    buffer = { kind = " (Buffer)" };
     calc = {kind = " (Calc)"};
-    vsnip = {kind = "ﲅ (Vsnip)"};
-    nvim_lsp = {kind = " (LSP)"};
+    vsnip = { kind = "ﲅ (Vsnip)" };
+    nvim_lsp = {
+        kind = " (LSP)",
+        priority = 1000
+    };
     nvim_lua = {kind = " (Nvim Lua)"};
     spell = {kind = " (Spell)"};
     tags = {kind = "理(Tags)"};
