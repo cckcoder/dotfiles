@@ -56,3 +56,6 @@ https://gnomepomodoro.org/
 
 # Udacity free
 * [Nano degree](https://github.com/mikesprague/udacity-nanodegrees#data-structures-and-algorithms-nanodegree)
+
+# spaceship-prompt
+* [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt)

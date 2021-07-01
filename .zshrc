@@ -2,28 +2,45 @@ export ZSH="/home/$USER/.oh-my-zsh"
 source ~/.zplug/init.zsh
 
 zplug "qoomon/zsh-lazyload"
-ZSH_THEME="spaceship"
+
+autoload -U promptinit; promptinit
+prompt spaceship
 
 
 #======[SpaceShipConfig]======
-SPACESHIP_DIR_SHOW="true"
-#======[SpaceShipConfig]======
-
 CASE_SENSITIVE="true"
-
-DISABLE_AUTO_UPDATE="true"
+SPACESHIP_PROMPT_ORDER=(
+    time          # Time stamps section
+    user          # Username section
+    dir           # Current directory section
+    host          # Hostname section
+    git           # Git section (git_branch + git_status)
+    hg            # Mercurial section (hg_branch  + hg_status)
+    package       # Package version
+    node          # Node.js section
+    php           # PHP section
+    rust          # Rust section
+    docker        # Docker section
+    venv          # virtualenv section
+    conda         # conda virtualenv section
+    pyenv         # Pyenv section
+    vi_mode       # Vi-mode indicator
+    jobs          # Background jobs indicator
+    line_sep
+    char          # Prompt character
+)
 
 plugins=(
-  git
-  mercurial
- 	laravel
-  fzf
-  pip
-  pyenv
-  python
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  tmux
+    git
+    mercurial
+    laravel
+    fzf
+    pip
+    pyenv
+    python
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    tmux
 )
 
 source $ZSH/oh-my-zsh.sh
