@@ -44,10 +44,18 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
-local servers = {'pyright', 'vuels', 'html', 'tsserver', 'intelephense', 'bashls', 'cssls'}
+local servers = {
+    'pyright', 'vuels', 'html',
+    'tsserver', 'intelephense', 'bashls',
+    'cssls', 'phpactor'
+}
+
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
-    capabilities = capabilities;
-    on_attach = on_attach;
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = {
+        debounce_text_changes = 500,
+    }
   }
 end

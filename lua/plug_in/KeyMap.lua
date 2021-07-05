@@ -35,7 +35,7 @@ map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 
 --[Explorer]--
-map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
+--map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
 
 
 --[LspSaga]--

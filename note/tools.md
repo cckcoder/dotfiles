@@ -53,6 +53,7 @@ https://gnomepomodoro.org/
 * [disrupted](https://github.com/disrupted/dotfiles)
 * [NvChad](https://github.com/siduck76/NvChad)
 * [kraftwerk28](https://github.com/kraftwerk28/dotfiles)
+* [phpactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html#global-installation)
 
 # Udacity free
 * [Nano degree](https://github.com/mikesprague/udacity-nanodegrees#data-structures-and-algorithms-nanodegree)
