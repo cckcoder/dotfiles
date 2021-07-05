@@ -16,18 +16,21 @@ require'compe'.setup {
   documentation = true;
 
   source = {
-    path = {kind = "... (Path)"};
-    buffer = { kind = " (Buffer)" };
-    calc = {kind = " (Calc)"};
-    vsnip = { kind = "ﲅ (Vsnip)" };
     nvim_lsp = {
         kind = " (LSP)",
-        priority = 1000
+        priority = 10000
     };
-    nvim_lua = {kind = " (Nvim Lua)"};
-    spell = {kind = " (Spell)"};
+    buffer = { 
+        kind = " (Buffer)",
+        priority = 2000
+    };
+    vsnip = { kind = "ﲅ (Vsnip)" };
     tags = {kind = "理(Tags)"};
+    spell = {kind = " (Spell)"};
     treesitter = {kind = "繁(Treesitter)"};
+    path = {kind = "... (Path)"};
+    calc = {kind = " (Calc)"};
+    nvim_lua = {kind = " (Nvim Lua)"};
   };
 }
 
