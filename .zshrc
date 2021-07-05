@@ -19,10 +19,8 @@ SPACESHIP_PROMPT_ORDER=(
     package       # Package version
     node          # Node.js section
     php           # PHP section
-    rust          # Rust section
     docker        # Docker section
     venv          # virtualenv section
-    conda         # conda virtualenv section
     pyenv         # Pyenv section
     vi_mode       # Vi-mode indicator
     jobs          # Background jobs indicator
