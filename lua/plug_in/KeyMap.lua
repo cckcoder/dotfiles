@@ -14,12 +14,12 @@ map('n', '<TAB>', ':bnext<cr>', options)
 map('n', '<S-TAB>', ':bprevious<cr>', options)
 map('n', '<leader>db', ':bdelete!<cr>', options)
 map('n', '<leader>y', ':StripWhitespace<CR>', options)
-map('n', 'zz', ':w!<cr>', options)
 map('n', '<leader>h', ':noh<cr>', options)
 map('n', '<C-j>', '<C-w>j', options)
 map('n', '<C-k>', '<C-w>k', options)
 map('n', '<C-h>', '<C-w>h', options)
 map('n', '<C-l>', '<C-w>l', options)
+map('n', '<leader><CR>', ':so ~/dotfiles/init.lua<CR>', options)
 
 
 --[Insert Mode]--
@@ -35,7 +35,7 @@ map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 
 --[Explorer]--
---map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
+map('n', '<leader>e', ':wincmd v<bar> :Ex <bar> :vertical resize 30<CR>', options)
 
 
 --[LspSaga]--
