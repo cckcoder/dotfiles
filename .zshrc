@@ -23,8 +23,8 @@ SPACESHIP_PROMPT_ORDER=(
     venv          # virtualenv section
     pyenv         # Pyenv section
     vi_mode       # Vi-mode indicator
-    jobs          # Background jobs indicator
     line_sep
+    jobs          # Background jobs indicator
     char          # Prompt character
 )
 
