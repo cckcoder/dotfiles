@@ -159,8 +159,7 @@ gls.left[3] = {
     condition = function()
         return is_file() and checkwidth()
     end,
-    highlight = { colors.middlegrey, colors.section_bg },
-    highlight = { colors.middlegrey, colors.section_bg },
+    highlight = {colors.grey,colors.bg},
   },
 }
 
@@ -168,7 +167,7 @@ gls.left[4] = {
     FileName = {
         provider = get_current_file_name,
         condition = buffer_not_empty,
-        highlight = { colors.fg, colors.section_bg },
+        highlight = {colors.grey,colors.bg},
         separator = sep.left,
         separator_highlight = { colors.section_bg, colors.bg },
     },
