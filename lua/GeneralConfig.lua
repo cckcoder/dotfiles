@@ -12,17 +12,23 @@ if fn.filereadable '~/neovim3/bin/python3.9' then
     vim.g.python3_host_prog = '~/neovim3/bin/python3.9'
 end
 
-vim.o.smarttab = true
-vim.o.shiftround = true
-vim.o.incsearch = true
-vim.o.cursorline = true
-vim.o.linespace = 4
-vim.o.linebreak = true
-vim.o.hidden = true
-vim.o.wildmenu = true
-vim.o.autoread = true
+opt.history = 500
+opt.smarttab = true
+opt.shiftround = true
+opt.incsearch = true
+opt.cursorline = true
+opt.linespace = 4
+opt.linebreak = true
+opt.hidden = true
+opt.wildmenu = true
+opt.autoread = true
 opt.pumblend = 7
 opt.pumheight = 20 
+opt.scrolloff = 3
+
+--[[Netrw]]--
+vim.g.netrw_localrmdir = 'rm -r'
+vim.g.netrw_browse_split = 4
 
 --[[Number Group]]--
 vim.o.number = true
