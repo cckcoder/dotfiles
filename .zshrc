@@ -142,21 +142,6 @@ tk(){
 }
 
 # SYSTEM
-asearch(){
-  apt-cache search "$1"
-}
-
-ainstall(){
-  sudo apt-get install "$1"
-}
-
-aupdate(){
-  sudo apt-get update
-}
-
-aupgrade(){
-  sudo apt-get upgrade
-}
 
 dockst(){
   if [ -z "$1" ];
