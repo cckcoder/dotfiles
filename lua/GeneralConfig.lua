@@ -49,6 +49,11 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.wildignore = "**/env/*,**/node_modules/**,.git/*,*/.hg,*.png,*.jpg,*.gif,*.jpeg"
 
+--[[Fold]]--
+opt.foldmethod = 'indent'
+opt.foldnestmax = 10
+opt.foldlevel= 2
+
 --[[Vsnip]]--
 vim.g.vsnip_snippet_dir = "~/dotfiles/vsnip"
 
