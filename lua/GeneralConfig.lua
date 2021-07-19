@@ -78,6 +78,10 @@ opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
 
+--[[Undo]]--
+opt.undofile = true
+opt.undodir = '~/.vim_undo'
+
 --[[Search]]--
 opt.ignorecase = true
 opt.smartcase = true
