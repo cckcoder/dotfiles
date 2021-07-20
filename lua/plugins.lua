@@ -45,6 +45,7 @@ return require('packer').startup(function()
     use { 'mhinz/vim-signify' }
 
     --[[Tools]]--
+    use "tversteeg/registers.nvim"
     use 'tpope/vim-unimpaired'
     use 'mattn/emmet-vim'
     use 'machakann/vim-highlightedyank'
