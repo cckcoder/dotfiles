@@ -1,4 +1,5 @@
 local cmd = vim.cmd
 local opt = vim.opt
 
-cmd[[colorscheme darcula]]
+cmd[[syntax enable]]
+cmd[[colorscheme dracula]]
