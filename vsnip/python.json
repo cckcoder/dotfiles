@@ -19,5 +19,11 @@
     "body": [
       "async def $1($2):"
     ]
+  },
+  "PDB": {
+    "prefix": ["pdb"],
+    "body": [
+      "import pdb; pdb.set_trace()"
+    ]
   }
 }
