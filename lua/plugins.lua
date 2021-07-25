@@ -26,20 +26,10 @@ return require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
     use 'norcalli/nvim-colorizer.lua'
 
-
     --[[Theme]]--
     use {'dracula/vim', as = 'dracula'}
     use 'doums/darcula'
-    use 'wadackel/vim-dogrun'
-    use 'tyrannicaltoucan/vim-deep-space'
-    use 'sainnhe/gruvbox-material'
-    use 'NTBBloodbath/doom-one.nvim'
     use 'tomasiser/vim-code-dark'
-    use { 
-        "npxbr/gruvbox.nvim",
-        requires = {"rktjmp/lush.nvim"}
-    }
-    use "rafamadriz/neon"
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }
