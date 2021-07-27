@@ -35,7 +35,7 @@ map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 
 --[Explorer]--
-map('n', '<leader>e', ':wincmd v<bar> :Ex <bar> :vertical resize 30<CR>', options)
+map('n', '<leader>e', ':RnvimrToggle<CR>', options)
 
 
 --[LspSaga]--
@@ -43,10 +43,6 @@ map('n', '<A-d>', ':Lspsaga open_floaterm<CR>', options2)
 map('n', '<A-c>', ':Lspsaga close_floaterm<CR>', options2)
 map('n', '[e', ':Lspsaga diagnostic_jump_next<CR>', options2)
 map('n', ']e', ':Lspsaga diagnostic_jump_prev<CR>', options2)
-
-
-
-
 
 
 --[[Compe]]--

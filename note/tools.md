@@ -47,6 +47,8 @@ https://gnomepomodoro.org/
 * [Lsp-Installer](https://github.com/williamboman/nvim-lsp-installer)
 * [Vimrc to lua](https://github.com/svermeulen/vimpeccable)
 * [the.exa](https://the.exa.website/)
+* [rnvimr file explorer](https://github.com/kevinhwang91/rnvimr)
+
 
 # Example Nvim config
 

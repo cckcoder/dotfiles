@@ -45,6 +45,7 @@ return require('packer').startup(function()
     use 'pechorin/any-jump.vim'
     use 'yggdroot/indentline'
     use 'tpope/vim-surround'
+    use 'kevinhwang91/rnvimr'
     use {
         'phaazon/hop.nvim', 
         as = 'hop',

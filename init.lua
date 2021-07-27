@@ -17,6 +17,7 @@ require('plug_in/LightBulb')
 require('plug_in/IndentLine')
 require('plug_in/Signify')
 require('plug_in/SymbolsOutline')
+require('plug_in/Rnvimr')
 require 'colorizer'.setup{ '*'; }
 
 vim.cmd('let g:loaded_matchit = 1')
