@@ -30,7 +30,7 @@ map('i', 'kj', '<ESC>', options)
 map('n', '<leader>p', ':Telescope find_files<cr>', options)
 map('n', '<leader>b', ':Telescope buffers<cr>', options)
 map('n', '<leader>sm', ':Telescope marks<cr>', options)
-map('n', '<leader>a', ':Telescope live_grep<cr>', options)
+map('n', '<leader>a', ':Telescope live_grep prompt_prefix=🔍<cr>', options)
 map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 

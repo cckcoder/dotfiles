@@ -40,5 +40,13 @@ wk.register({
   o = {
     name = "SymbolOutLine",
     l = { ":SymbolsOutline<CR>", "SymbolOutLine" },
+  },
+  T = {
+    name = "Telescope",
+    m = { ":Telescope marks<CR>", "Marks" },
+    h = { ":Telescope help_tags<CR>", "Help Tags" },
+    c = { ":Telescope commands<CR>", "Help Tags" },
   }
 }, { prefix = "<leader>"})
+
+
