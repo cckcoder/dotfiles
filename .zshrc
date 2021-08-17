@@ -88,6 +88,7 @@ alias thc='cd /mnt/disk_2/thcoating'
 alias thc2='cd /mnt/disk_2/w2thcoating'
 alias slbjsync='php artisan couch:update'
 alias cblog='cd /mnt/disk_2/codewiz_blog'
+alias sala='cd /opt/salamander'
 
 # Docker ps
 alias dops='docker ps'
