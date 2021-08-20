@@ -19,5 +19,6 @@ require('plug_in/Signify')
 require('plug_in/SymbolsOutline')
 require('plug_in/Rnvimr')
 require 'colorizer'.setup{ '*'; }
+require('plug_in/Kommentary')
 
 vim.cmd('let g:loaded_matchit = 1')

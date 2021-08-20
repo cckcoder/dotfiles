@@ -73,6 +73,6 @@ return require('packer').startup(function()
         event = { 'BufRead' } 
     }
     use { 'simrat39/symbols-outline.nvim' }
-
+    use 'b3nj5m1n/kommentary'
 end)
 
