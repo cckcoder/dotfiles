@@ -46,11 +46,7 @@ return require('packer').startup(function()
     use 'yggdroot/indentline'
     use 'tpope/vim-surround'
     use 'kevinhwang91/rnvimr'
-    use {
-        'phaazon/hop.nvim', 
-        as = 'hop',
-        config = function() require("hop").setup({}) end
-    }
+    use 'justinmk/vim-sneak'
     use 'airblade/vim-rooter'
     use {
         'glepnir/galaxyline.nvim',

@@ -7,7 +7,6 @@ options2 = { noremap = true, silent = true }
 
 --[General]--
 --[Normal Mode]--
-map('n', '<leader>w', ':HopWord<cr>', options)
 map('n', 'tn', ':tabnew<cr>', options)
 map('n', 'tc', ':tabclose<cr>', options)
 map('n', '<TAB>', ':bnext<cr>', options)
