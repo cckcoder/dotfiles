@@ -127,6 +127,12 @@ fft() {
 alias tls='tmux ls'
 alias txa='pkill -f tmux'
 
+# GIT
+alias gcom='git checkout master'
+gnb() {
+  git checkout -b "$1"
+}
+
 # ADB
 alias adb='cd ~/ADB'
 
