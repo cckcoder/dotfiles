@@ -36,6 +36,10 @@ return require('packer').startup(function()
     use { 'mhinz/vim-signify' }
 
     --[[Tools]]--
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = 'kyazdani42/nvim-web-devicons'
+    }
     use "tversteeg/registers.nvim"
     use 'tpope/vim-unimpaired'
     use 'mattn/emmet-vim'
@@ -46,7 +50,6 @@ return require('packer').startup(function()
     use 'pechorin/any-jump.vim'
     use 'yggdroot/indentline'
     use 'tpope/vim-surround'
-    use 'kevinhwang91/rnvimr'
     use 'justinmk/vim-sneak'
     use 'airblade/vim-rooter'
     use {

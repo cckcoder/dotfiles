@@ -34,8 +34,7 @@ map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 
 
 --[Explorer]--
-map('n', '<leader>e', ':RnvimrToggle<CR>', options)
-
+map('n', '<leader>e', ':NvimTreeToggle<CR>', options)
 
 --[LspSaga]--
 map('n', '<A-d>', ':Lspsaga open_floaterm<CR>', options2)

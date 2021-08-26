@@ -4,7 +4,7 @@ require('plug_in/KeyMap')
 require('plug_in/ThemeConfig')
 
 --[[PlugIn Call]]--
---require('plug_in/NvimTree')
+require('plug_in/NvimTree')
 require('plug_in/CompeConfig')
 require('plug_in/TeleScope')
 require('plug_in/NvimTreeSistter')
@@ -17,7 +17,6 @@ require('plug_in/LightBulb')
 require('plug_in/IndentLine')
 require('plug_in/Signify')
 require('plug_in/SymbolsOutline')
-require('plug_in/Rnvimr')
 require 'colorizer'.setup{ '*'; }
 require('plug_in/Kommentary')
 require('plug_in/VimSneak')
