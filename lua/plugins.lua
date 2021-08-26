@@ -27,10 +27,11 @@ return require('packer').startup(function()
     use 'norcalli/nvim-colorizer.lua'
 
     --[[Theme]]--
-    use {'dracula/vim', as = 'dracula'}
+    use 'arcticicestudio/nord-vim'
+    --[[ use {'dracula/vim', as = 'dracula'}
     use 'doums/darcula'
     use 'tomasiser/vim-code-dark'
-    use "Pocco81/Catppuccino.nvim"
+    use "Pocco81/Catppuccino.nvim" ]]
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }

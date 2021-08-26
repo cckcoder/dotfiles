@@ -4,7 +4,9 @@ local opt = vim.opt
 local catppuccino = require("catppuccino")
 
 cmd[[syntax enable]]
-catppuccino.setup(
+cmd[[colorscheme nord]]
+
+--[[ catppuccino.setup(
     {
         colorscheme = "catppuccino",
         styles = {
@@ -33,4 +35,4 @@ catppuccino.setup(
 )
 
 
-catppuccino.load()
+catppuccino.load() ]]
