@@ -30,6 +30,7 @@ return require('packer').startup(function()
     use {'dracula/vim', as = 'dracula'}
     use 'doums/darcula'
     use 'tomasiser/vim-code-dark'
+    use "Pocco81/Catppuccino.nvim"
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }
