@@ -1,7 +1,6 @@
 
 local cmd = vim.cmd
 local opt = vim.opt
-local catppuccino = require("catppuccino")
 
 cmd[[syntax enable]]
 cmd[[colorscheme nord]]
