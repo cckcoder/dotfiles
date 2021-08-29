@@ -47,7 +47,7 @@ vim.o.title = true
 --[[Splite Window]]--
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.o.wildignore = {
+opt.wildignore = {
     "**/env/*", "**/node_modules/**", ".git/*",
     "*/.hg", "*.png,",
     "*.jpg", "*.gif", "*.jpeg",
