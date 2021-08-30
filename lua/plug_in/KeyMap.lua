@@ -24,7 +24,6 @@ map('n', '<leader>,', ':w<CR>', options)
 
 --[Insert Mode]--
 map('i', 'kj', '<ESC>', options)
-map('i', '<leader>,', '<ESC>:w<CR>a', options)
 
 
 --[TeleScope]--
