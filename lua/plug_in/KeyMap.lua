@@ -19,10 +19,12 @@ map('n', '<C-k>', '<C-w>k', options)
 map('n', '<C-h>', '<C-w>h', options)
 map('n', '<C-l>', '<C-w>l', options)
 map('n', '<leader><CR>', ':so ~/dotfiles/init.lua<CR>', options)
+map('n', '<leader>,', ':w<CR>', options)
 
 
 --[Insert Mode]--
 map('i', 'kj', '<ESC>', options)
+map('i', '<leader>,', '<ESC>:w<CR>a', options)
 
 
 --[TeleScope]--
@@ -62,6 +64,3 @@ map('v', '<', '<gv', options)
 map('v', '>', '>gv', options)
 map('v', 'J', ":m '>+1<CR>gv=gv", options)
 map('v', 'K', ":m '<-2<CR>gv=gv", options)
-
-
---[Visual Mode]--
