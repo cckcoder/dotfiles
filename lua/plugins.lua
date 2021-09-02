@@ -28,10 +28,6 @@ return require('packer').startup(function()
 
     --[[Theme]]--
     use 'arcticicestudio/nord-vim'
-    --[[ use {'dracula/vim', as = 'dracula'}
-    use 'doums/darcula'
-    use 'tomasiser/vim-code-dark'
-    use "Pocco81/Catppuccino.nvim" ]]
 
     --[[Git and HG]]--
     use { 'mhinz/vim-signify' }
@@ -52,8 +48,8 @@ return require('packer').startup(function()
     use 'pechorin/any-jump.vim'
     use 'yggdroot/indentline'
     use 'tpope/vim-surround'
-    use 'justinmk/vim-sneak'
     use 'airblade/vim-rooter'
+    use 'phaazon/hop.nvim'
     use {
         'glepnir/galaxyline.nvim',
         branch = 'main',

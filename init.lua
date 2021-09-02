@@ -22,3 +22,8 @@ require('plug_in/Kommentary')
 require('plug_in/VimSneak')
 
 vim.cmd('let g:loaded_matchit = 1')
+
+vim.cmd([[hi HopNextKey guifg=#bd93f9]])
+vim.cmd([[hi HopNextKey1 guifg=#bd93f9]])
+vim.cmd([[hi HopNextKey2 guifg=#bd93f9]])
+

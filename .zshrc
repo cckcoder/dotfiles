@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 
 # General
 alias cfb='vi $HOME/.bashrc'
-alias cfv='vi $HOME/.config/nvim/init.lua'
+alias cfv='vi $HOME/dotfiles/init.lua'
 alias cfz='vi $HOME/.zshrc'
 alias cft='vi $HOME/.tmux.conf'
 alias cfk='vi $HOME/dotfiles/kitty.conf'
