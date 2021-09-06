@@ -47,7 +47,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true;
 local servers = {
     'pyright', 'vuels', 'html',
     'tsserver', 'intelephense', 'bashls',
-    'cssls', 'phpactor'
+    'cssls'
 }
 
 for _, lsp in ipairs(servers) do
