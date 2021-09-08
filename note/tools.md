@@ -65,3 +65,6 @@ https://gnomepomodoro.org/
 
 # Manjaro Clean Cache
 (https://averagelinuxuser.com/clean-arch-linux/#1-clean-package-cache)
+
+# CCLS for C-lang
+(https://github.com/MaskRay/ccls/wiki)
