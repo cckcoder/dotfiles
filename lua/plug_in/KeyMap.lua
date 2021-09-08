@@ -58,8 +58,6 @@ vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll
 
 --[[Hop]]--
 map('n', '<leader>w', ':HopWord<CR>', options2)
-map('n', 'f', ':HopChar1<CR>', options2)
-map('n', '2f', ':HopChar2<CR>', options2)
 
 --[Visual Mode]--
 --[[Better indenting]]--

@@ -46,6 +46,12 @@ wk.register({
     m = { ":Telescope marks<CR>", "Marks" },
     h = { ":Telescope help_tags<CR>", "Help Tags" },
     c = { ":Telescope commands<CR>", "Help Tags" },
+    f = { ":Telescope filetypes<CR>", "File types" },
+  },
+  H = {
+    name = "Hop",
+    f = { ":HopChar1<CR>", "HopChar 1" },
+    c = { ":HopChar2<CR>", "HopChar 2" },
   }
 }, { prefix = "<leader>"})
 
