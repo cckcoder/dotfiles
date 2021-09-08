@@ -62,3 +62,6 @@ https://gnomepomodoro.org/
 
 # spaceship-prompt
 * [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+
+# Manjaro Clean Cache
+(https://averagelinuxuser.com/clean-arch-linux/#1-clean-package-cache)
