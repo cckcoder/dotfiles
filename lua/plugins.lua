@@ -33,6 +33,7 @@ return require('packer').startup(function()
     use { 'mhinz/vim-signify' }
 
     --[[Tools]]--
+    use {'kevinhwang91/nvim-hlslens'}
     use 'sbdchd/neoformat'
     use {
         'kyazdani42/nvim-tree.lua',
