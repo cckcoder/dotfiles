@@ -229,3 +229,5 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export C_INCLUDE_PATH=/usr/local/include
