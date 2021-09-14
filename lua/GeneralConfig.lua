@@ -25,6 +25,8 @@ opt.autoread = true
 opt.pumblend = 7
 opt.pumheight = 20 
 opt.scrolloff = 3
+opt.laststatus = 2
+opt.showbreak = '↳ '
 
 --[[Netrw]]--
 vim.g.netrw_localrmdir = 'rm -r'
@@ -37,6 +39,7 @@ vim.o.numberwidth = 5
 
 --[[Set 80 characters]]--
 vim.o.textwidth = 80
+opt.synmaxcol = 200
 
 --[[Performance Tuning]]--
 vim.o.timeoutlen = 500
