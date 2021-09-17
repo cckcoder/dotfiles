@@ -16,27 +16,27 @@ dynamic_title: true
 decorations: full
 
 font:
-  size: 14
+  size: 15
 
   offset:
     x: 0
     y: 1
 
   normal:
-    family: "JetBrainsMono Nerd Font"
-    style: Regular
+    family: "Iosevka"
+    style: Medium
 
   bold:
-    family: "JetBrainsMono Nerd Font"
+    family: "Iosevka"
     style: Bold
 
   italic:
-    family: "JetBrainsMono Nerd Font"
+    family: "Iosevka"
     style: Italic
 
   bold_italic:
-    family: "JetBrainsMono Nerd Font"
-    style: Bold Italic
+    family: "Iosevka"
+    style: Semibold Italic
 
 # Colors (iTerm 2 default theme)
 colors:
