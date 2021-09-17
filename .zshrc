@@ -118,6 +118,7 @@ alias lsc='ls -1'
 alias m='meld .'
 alias pacup='sudo pacman --noconfirm -Syyu'
 alias reb='reboot'
+alias shd='shutdown now'
 alias pyenv='python3 -m venv env'
 fft() {
   find -type d -name "$1*"
