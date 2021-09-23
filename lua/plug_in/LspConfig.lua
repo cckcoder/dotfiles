@@ -52,7 +52,6 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local servers = {
 	"pyright",
-	"vuels",
 	"html",
 	"tsserver",
 	"intelephense",
