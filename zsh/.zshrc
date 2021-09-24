@@ -1,8 +1,12 @@
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#if command -v pyenv 1>/dev/null 2>&1; then
-#  eval "$(pyenv init --path)"
-#fi
+# Add this to your zshrc or bzshrc file
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+ensure_tmux_is_running
 
 export ZSH="$HOME/.oh-my-zsh"
 source ~/.zplug/init.zsh
