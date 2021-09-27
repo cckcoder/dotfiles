@@ -161,6 +161,10 @@ yt() {
   youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
 }
 
+ytmp() {
+    youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg -i -o "%(title)s.%(ext)s" $1
+}
+
 cl() {
   'clear'
 }
