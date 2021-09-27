@@ -154,5 +154,9 @@ yt() {
   youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
 }
 
+cl() {
+  'clear'
+}
+
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
