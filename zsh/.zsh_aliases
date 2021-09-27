@@ -88,6 +88,13 @@ gnb() {
   git checkout -b "$1"
 }
 
+gbc() {
+    if [ -z "$1" ];
+        then git log --graph --oneline;
+        else git log --graph --oneline -"$1";
+    fi
+}
+
 # ADB
 alias adb='cd ~/ADB'
 
