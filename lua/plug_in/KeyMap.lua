@@ -22,6 +22,8 @@ map("n", "<leader>,", ":w<CR>", options)
 
 --[Insert Mode]--
 map("i", "kj", "<ESC>", options)
+--[Terminal Mode]--
+map("t", "<ESC>", "<C-\\><C-n>", options)
 
 --[TeleScope]--
 map("n", "<leader>p", ":Telescope find_files<cr>", options)
@@ -34,10 +36,14 @@ map("n", "<leader>fh", ":Telescope help_tags<cr>", options)
 map("n", "<leader>e", ":NvimTreeToggle<CR>", options)
 
 --[LspSaga]--
-map("n", "<A-d>", ":Lspsaga open_floaterm<CR>", options2)
+map("n", "<A-o>", ":Lspsaga open_floaterm<CR>", options2)
 map("n", "<A-c>", ":Lspsaga close_floaterm<CR>", options2)
 map("n", "[e", ":Lspsaga diagnostic_jump_next<CR>", options2)
 map("n", "]e", ":Lspsaga diagnostic_jump_prev<CR>", options2)
+
+--[[Saga Scroll]]
+vim.cmd("nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
+vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
 
 --[[Compe]]
 vim.cmd("inoremap <silent><expr> <C-Space> compe#complete()")
@@ -46,9 +52,6 @@ vim.cmd("inoremap <silent><expr> <C-e>     compe#close('<C-e>')")
 vim.cmd("inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })")
 vim.cmd("inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })")
 
---[[Saga Scroll]]
-vim.cmd("nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
-vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
 
 --[[Hop]]
 map("n", "<leader>w", ":HopWord<CR>", options2)
