@@ -40,7 +40,7 @@ return require("packer").startup(function()
 	use("sbdchd/neoformat")
 	use({
 		"kyazdani42/nvim-tree.lua",
-		requires = "kyazdani42/nvim-web-devicons",
+		requires = "kyazdani42/nvim-web-devicons"
 	})
 	use("tversteeg/registers.nvim")
 	use("tpope/vim-unimpaired")
