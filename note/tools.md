@@ -81,3 +81,6 @@ https://gnomepomodoro.org/
 
 [Link](https://github.com/JohnnyMorganz/StyLua)
 `yay -S sytlua`
+
+# screenkey
+[Link](https://gitlab.com/screenkey/screenkey#installation-and-basic-usage)
