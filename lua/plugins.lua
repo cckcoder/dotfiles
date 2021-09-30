@@ -75,7 +75,6 @@ return require("packer").startup(function()
 			require("lspkind").setup({})
 		end,
 	})
-	use({ "glepnir/lspsaga.nvim" })
 	use({
 		"zsugabubus/crazy8.nvim",
 		event = { "BufRead" },
