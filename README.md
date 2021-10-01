@@ -6,6 +6,7 @@
 - [] install [ nvim-bqf ](https://github.com/kevinhwang91/nvim-bqf)
 - [] install [ lsp signature ](https://github.com/ray-x/lsp_signature.nvim)
 - [] install maybe  [ vista ]( https://github.com/liuchengxu/vista.vim )
+- [] add alias for kill port  [ Ref ](https://mr-khan.gitlab.io/linux/2018/05/02/kill-specific-port-on-linux.html)
 
 ## Other dotfile
 
