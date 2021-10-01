@@ -12,6 +12,34 @@ end
 
 local cmp = require("cmp")
 
+local lsp_symbols = {
+	Text = "   (Text) ",
+	Method = "   (Method)",
+	Function = " []  (Function)",
+	Constructor = "   (Constructor)",
+	Field = " ﴲ  (Field)",
+	Variable = " [] (Variable)",
+	Class = " ﴯ  (Class)",
+	Interface = " ﰮ  (Interface)",
+	Module = "   (Module)",
+	Property = " 襁 (Property)",
+	Unit = "   (Unit)",
+	Value = "   (Value)",
+	Enum = " 練 (Enum)",
+	Keyword = "   (Keyword)",
+	Snippet = "   (Snippet)",
+	Color = "   (Color)",
+	File = "   (File)",
+	Reference = "   (Reference)",
+	Folder = "   (Folder)",
+	EnumMember = "   (EnumMember)",
+	Constant = " ﲀ  (Constant)",
+	Struct = " ﳤ  (Struct)",
+	Event = "   (Event)",
+	Operator = "   (Operator)",
+	TypeParameter = "   (TypeParameter)",
+}
+
 cmp.setup({
 	completion = {
 		completeopt = "menu,menuone,noinsert",
@@ -54,30 +82,24 @@ cmp.setup({
 	},
 	sources = {
 		{ name = "nvim_lsp" },
-		-- For vsnip user.
 		{ name = "vsnip" },
-
-		-- For luasnip user.
-		-- { name = 'luasnip' },
-
-		-- For ultisnips user.
-		-- { name = 'ultisnips' },
 		{ name = "buffer" },
+		{ name = "path" },
+		{ name = "tags" },
+		{ name = "spell" },
+		{ name = "calc" },
+	},
+	formatting = {
+		format = function(entry, item)
+			item.kind = lsp_symbols[item.kind]
+			-- set a name for each source
+			item.menu = ({
+				buffer = "[Buffer]",
+				nvim_lsp = "[LSP]",
+				luasnip = "[LuaSnip]",
+			})[entry.source.name]
+
+			return item
+		end,
 	},
 })
-
---[[ for _, lsp in ipairs(servers) do
-	nvim_lsp[lsp].setup({
-		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
-		on_attach = on_attach,
-		flags = {
-			debounce_text_changes = 500,
-		},
-	})
-end
-
-nvim_lsp.pyright.setup({
-	on_attach = function(client)
-		client.server_capabilities.completionProvider = false
-	end,
-}) ]]

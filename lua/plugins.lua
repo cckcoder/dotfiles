@@ -74,13 +74,6 @@ return require("packer").startup(function()
 		end,
 	})
 	use({
-		"onsails/lspkind-nvim",
-		as = "lspkind",
-		config = function()
-			require("lspkind").setup({})
-		end,
-	})
-	use({
 		"zsugabubus/crazy8.nvim",
 		event = { "BufRead" },
 	})
