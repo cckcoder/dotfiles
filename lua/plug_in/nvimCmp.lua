@@ -66,22 +66,7 @@ cmp.setup({
 	},
 })
 
--- Setup lspconfig.
-local nvim_lsp = require("lspconfig")
-local servers = {
-	"pyright",
-	"html",
-	"tsserver",
-	"intelephense",
-	"bashls",
-	"cssls",
-	"ccls",
-	"jsonls",
-	"vimls",
-    "jedi_language_server"
-}
-
-for _, lsp in ipairs(servers) do
+--[[ for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup({
 		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
 		on_attach = on_attach,
@@ -95,4 +80,4 @@ nvim_lsp.pyright.setup({
 	on_attach = function(client)
 		client.server_capabilities.completionProvider = false
 	end,
-})
+}) ]]
