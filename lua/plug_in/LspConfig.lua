@@ -44,28 +44,3 @@ local on_attach = function(client, bufnr)
 		)
 	end
 end
-
-local nvim_lsp = require("lspconfig")
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-capabilities.textDocument.completion.completionItem.snippetSupport = true
-
-local servers = {
-	"pyright",
-	"html",
-	"tsserver",
-	"intelephense",
-	"bashls",
-	"cssls",
-	"ccls",
-}
-
-for _, lsp in ipairs(servers) do
-	nvim_lsp[lsp].setup({
-		capabilities = capabilities,
-		on_attach = on_attach,
-		flags = {
-			debounce_text_changes = 500,
-		},
-	})
-end

@@ -6,7 +6,6 @@ local cmd = vim.cmd
 --
 opt.encoding = "utf-8"
 opt.clipboard = "unnamedplus"
-opt.completeopt = { "menuone", "noselect" }
 vim.o.termguicolors = true
 if fn.filereadable("~/neovim3/bin/python3.9") then
 	vim.g.python3_host_prog = "~/neovim3/bin/python3.9"
