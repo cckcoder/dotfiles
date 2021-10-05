@@ -1,0 +1,5 @@
+--glob
+'!.git'
+!env/
+
+--smart-case
