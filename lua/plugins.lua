@@ -13,11 +13,10 @@ return require("packer").startup(function()
 	use("kyazdani42/nvim-web-devicons")
 
 	--[[ Complete ]]
-	--
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/nvim-cmp")
-    --[[For vsnip user.]]
+	--[[For vsnip user.]]
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
 
@@ -40,14 +39,14 @@ return require("packer").startup(function()
 	use({ "mhinz/vim-signify" })
 
 	--[[Tools]]
-	--
 	use({ "kevinhwang91/nvim-hlslens" })
 	use("sbdchd/neoformat")
 	use({
 		"kyazdani42/nvim-tree.lua",
-		requires = "kyazdani42/nvim-web-devicons"
+		requires = "kyazdani42/nvim-web-devicons",
 	})
 	use("tversteeg/registers.nvim")
+    use("tpope/vim-repeat")
 	use("tpope/vim-unimpaired")
 	use("mattn/emmet-vim")
 	use("machakann/vim-highlightedyank")
