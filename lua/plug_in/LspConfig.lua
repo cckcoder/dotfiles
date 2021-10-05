@@ -60,7 +60,7 @@ local servers = {
 	"ccls",
 	"jsonls",
 	"vimls",
-    "jedi_language_server"
+	"jedi_language_server",
 }
 
 for _, lsp in ipairs(servers) do
