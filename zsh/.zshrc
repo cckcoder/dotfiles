@@ -78,8 +78,6 @@ zle -N edit-command-line
 
 # Bind Key
 bindkey '^x^e' edit-command-line
-bindkey -v
-export KEYTIMEOUT=1
 
 PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
