@@ -12,6 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 source ~/.zplug/init.zsh
 #======[Load Alias]======
 source "$XDG_CONFIG_HOME/zsh/.zsh_aliases"
+source "$DOTFILES/zsh/scripts.sh"
 zplug "qoomon/zsh-lazyload"
 
 autoload -Uz promptinit; promptinit
@@ -74,7 +75,11 @@ fi
 
 autoload -U edit-command-line
 zle -N edit-command-line
+
+# Bind Key
 bindkey '^x^e' edit-command-line
+bindkey -v
+export KEYTIMEOUT=1
 
 PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
