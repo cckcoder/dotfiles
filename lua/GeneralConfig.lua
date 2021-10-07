@@ -106,6 +106,3 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.wrapscan = true
 opt.showmatch = true
-
-cmd([[autocmd FileType vue set sw=2 ts=2 sts=2]])
-cmd([[autocmd FileType javascript set sw=2 ts=2 sts=2]])
