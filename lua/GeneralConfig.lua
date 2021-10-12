@@ -3,7 +3,6 @@ local fn = vim.fn
 local cmd = vim.cmd
 
 --[[Utils]]
---
 opt.encoding = "utf-8"
 opt.clipboard = "unnamedplus"
 vim.o.termguicolors = true
@@ -27,31 +26,22 @@ opt.scrolloff = 3
 opt.laststatus = 2
 opt.showbreak = "↳ "
 
---[[Netrw]]
---
-vim.g.netrw_localrmdir = "rm -r"
-vim.g.netrw_browse_split = 4
-
 --[[Number Group]]
---
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.numberwidth = 5
 
 --[[Set 80 characters]]
---
 vim.o.textwidth = 80
 opt.synmaxcol = 200
 
 --[[Performance Tuning]]
---
 vim.o.timeoutlen = 500
 vim.o.ttimeoutlen = 0
 vim.o.updatetime = 300
 vim.o.title = true
 
 --[[Splite Window]]
---
 vim.o.splitbelow = true
 vim.o.splitright = true
 opt.wildignore = {
@@ -67,17 +57,14 @@ opt.wildignore = {
 }
 
 --[[Fold]]
---
 opt.foldmethod = "indent"
 opt.foldnestmax = 10
 opt.foldlevel = 2
 
 --[[Vsnip]]
---
 vim.g.vsnip_snippet_dir = "~/dotfiles/vsnip"
 
 --[[Indentation]]
---
 opt.autoindent = true
 opt.expandtab = true
 opt.shiftwidth = 4
@@ -88,20 +75,17 @@ opt.shiftround = true -- Round indent
 opt.joinspaces = false -- No double spaces with join after a dot
 
 --[[Display]]
---
 opt.wrap = true
 opt.lazyredraw = true
 opt.list = true
 opt.showcmd = true
 
 --[[Backup]]
---
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
 
 --[[Search]]
---
 opt.ignorecase = true
 opt.smartcase = true
 opt.wrapscan = true
