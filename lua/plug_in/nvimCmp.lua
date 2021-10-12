@@ -42,7 +42,15 @@ local lsp_symbols = {
 
 cmp.setup({
 	completion = {
-		completeopt = "menu,menuone,noinsert",
+		completeopt = "menuone,noinsert",
+	},
+	documentation = {
+		border = "rounded", -- the border option is the same as `|help nvim_open_win|`
+		winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
+		max_width = 60,
+		min_width = 30,
+		max_height = math.floor(vim.o.lines * 0.3),
+		min_height = 1,
 	},
 	snippet = {
 		expand = function(args)
@@ -56,24 +64,26 @@ cmp.setup({
 		["<C-e>"] = cmp.mapping.close(),
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<Tab>"] = cmp.mapping(function(fallback)
-			if vim.fn.pumvisible() == 1 then
-				feedkey("<C-n>", "n")
+			if cmp.visible() then
+				cmp.select_next_item()
 			elseif vim.fn["vsnip#available"]() == 1 then
 				feedkey("<Plug>(vsnip-expand-or-jump)", "")
 			elseif has_words_before() then
 				cmp.complete()
 			else
-				fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+				fallback()
 			end
 		end, {
 			"i",
 			"s",
 		}),
-		["<S-Tab>"] = cmp.mapping(function()
-			if vim.fn.pumvisible() == 1 then
-				feedkey("<C-p>", "n")
+		["<S-Tab>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_prev_item()
 			elseif vim.fn["vsnip#jumpable"](-1) == 1 then
 				feedkey("<Plug>(vsnip-jump-prev)", "")
+			else
+				fallback()
 			end
 		end, {
 			"i",
@@ -92,13 +102,11 @@ cmp.setup({
 	formatting = {
 		format = function(entry, item)
 			item.kind = lsp_symbols[item.kind]
-			-- set a name for each source
 			item.menu = ({
 				buffer = "[Buffer]",
 				nvim_lsp = "[LSP]",
 				luasnip = "[LuaSnip]",
 			})[entry.source.name]
-
 			return item
 		end,
 	},
