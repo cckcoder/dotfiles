@@ -6,4 +6,12 @@ require("telescope").setup({
 			i = { ["kj"] = actions.close },
 		},
 	},
+	pickers = {
+		find_files = {
+			theme = "ivy",
+		},
+		live_grep = {
+			theme = "ivy",
+		},
+	},
 })
