@@ -43,7 +43,6 @@ return require("packer").startup(function()
 	use("arcticicestudio/nord-vim")
 
 	--[[Git and HG]]
-	--
 	use({ "mhinz/vim-signify" })
 
 	--[[Tools]]
@@ -86,4 +85,5 @@ return require("packer").startup(function()
 	})
 	use({ "simrat39/symbols-outline.nvim" })
 	use("b3nj5m1n/kommentary")
+	use("chentau/marks.nvim")
 end)
