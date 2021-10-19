@@ -15,7 +15,14 @@ return require("packer").startup(function()
 	--[[ Complete ]]
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/nvim-cmp")
+	use({
+		"hrsh7th/nvim-cmp",
+		require = {
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-calc",
+			"hrsh7th/cmp-nvim-lua",
+		},
+	})
 	--[[For vsnip user.]]
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
@@ -24,7 +31,7 @@ return require("packer").startup(function()
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/popup.nvim" }, { "nvim-lua/plenary.nvim" } },
 	})
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("rafamadriz/friendly-snippets")
@@ -47,7 +54,7 @@ return require("packer").startup(function()
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 	use("tversteeg/registers.nvim")
-    use("tpope/vim-repeat")
+	use("tpope/vim-repeat")
 	use("tpope/vim-unimpaired")
 	use("mattn/emmet-vim")
 	use("machakann/vim-highlightedyank")

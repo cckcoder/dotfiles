@@ -93,7 +93,7 @@ cmp.setup({
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "vsnip" },
-		{ name = "buffer" },
+		{ name = "buffer", max_item_count = 1 },
 		{ name = "path" },
 		{ name = "tags" },
 		{ name = "spell" },
