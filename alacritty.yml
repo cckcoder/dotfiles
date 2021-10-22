@@ -1,13 +1,13 @@
 colors:
   bright:
-    black: "#4c566a"
-    blue: "#81a1c1"
-    cyan: "#8fbcbb"
-    green: "#a3be8c"
-    magenta: "#b48ead"
-    red: "#bf616a"
-    white: "#eceff4"
-    yellow: "#ebcb8b"
+    black:   '0x465780'
+    red:     '0xd06f79'
+    green:   '0xb1d196'
+    yellow:  '0xf0d399'
+    blue:    '0x8cafd2'
+    magenta: '0xc895bf'
+    cyan:    '0x93ccdc'
+    white:   '0xe7ecf4'
   cursor:
     cursor: "#d8dee9"
     text: "#2e3440"
@@ -21,18 +21,21 @@ colors:
     white: "#aeb3bb"
     yellow: "#b29e75"
   normal:
-    black: "#3b4252"
-    blue: "#81a1c1"
-    cyan: "#88c0d0"
-    green: "#a3be8c"
-    magenta: "#b48ead"
-    red: "#bf616a"
-    white: "#e5e9f0"
-    yellow: "#ebcb8b"
+    black:   '0x3b4252'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x81a1c1'
+    magenta: '0xb48ead'
+    cyan:    '0x88c0d0'
+    white:   '0xe5e9f0'
   primary:
-    background: "#2e3440"
     dim_foreground: "#a5abb6"
-    foreground: "#d8dee9"
+    background: '0x2e3440'
+    foreground: '0xb9bfca'
+  indexed_colors:
+    - { index: 16, color: '0xc9826b' }
+    - { index: 17, color: '0xbf88bc' }
   search:
     bar:
       background: "#434c5e"
@@ -53,8 +56,8 @@ env:
   TERM: xterm-256color
 font:
   normal:
-      family: "JetBrainsMono Nerd Font"
-      style: Regular
+    family: "JetBrainsMono Nerd Font"
+    style: Regular
   bold:
     family: "JetBrainsMono Nerd Font"
     style: Bold

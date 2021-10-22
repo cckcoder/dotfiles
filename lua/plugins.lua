@@ -41,6 +41,7 @@ return require("packer").startup(function()
 	--[[Theme]]
 	--
 	use("arcticicestudio/nord-vim")
+	use("EdenEast/nightfox.nvim")
 
 	--[[Git and HG]]
 	use({ "mhinz/vim-signify" })
