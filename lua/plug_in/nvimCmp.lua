@@ -42,7 +42,8 @@ local lsp_symbols = {
 
 cmp.setup({
 	completion = {
-		completeopt = "menuone,noinsert",
+		completeopt = "menu,menuone,noselect",
+		complete = ".,w,b",
 	},
 	documentation = {
 		border = "rounded", -- the border option is the same as `|help nvim_open_win|`

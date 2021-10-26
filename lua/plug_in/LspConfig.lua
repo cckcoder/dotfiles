@@ -46,8 +46,7 @@ local on_attach = function(client, bufnr)
 end
 
 local nvim_lsp = require("lspconfig")
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
+local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local servers = {
@@ -65,7 +64,7 @@ local servers = {
 
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup({
-		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+		capabilities = capabilities,
 		on_attach = on_attach,
 		flags = {
 			debounce_text_changes = 500,

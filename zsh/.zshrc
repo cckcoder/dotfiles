@@ -65,6 +65,12 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#======[nnn]======
+export LC_COLLATE="C"
+export NNN_PLUG='p:preview-tui;v:imgview;n:nuke;f:fzplug'
+export NNN_BMS="d:$HOME/Downloads;b:/src/bit"
+export NNN_FIFO=/tmp/nnn.fifo
+
 if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
   source "${VIRTUAL_ENV}/bin/activate"
 fi
