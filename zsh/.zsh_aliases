@@ -93,7 +93,7 @@ alias tls='tmux ls'
 alias txa='pkill -f tmux'
 
 # GIT
-alias gcom='git checkout master'
+alias gcom='git checkout main'
 gnb() {
   git checkout -b "$1"
 }
@@ -169,6 +169,10 @@ dockre(){
 
 yt() {
   youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
+}
+
+ytn() {
+  youtube-dl -i -o "$1.%(ext)s" -f best $2
 }
 
 ytmp() {
