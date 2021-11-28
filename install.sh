@@ -13,9 +13,14 @@
 #ln -sf "$HOME/dotfiles/zsh/.zshenv" "$HOME"
 #ln -sf "$HOME/dotfiles/zsh/.zshrc" "$HOME/.config/zsh"
 
-
 #########
 # Fonts #
 #########
 #mkdir -p "$XDG_DATA_HOME"
-cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
+#cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
+
+#########
+# Dunst #
+#########
+mkdir -p "$XDG_CONFIG_HOME/dunst"
+ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
