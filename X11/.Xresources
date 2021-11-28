@@ -1,38 +1,43 @@
-! black 236 238
-*.color0: #303030
-*.color8: #444444
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-! red 167
-*.color1: #d75f5f
-*.color9: #d75f5f
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
 
-! green 108
-*.color2: #87AF87
-*.color10: #87AF87
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
-! yellow 221
-*.color3: #ffd75f
-*.color11: #ffd75f
-
-! blue 110
-*.color4: #87afd7
-*.color12: #87afd7
-
-! magenta 146
-*.color5: #afafd7
-*.color13: #afafd7
-
-! cyan 75
-*.color6: #afd7ff
-*.color14: #afd7ff
-
-! white 239 15
-*.color7: #e4e4e4
-*.color15: #e4e4e4
-
-*.foreground: #c6c6c6
-*.background: #1C1C1C
-*.cursorColor: #444444
 
 URxvt*font: xft:JetBrainsMonoNL Nerd Font:style=Medium:size=15:pixelsize=16:antialias=true
 
