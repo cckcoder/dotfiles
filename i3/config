@@ -232,3 +232,5 @@ bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
 #dunstrc
 exec --no-startup -id dunst
+#pulseaudio
+exec --no-startup-id pulseaudio
