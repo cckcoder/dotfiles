@@ -38,9 +38,7 @@
 *.color14: nord7
 *.color15: nord6
 
-
-URxvt*font: xft:JetBrainsMonoNL Nerd Font:style=Medium:size=15:pixelsize=16:antialias=true
-
+URxvt*font: xft:JetBrainsMono NF:style=Regular:size=14:antialias=true
 URxvt*letterSpace: -1
 
 URxvt*borderLess: false

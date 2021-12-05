@@ -79,6 +79,9 @@ fft() {
   find -type d -name "$1*"
 }
 
+# i3
+alias cfi3='vi $DOTFILES/i3/config'
+alias cfx='vi $DOTFILES/X11/.Xresources'
 # Pacman, Yay
 alias pacup='sudo pacman --noconfirm -Syyu'
 pacin() {

@@ -111,3 +111,5 @@ export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O
 export LDLIBS="-lcrypt -lcs50 -lm"
 export VISUAL="vi"
 source /home/iamcc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="${PATH}:$(python3 -c 'import site; print(site.USER_BASE)')/bin"
+

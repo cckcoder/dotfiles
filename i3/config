@@ -226,15 +226,19 @@ for_window [class="URxvt*"] border pixel 1
 for_window [instance="urxvt_scratchpad"] move to scratchpad , border none
 bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
 exec urxvtc -name urxvt_scratchpad
+
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad , border none
 bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
+
 #dunstrc
 exec --no-startup -id dunst
+
 #pulseaudio
 exec --no-startup-id pulseaudio
+
 # switch language
-#exec_always "setxkbmap -model pc104 -layout us,th -variant ,, -option grp:alt_shift_toggle"
-exec_always "setxkbmap -layout us,th -option 'grp:alt_space_toggle'"
+exec_always "setxkbmap -model pc104 -layout us,th -variant ,, -option grp:alt_shift_toggle"
+#exec_always "setxkbmap -layout us,th -option 'grp:alt_space_toggle'"
 

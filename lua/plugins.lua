@@ -29,10 +29,8 @@ return require("packer").startup(function()
 
 	use({
 		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/popup.nvim" }, { "nvim-lua/plenary.nvim" } },
+		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("rafamadriz/friendly-snippets")
 	use("neovim/nvim-lspconfig")
@@ -67,14 +65,6 @@ return require("packer").startup(function()
 	use("airblade/vim-rooter")
 	use("phaazon/hop.nvim")
 	use({
-		"glepnir/galaxyline.nvim",
-		branch = "main",
-		config = function()
-			require("my_statusline")
-		end,
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
-	use({
 		"folke/which-key.nvim",
 		config = function()
 			require("which-key").setup({})
@@ -87,4 +77,8 @@ return require("packer").startup(function()
 	use({ "simrat39/symbols-outline.nvim" })
 	use("b3nj5m1n/kommentary")
 	use("chentau/marks.nvim")
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 end)
