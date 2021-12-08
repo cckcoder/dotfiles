@@ -15,14 +15,10 @@ return require("packer").startup(function()
 	--[[ Complete ]]
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
-	use({
-		"hrsh7th/nvim-cmp",
-		require = {
-			"hrsh7th/cmp-path",
-			"hrsh7th/cmp-calc",
-			"hrsh7th/cmp-nvim-lua",
-		},
-	})
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-nvim-lua")
+	use("hrsh7th/nvim-cmp")
+
 	--[[For vsnip user.]]
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")

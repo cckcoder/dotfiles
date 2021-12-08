@@ -93,8 +93,8 @@ cmp.setup({
 	},
 	sources = {
 		{ name = "nvim_lsp" },
+		{ name = "buffer", max_item_count = 1, keyword_length = 3 },
 		{ name = "vsnip" },
-		{ name = "buffer", max_item_count = 1 },
 		{ name = "path" },
 		{ name = "tags" },
 		{ name = "spell" },
@@ -104,11 +104,17 @@ cmp.setup({
 		format = function(entry, item)
 			item.kind = lsp_symbols[item.kind]
 			item.menu = ({
-				buffer = "[Buffer]",
+				buffer = "[Buf]",
 				nvim_lsp = "[LSP]",
-				luasnip = "[LuaSnip]",
+				vsnip = "[snip]",
+				path = "[path]",
 			})[entry.source.name]
 			return item
 		end,
 	},
+
+	experimental = {
+		native_menu = false,
+		ghost_text = false
+	}
 })
