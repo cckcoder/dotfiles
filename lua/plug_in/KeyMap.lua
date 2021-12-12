@@ -55,3 +55,7 @@ map("v", "<", "<gv", options)
 map("v", ">", ">gv", options)
 map("v", "J", ":m '>+1<CR>gv=gv", options)
 map("v", "K", ":m '<-2<CR>gv=gv", options)
+
+
+--[[Neoformat]]
+map("n", "<A-l>", ":Neoformat<CR>", options2)

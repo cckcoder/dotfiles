@@ -25,5 +25,19 @@
     "body": [
       "import pdb; pdb.set_trace()"
     ]
+  },
+  "new class": {
+    "prefix": ["ncls"],
+    "body": [
+      "class $1($2):",
+      "    pass"
+    ]
+  },
+  "def str": {
+    "prefix": ["dstr"],
+    "body": [
+      "def __str__(self):",
+      "    $1"
+    ]
   }
 }
