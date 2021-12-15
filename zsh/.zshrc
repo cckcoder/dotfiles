@@ -96,8 +96,9 @@ export GTAGSCONF=/usr/share/gtags/gtags.conf
 export GTAGSLABEL=ctags
 fpath=($fpath "/home/dev2/.zfunctions")
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
 export TERM=xterm-256color
 export PATH=$PATH:/usr/local/go/bin
@@ -110,6 +111,7 @@ export CC="clang"
 export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
 export LDLIBS="-lcrypt -lcs50 -lm"
 export VISUAL="vi"
-source /home/iamcc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/$USER/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="${PATH}:$(python3 -c 'import site; print(site.USER_BASE)')/bin"
 
+source /home/codwiz/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
