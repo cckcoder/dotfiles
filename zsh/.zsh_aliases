@@ -172,9 +172,14 @@ dockre(){
   fi
 }
 
+# yt() {
+#   youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
+# }
+
 yt() {
-  youtube-dl -i -o "%(title)s.%(ext)s" -f best $1
+  yt-dlp -i -o "%(title)s.%(ext)s" -f best $1
 }
+
 
 ytn() {
   youtube-dl -i -o "$1.%(ext)s" -f best $2
