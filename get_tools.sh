@@ -1,4 +1,4 @@
-pacman -S ripgrep gawk fg
+pacman -S ripgrep gawk fg feh
 
 npm i -g bash-language-server pyright \
     typescript typescript-language-server \

@@ -46,11 +46,13 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvtc
+#bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec alacritty
 
 # start application.
 bindsym $mod+Shift+e exec nautilus
 bindsym $mod+Shift+f exec firefox-developer-edition
+bindsym $mod+Shift+g exec google-chrome-stable
 
 
 # kill focused window
@@ -231,6 +233,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [class="Arandr"] floating enable
 for_window [class="URxvt*"] border pixel 1
+for_window [class="Alacritty"] border pixel 1
 
 # Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad , border none

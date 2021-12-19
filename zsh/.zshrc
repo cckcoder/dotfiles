@@ -113,5 +113,3 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 export VISUAL="vi"
 source /home/$USER/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="${PATH}:$(python3 -c 'import site; print(site.USER_BASE)')/bin"
-
-source /home/codwiz/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

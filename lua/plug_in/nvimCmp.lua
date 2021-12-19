@@ -46,7 +46,8 @@ cmp.setup({
 		complete = ".,w,b",
 	},
 	documentation = {
-		border = "rounded", -- the border option is the same as `|help nvim_open_win|`
+		-- border = "rounded", -- the border option is the same as `|help nvim_open_win|`
+		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
 		winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
 		max_width = 60,
 		min_width = 30,
@@ -93,12 +94,21 @@ cmp.setup({
 	},
 	sources = {
 		{ name = "nvim_lsp" },
-		{ name = "buffer", max_item_count = 1, keyword_length = 3 },
+		{ name = "treesitter" },
+		{
+			name = "buffer",
+			max_item_count = 1,
+			keyword_length = 3,
+			option = {
+				get_bufnrs = function()
+					return vim.api.nvim_list_bufs()
+				end,
+			},
+		},
 		{ name = "vsnip" },
 		{ name = "path" },
 		{ name = "tags" },
 		{ name = "spell" },
-		{ name = "calc" },
 	},
 	formatting = {
 		format = function(entry, item)
@@ -115,6 +125,6 @@ cmp.setup({
 
 	experimental = {
 		native_menu = false,
-		ghost_text = false
-	}
+		ghost_text = false,
+	},
 })
