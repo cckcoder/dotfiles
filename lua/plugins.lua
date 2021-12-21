@@ -12,15 +12,22 @@ return require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 	use("kyazdani42/nvim-web-devicons")
 
-	--[[ Complete ]]
-	use("hrsh7th/cmp-nvim-lsp")
-	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/cmp-path")
-	use("hrsh7th/cmp-nvim-lua")
-	use("hrsh7th/nvim-cmp")
+	--[[COQ]]
+	use({
+		"ms-jpq/coq_nvim",
+		branch = "coq",
+	})
 
-	--[[For vsnip user.]]
-	use("hrsh7th/cmp-vsnip")
+	use({ "ms-jpq/coq.artifacts", branch = "artifacts" })
+	use({ "ms-jpq/coq.thirdparty", branch = "3p" })
+
+	use({
+		"ms-jpq/coq_nvim",
+		branch = "coq",
+		event = "VimEnter",
+		config = "vim.cmd[[COQnow]]",
+	})
+	use({ "ms-jpq/coq.artifacts", branch = "artifacts" })
 	use("hrsh7th/vim-vsnip")
 
 	--[[telescope]]
@@ -28,7 +35,7 @@ return require("packer").startup(function()
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use {'nvim-telescope/telescope-ui-select.nvim' }
+	use({ "nvim-telescope/telescope-ui-select.nvim" })
 
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("rafamadriz/friendly-snippets")

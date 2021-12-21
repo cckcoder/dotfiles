@@ -6,8 +6,8 @@ local cmd = vim.cmd
 opt.encoding = "utf-8"
 opt.clipboard = "unnamedplus"
 vim.o.termguicolors = true
-if fn.filereadable("~/neovim3/bin/python3.9") then
-	vim.g.python3_host_prog = "~/neovim3/bin/python3.9"
+if fn.filereadable("~/neovim3/bin/python3.10") then
+	vim.g.python3_host_prog = "~/neovim3/bin/python3.10"
 end
 
 opt.history = 500

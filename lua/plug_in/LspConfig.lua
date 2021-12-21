@@ -46,7 +46,9 @@ local on_attach = function(client, bufnr)
 end
 
 local nvim_lsp = require("lspconfig")
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local coq = require("coq")
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local servers = {
@@ -61,15 +63,19 @@ local servers = {
 	"vimls",
 	"jedi_language_server",
 	"vuels",
-	"jdtls"
+	"jdtls",
 }
 
 for _, lsp in ipairs(servers) do
-	nvim_lsp[lsp].setup({
-		capabilities = capabilities,
+	nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(vim.tbl_deep_extend("force", {
 		on_attach = on_attach,
-		flags = {
-			debounce_text_changes = 500,
-		},
-	})
+		capabilities = capabilities,
+		flags = { debounce_text_changes = 150 },
+		init_options = config,
+	}, {})))
+
+	local cfg = nvim_lsp[lsp]
+	if not (cfg and cfg.cmd and vim.fn.executable(cfg.cmd[1]) == 1) then
+		print(lsp .. ": cmd not found: " .. vim.inspect(cfg.cmd))
+	end
 end
