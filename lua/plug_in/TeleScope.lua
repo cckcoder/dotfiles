@@ -14,5 +14,9 @@ require("telescope").setup({
 			theme = "ivy",
 		},
 	},
-	extensions = { },
+	extensions = {
+		["ui-select"] = {
+			require("telescope.themes").get_dropdown {}
+		},
+	}
 })

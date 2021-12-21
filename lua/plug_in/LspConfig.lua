@@ -61,6 +61,7 @@ local servers = {
 	"vimls",
 	"jedi_language_server",
 	"vuels",
+	"jdtls"
 }
 
 for _, lsp in ipairs(servers) do

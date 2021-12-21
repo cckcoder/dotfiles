@@ -23,10 +23,13 @@ return require("packer").startup(function()
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
 
+	--[[telescope]]
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use {'nvim-telescope/telescope-ui-select.nvim' }
+
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("rafamadriz/friendly-snippets")
 	use("neovim/nvim-lspconfig")
@@ -79,4 +82,5 @@ return require("packer").startup(function()
 	})
 
 	use({ "tweekmonster/django-plus.vim" })
+	use({ "mfussenegger/nvim-jdtls" })
 end)
