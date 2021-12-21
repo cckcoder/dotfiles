@@ -233,7 +233,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [class="Arandr"] floating enable
 for_window [class="URxvt*"] border pixel 1
-for_window [class="Alacritty"] border pixel 1
+for_window [class="Alacritty"] border pixel 3
 
 # Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad , border none
