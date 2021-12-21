@@ -42,15 +42,15 @@ local lsp_symbols = {
 
 cmp.setup({
 	completion = {
-		completeopt = "menu,menuone,noselect",
+		completeopt = "menuone,noselect",
 		complete = ".,w,b",
 	},
 	documentation = {
 		-- border = "rounded", -- the border option is the same as `|help nvim_open_win|`
 		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
 		winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
-		max_width = 60,
-		min_width = 30,
+		max_width = 80,
+		min_width = 40,
 		max_height = math.floor(vim.o.lines * 0.3),
 		min_height = 1,
 	},
@@ -97,13 +97,8 @@ cmp.setup({
 		{ name = "treesitter" },
 		{
 			name = "buffer",
-			max_item_count = 1,
+			max_item_count = 2,
 			keyword_length = 3,
-			option = {
-				get_bufnrs = function()
-					return vim.api.nvim_list_bufs()
-				end,
-			},
 		},
 		{ name = "vsnip" },
 		{ name = "path" },

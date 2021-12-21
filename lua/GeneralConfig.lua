@@ -25,6 +25,7 @@ opt.pumheight = 20
 opt.scrolloff = 3
 opt.laststatus = 2
 opt.showbreak = "↳ "
+opt.ruler = true
 
 --[[Number Group]]
 vim.o.number = true
