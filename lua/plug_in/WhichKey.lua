@@ -53,6 +53,10 @@ wk.register({
 		f = { ":HopChar1<CR>", "HopChar 1" },
 		c = { ":HopChar2<CR>", "HopChar 2" },
 	},
+	t = {
+		name = "Trouble",
+		t = { ":TroubleToggle<CR>", "TroubleToggle" },
+	},
 }, {
 	prefix = "<leader>",
 })
