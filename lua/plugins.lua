@@ -77,6 +77,11 @@ return require("packer").startup(function()
 		end,
 	})
 	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons"
+	})
+	use("folke/lsp-colors.nvim")
+	use({
 		"zsugabubus/crazy8.nvim",
 		event = { "BufRead" },
 	})

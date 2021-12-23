@@ -56,18 +56,18 @@ env:
   TERM: xterm-256color
 font:
   normal:
-    family: "JetBrainsMono Nerd Font"
+    family: "JetBrainsMonoNL Nerd Font"
     style: Regular
   bold:
-    family: "JetBrainsMono Nerd Font"
+    family: "JetBrainsMonoNL Nerd Font"
     style: Bold
 
   italic:
-    family: "JetBrainsMono Nerd Font"
+    family: "JetBrainsMonoNL Nerd Font"
     style: Italic
 
   bold_italic:
-    family: "JetBrainsMono Nerd Font"
+    family: "JetBrainsMonoNL Nerd Font"
     style: Bold Italic
   offset:
     x: 0

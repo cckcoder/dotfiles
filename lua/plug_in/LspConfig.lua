@@ -70,7 +70,7 @@ for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(vim.tbl_deep_extend("force", {
 		on_attach = on_attach,
 		capabilities = capabilities,
-		flags = { debounce_text_changes = 150 },
+		flags = { debounce_text_changes = 500 },
 		init_options = config,
 	}, {})))
 
