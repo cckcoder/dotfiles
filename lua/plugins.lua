@@ -21,13 +21,6 @@ return require("packer").startup(function()
 	use({ "ms-jpq/coq.artifacts", branch = "artifacts" })
 	use({ "ms-jpq/coq.thirdparty", branch = "3p" })
 
-	use({
-		"ms-jpq/coq_nvim",
-		branch = "coq",
-		event = "VimEnter",
-		config = "vim.cmd[[COQnow]]",
-	})
-	use({ "ms-jpq/coq.artifacts", branch = "artifacts" })
 	use("hrsh7th/vim-vsnip")
 
 	--[[telescope]]
@@ -43,9 +36,9 @@ return require("packer").startup(function()
 	use("norcalli/nvim-colorizer.lua")
 
 	--[[Theme]]
-	--
 	use("arcticicestudio/nord-vim")
 	use("EdenEast/nightfox.nvim")
+	use("rebelot/kanagawa.nvim")
 
 	--[[Git and HG]]
 	use({ "mhinz/vim-signify" })
@@ -78,7 +71,7 @@ return require("packer").startup(function()
 	})
 	use({
 		"folke/trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons"
+		requires = "kyazdani42/nvim-web-devicons",
 	})
 	use("folke/lsp-colors.nvim")
 	use({

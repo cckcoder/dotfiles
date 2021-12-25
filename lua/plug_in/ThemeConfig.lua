@@ -2,4 +2,5 @@ local cmd = vim.cmd
 
 cmd([[syntax enable]])
 -- cmd([[colorscheme nord]])
-require("nightfox").load('nordfox')
+cmd([[colorscheme kanagawa]])
+-- require("nightfox").load('nordfox')
