@@ -113,6 +113,9 @@ gbc() {
     fi
 }
 
+lg1() {
+	git log --all --graph --pretty=format:'%C(auto)%h%C(auto)%d %s %C(dim white)(%aN, %ar)'
+}
 # ADB
 #alias adb='cd ~/ADB'
 
