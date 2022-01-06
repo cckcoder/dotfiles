@@ -8,4 +8,8 @@ augroup vue_dev
     autocmd BufRead, BufNewFile *.vue setfiletype html
 augroup END
 
+augroup java_dev
+    autocmd FileType java set sw=2 ts=2 sts=2
+augroup END
+
 autocmd FileType javascript set sw=2 ts=2 sts=2

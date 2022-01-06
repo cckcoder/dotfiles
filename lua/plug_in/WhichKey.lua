@@ -21,6 +21,7 @@ wk.register({
 		i = { ":PackerInstall<CR>", "Packer install" },
 		u = { ":PackerUpdate<CR>", "Packer update" },
 		c = { ":PackerClean<CR>", "Packer clean" },
+		s = { ":PackerSync<CR>", "Packer Sync" },
 		h = { ":checkhealth<CR>", "Check health" },
 	},
 	S = {
