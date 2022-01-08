@@ -62,9 +62,6 @@ opt.foldmethod = "indent"
 opt.foldnestmax = 10
 opt.foldlevel = 2
 
---[[Vsnip]]
-vim.g.vsnip_snippet_dir = "~/dotfiles/vsnip"
-
 --[[Indentation]]
 opt.autoindent = true
 opt.expandtab = true
