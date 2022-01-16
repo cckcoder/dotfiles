@@ -29,6 +29,12 @@ return require("packer").startup(function()
 	use({ "nvim-telescope/telescope-ui-select.nvim" })
 
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use({
+		"lewis6991/spellsitter.nvim",
+		config = function()
+			require("spellsitter").setup()
+		end,
+	})
 	use("rafamadriz/friendly-snippets")
 	use("neovim/nvim-lspconfig")
 	use("norcalli/nvim-colorizer.lua")
