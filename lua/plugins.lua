@@ -29,6 +29,7 @@ return require("packer").startup(function()
 	use({ "nvim-telescope/telescope-ui-select.nvim" })
 
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use({ "nvim-treesitter/nvim-treesitter-textobjects"})
 	use({
 		"lewis6991/spellsitter.nvim",
 		config = function()
