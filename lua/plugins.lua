@@ -93,4 +93,6 @@ return require("packer").startup(function()
 
 	use({ "tweekmonster/django-plus.vim" })
 	use({ "mfussenegger/nvim-jdtls" })
+	use({ "p00f/nvim-ts-rainbow" })
+
 end)
