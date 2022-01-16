@@ -32,21 +32,10 @@ map("n", "<leader>sm", ":Telescope marks<cr>", options)
 map("n", "<leader>a", ":Telescope live_grep prompt_prefix=🔍<cr>", options)
 map("n", "<leader>A", ":Telescope lsp_code_actions<cr>", options)
 map("n", "<leader>fh", ":Telescope help_tags<cr>", options)
-map("n", "<leader>C", ":Telescope command_history<cr>", options)
+map("n", "q:", ":Telescope command_history<cr>", options)
 
 --[Explorer]--
 map("n", "<leader>e", ":NvimTreeToggle<CR>", options)
-
---[LspSaga]--
-map("n", "<A-o>", ":Lspsaga open_floaterm<CR>", options2)
-map("n", "<A-c>", ":Lspsaga close_floaterm<CR>", options2)
-map("n", "[e", ":Lspsaga diagnostic_jump_next<CR>", options2)
-map("n", "]e", ":Lspsaga diagnostic_jump_prev<CR>", options2)
-
---[[Saga Scroll]]
-vim.cmd("nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
-vim.cmd("nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
-
 
 --[[Hop]]
 map("n", "<leader>w", ":HopWord<CR>", options2)
