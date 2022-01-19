@@ -5,6 +5,7 @@ require("telescope").setup({
 		mappings = {
 			i = { ["kj"] = actions.close },
 		},
+		file_ignore_patterns = {"env", "node_modules"} 
 	},
 	pickers = {
 		find_files = {
