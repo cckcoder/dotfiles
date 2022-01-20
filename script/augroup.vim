@@ -13,3 +13,8 @@ augroup java_dev
 augroup END
 
 autocmd FileType javascript set sw=2 ts=2 sts=2
+
+
+augroup handle_bars
+    autocmd BufRead, BufNewFile *.handlebars setfiletype html
+augroup END
