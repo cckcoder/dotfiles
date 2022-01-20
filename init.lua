@@ -21,6 +21,7 @@ require("plug_in/Kommentary")
 require("plug_in/VimSneak")
 require("plug_in/Marks")
 require("plug_in/Trouble")
+require("plug_in/AutoSave")
 require("hop").setup()
 
 vim.cmd("let g:loaded_matchit = 1")
