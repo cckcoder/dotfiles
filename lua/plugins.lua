@@ -51,6 +51,7 @@ return require("packer").startup(function()
 
 	--[[Tools]]
 	use({ "kevinhwang91/nvim-hlslens" })
+	use({ "romainl/vim-cool" })
 	use("sbdchd/neoformat")
 	use({
 		"kyazdani42/nvim-tree.lua",
