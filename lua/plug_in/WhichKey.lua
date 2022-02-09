@@ -31,10 +31,9 @@ wk.register({
 		p = { ":Lspsaga preview_definition<CR>", "Saga Preview Definit" },
 		d = { ":Lspsaga hover_doc<CR>", "Saga Hoverdoc" },
 	},
-	j = {
+	J = {
 		name = "AnyJump",
-		j = { ":AnyJump<CR>", "AnyJump" },
-		j = { ":AnyJump<CR>", "AnyJump" },
+		j = { ":AnyJump<CR>", "AnyJump" }, j = { ":AnyJump<CR>", "AnyJump" },
 		b = { ":AnyJumpBack<CR>", "AnyJumpBack" },
 		l = { ":AnyJumpLastResults<CR>", "AnyJumpLastResults" },
 	},

@@ -82,6 +82,7 @@ opt.showcmd = true
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
+opt.bufhidden = "hide"
 
 --[[Search]]
 opt.ignorecase = true
