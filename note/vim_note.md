@@ -94,6 +94,7 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 https://www.linode.com/docs/tools-reference/tools/how-to-install-neovim-and-plugins-with-vim-plug/
 
 # Install via wget
+
 `wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim `
 
 #remove Neovim
@@ -107,20 +108,26 @@ https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/
 for vim-hexokinase
 https://github.com/RRethy/vim-hexokinase
 
-
-
 # Lsp
+
 https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 
 ## Python Config
+
 `npm install -g pyright`
 
 ## Ref
+
 https://github.com/ChristianChiarulli/LunarVim/blob/master/init.lua
 
 ## Vim Tips
 
 ### delete blank line
-* [vim-delete-line](https://linuxize.com/post/vim-delete-line/)
-`:g /word/d`
-`:g/^$/d`
+
+- [vim-delete-line](https://linuxize.com/post/vim-delete-line/)
+  `:g /word/d`
+  `:g/^$/d`
+
+## Config cmp with omnifunc
+
+`-- use omnifunc vim.api.nvim_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc') vim.opt.completeopt = {'noinsert', 'menuone', 'noselect'} vim.api.nvim_command('inoremap <C-j> <C-x><C-o>')`
