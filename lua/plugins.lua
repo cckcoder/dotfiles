@@ -46,6 +46,7 @@ return require("packer").startup(function()
 	use("rebelot/kanagawa.nvim")
 	use("Mofiqul/dracula.nvim")
 	use("RRethy/nvim-base16")
+	use("chriskempson/base16-vim")
 
 	--[[Git and HG]]
 	use({ "mhinz/vim-signify" })

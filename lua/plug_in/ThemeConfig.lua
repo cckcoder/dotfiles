@@ -1,4 +1,5 @@
 local cmd = vim.cmd
 
-cmd([[syntax enable]])
-cmd('colorscheme base16-default-dark')
+-- cmd([[syntax enable]])
+cmd('colorscheme base16-classic-dark')
+
