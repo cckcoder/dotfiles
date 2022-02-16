@@ -27,3 +27,6 @@
 
 - (https://github.com/luukvbaal/stabilize.nvim)
 - (https://github.com/tpope/vim-eunuch)
+
+## Arch Ref
+* [back-up package](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages)
