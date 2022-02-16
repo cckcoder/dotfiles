@@ -12,6 +12,7 @@ alias lg='lazygit'
 alias szsh='source $HOME/.zshenv'
 alias dbit='cd /src/bit/'
 alias webs='cd /var/customers/webs'
+alias ct='cd /src/codewiz_memo; ./ct&'
 
 # Server
 alias nr='ssh root@192.168.80.240'
