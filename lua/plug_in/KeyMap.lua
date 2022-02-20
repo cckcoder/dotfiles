@@ -33,6 +33,7 @@ map("n", "<leader>a", ":Telescope live_grep prompt_prefix=🔍<cr>", options)
 map("n", "<leader>A", ":Telescope lsp_code_actions<cr>", options)
 map("n", "<leader>fh", ":Telescope help_tags<cr>", options)
 map("n", "q:", ":Telescope command_history<cr>", options)
+map("n", "grr", ":lua vim.lsp.buf.rename()<cr>", options)
 
 --[Explorer]--
 map("n", "<leader>e", ":NvimTreeToggle<CR>", options)
@@ -46,7 +47,6 @@ map("v", "<", "<gv", options)
 map("v", ">", ">gv", options)
 map("v", "J", ":m '>+1<CR>gv=gv", options)
 map("v", "K", ":m '<-2<CR>gv=gv", options)
-
 
 --[[Neoformat]]
 map("n", "<A-l>", ":Neoformat<CR>", options2)
