@@ -27,6 +27,8 @@ opt.laststatus = 2
 opt.showbreak = "↳ "
 opt.ruler = true
 
+cmd("set formatoptions-=cro")
+
 --[[Number Group]]
 vim.o.number = true
 vim.o.relativenumber = true
