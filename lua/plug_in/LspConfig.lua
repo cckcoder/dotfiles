@@ -18,16 +18,14 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "<leader>lca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 
 	-- Set autocommands conditional on server_capabilities
-	if client.resolved_capabilities.document_highlight then
-		vim.api.nvim_exec(
-			[[
+	vim.api.nvim_exec(
+		[[
       hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
       hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
       hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
     ]],
-			false
-		)
-	end
+		false
+	)
 end
 
 local nvim_lsp = require("lspconfig")

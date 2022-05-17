@@ -22,6 +22,7 @@
 - [awesome nvim](https://github.com/rockerBOO/awesome-neovim)
 - (https://thevaluable.dev/vim-beginner/)
 - (https://danielmiessler.com/study/vim/)
+- [kickstart config](https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua)
 
 ## Interest plugin
 
@@ -31,3 +32,4 @@
 
 ## Arch Ref
 * [back-up package](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages)
+

@@ -41,7 +41,6 @@ return require("packer").startup(function()
 	use("norcalli/nvim-colorizer.lua")
 
 	--[[Theme]]
-	use("arcticicestudio/nord-vim")
 	use("EdenEast/nightfox.nvim")
 	use("rebelot/kanagawa.nvim")
 	use("Mofiqul/dracula.nvim")
@@ -89,7 +88,7 @@ return require("packer").startup(function()
 	})
 	use({ "simrat39/symbols-outline.nvim" })
 	use("b3nj5m1n/kommentary")
-	use("chentau/marks.nvim")
+	use("chentoast/marks.nvim")
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
